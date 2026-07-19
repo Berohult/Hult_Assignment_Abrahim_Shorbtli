@@ -26,6 +26,27 @@ self.addEventListener("activate", (e) => {
 
 self.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET") return;
+
+  // HTML: network-first, so WhatsApp menu edits reach returning customers
+  // immediately; the cache is only the offline fallback.
+  if (e.request.mode === "navigate") {
+    e.respondWith(
+      fetch(e.request)
+        .then((res) => {
+          if (res.ok) {
+            const copy = res.clone();
+            caches.open(CACHE).then((c) => c.put(e.request, copy));
+          }
+          return res;
+        })
+        .catch(() =>
+          caches.match(e.request).then((hit) => hit || caches.match("./index.html"))
+        )
+    );
+    return;
+  }
+
+  // Static assets (fonts): cache-first with background refresh.
   e.respondWith(
     caches.match(e.request).then((hit) => {
       const net = fetch(e.request)

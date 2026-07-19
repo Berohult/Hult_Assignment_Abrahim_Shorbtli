@@ -142,7 +142,7 @@ html[dir="rtl"] .parade-track{animation-name:marquee-rtl}
 .ptile .pr{font-family:var(--f-b);font-weight:600;font-size:13px;color:var(--gold2)}
 
 /* ===== Chapters ===== */
-.chapter{padding-top:34px;content-visibility:auto;contain-intrinsic-size:auto 600px}
+.chapter{padding-top:34px;scroll-margin-top:118px}
 .ch-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:4px}
 .ch-title{font-family:var(--f-d);font-weight:700;font-size:24px;color:var(--ink);margin:0;
   text-wrap:balance}
@@ -292,7 +292,7 @@ html[dir="rtl"] .parade-track{animation-name:marquee-rtl}
 .sheet.show{transform:none}
 .sheet.drag{transition:none}
 .grabber{width:44px;height:5px;border-radius:999px;background:var(--hair2);margin:10px auto 2px;flex:none}
-.sheet-scroll{overflow-y:auto;overscroll-behavior:contain;padding:6px 22px 30px;touch-action:pan-y}
+.sheet-scroll{overflow-y:auto;overscroll-behavior:contain;padding:6px 22px 12px;touch-action:pan-y}
 .sheet .art{height:170px;border-radius:200px 200px 18px 18px / 300px 300px 18px 18px;
   display:grid;place-items:center;position:relative;margin:8px 0 14px}
 .sheet .art svg.item-ic{width:70px;height:70px}
@@ -308,7 +308,9 @@ html[dir="rtl"] .parade-track{animation-name:marquee-rtl}
 .opt.on{background:var(--gold);color:#1D1712;border-color:var(--gold);font-weight:600}
 .opt:active{transform:scale(.95)}
 .opt .pp{font-size:10.5px;opacity:.75}
-.sheet-cta-row{display:flex;gap:12px;align-items:center;margin-top:24px}
+.sheet-cta-row{display:flex;gap:12px;align-items:center;margin-top:24px;
+  position:sticky;bottom:0;background:var(--bg2);padding:10px 0;
+  box-shadow:0 -14px 18px -10px rgba(10,8,6,.55)}
 .qty{display:flex;align-items:center;gap:2px;border:1px solid var(--hair2);border-radius:14px}
 .qty button{width:38px;height:44px;font-size:19px;color:var(--gold2)}
 .qty span{min-width:22px;text-align:center;font-weight:600;font-variant-numeric:tabular-nums}
@@ -432,12 +434,12 @@ footer .f-block{margin-bottom:18px;line-height:2}
 
 <div class="scrim" id="scrim"></div>
 
-<section class="sheet" id="itemSheet" role="dialog" aria-modal="true" aria-label="Item details">
+<section class="sheet" id="itemSheet" role="dialog" aria-modal="true" aria-label="Item details" tabindex="-1">
   <div class="grabber" id="grab1"></div>
   <div class="sheet-scroll" id="itemSheetBody"></div>
 </section>
 
-<section class="sheet" id="cartSheet" role="dialog" aria-modal="true" aria-label="Your order">
+<section class="sheet" id="cartSheet" role="dialog" aria-modal="true" aria-label="Your order" tabindex="-1">
   <div class="grabber" id="grab2"></div>
   <div class="sheet-scroll" id="cartSheetBody"></div>
 </section>
@@ -480,6 +482,9 @@ var T = {
   total:{ar:"الإجمالي",en:"Total"},
   sar:{ar:"ر.س",en:"SAR"},
   vatNote:{ar:"الأسعار بالريال السعودي شاملة ضريبة القيمة المضافة ١٥٪",en:"Prices in Saudi Riyal, inclusive of 15% VAT"},
+  vatShort:{ar:"شامل الضريبة",en:"VAT incl."},
+  qtyMinus:{ar:"تقليل الكمية",en:"Decrease quantity"},
+  qtyPlus:{ar:"زيادة الكمية",en:"Increase quantity"},
   orderWa:{ar:"اطلب عبر واتساب",en:"Order via WhatsApp"},
   suggest:{ar:"ختامها حلو؟ كيكة الزعفران تُكمل طلبك.",en:"A sweet ending? Saffron milk cake completes your order."},
   addIt:{ar:"أضفها",en:"Add it"},
@@ -752,7 +757,7 @@ var ADDONS = [
 ];
 var CUSTOM = {
   sweet:{t:"sweetness",opts:[{ar:"٠٪",en:"0%"},{ar:"٢٥٪",en:"25%"},{ar:"٥٠٪",en:"50%"},{ar:"١٠٠٪",en:"100%"}],def:2},
-  milk:{t:"milk",opts:[{ar:"طازج",en:"Fresh"},{ar:"شوفان",en:"Oat"},{ar:"لوز",en:"Almond"}],def:0},
+  milk:{t:"milk",opts:[{ar:"طازج",en:"Fresh"},{ar:"شوفان",en:"Oat",p:2},{ar:"لوز",en:"Almond",p:2}],def:0},
   ice:{t:"ice",opts:[{ar:"عادي",en:"Regular"},{ar:"خفيف",en:"Light"},{ar:"بدون",en:"None"}],def:0},
   saff:{t:"intensity",opts:[{ar:"خفيف",en:"Light"},{ar:"متوازن",en:"Balanced"},{ar:"غني",en:"Rich"}],def:1}
 };
@@ -911,7 +916,7 @@ function renderHero(){
   document.getElementById("greet").textContent=(h>=5&&h<12)?t(T.greetMorning):t(T.greetEvening);
   document.getElementById("heroMeta").innerHTML=T.metaChips.map(function(c){return '<span class="hmchip">'+t(c)+'</span>';}).join("");
   document.getElementById("langBtn").textContent=t(T.langBtn);
-  document.getElementById("obLabel").textContent=t(T.sar)+" · "+t(T.vatNote).split("،")[0];
+  document.getElementById("obLabel").textContent=t(T.sar)+" · "+t(T.vatShort);
   document.getElementById("obView").textContent=t(T.viewOrder);
 }
 function renderFooter(){
@@ -958,7 +963,9 @@ function bindChips(){
     });
   });
 }
+var curChipId=null;
 function setActiveChip(id){
+  curChipId=id;
   var chips=document.querySelectorAll(".chip");
   var glider=document.getElementById("glider");
   chips.forEach(function(c){c.classList.toggle("on",c.dataset.chip===id);});
@@ -997,12 +1004,15 @@ function checkBreakfast(){
   var sec=document.getElementById("ch-bf");
   if(!sec) return;
   var h=new Date().getHours();
-  sec.classList.toggle("after-hours",h>=12);
+  sec.classList.toggle("after-hours",h>=12||h<6);
 }
 
 /* ================ Cart ================ */
 var cart=[];
 try{ cart=JSON.parse(localStorage.getItem("wasm-cart")||"[]"); }catch(e){ cart=[]; }
+cart=Array.isArray(cart)?cart.filter(function(l){
+  return l&&byId[l.id]&&Array.isArray(l.mods)&&typeof l.qty==="number"&&l.qty>0&&typeof l.unit==="number";
+}):[];
 function saveCart(){ localStorage.setItem("wasm-cart",JSON.stringify(cart)); }
 function cartCount(){ return cart.reduce(function(n,l){return n+l.qty;},0); }
 function cartTotal(){ return cart.reduce(function(n,l){return n+l.qty*l.unit;},0); }
@@ -1031,12 +1041,12 @@ function bump(){
 function fly(fromEl){
   if(matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   var r=fromEl.getBoundingClientRect();
-  var bar=document.getElementById("orderbar").getBoundingClientRect();
+  var cnt=document.getElementById("obCount").getBoundingClientRect();
   var dot=document.createElement("span");
   dot.className="fly";
   dot.style.left=(r.left+r.width/2-6)+"px";dot.style.top=(r.top+r.height/2-6)+"px";
   document.body.appendChild(dot);
-  var dx=(bar.left+40)-(r.left+r.width/2), dy=(bar.top+bar.height/2)-(r.top+r.height/2);
+  var dx=(cnt.left+cnt.width/2)-(r.left+r.width/2), dy=(cnt.top+cnt.height/2)-(r.top+r.height/2);
   dot.animate([{transform:"translate(0,0) scale(1)",opacity:1},
     {transform:"translate("+dx*0.5+"px,"+(dy-70)+"px) scale(.9)",opacity:1,offset:.6},
     {transform:"translate("+dx+"px,"+dy+"px) scale(.4)",opacity:.4}],
@@ -1065,21 +1075,24 @@ function toast(msg){
 }
 
 /* ================ Sheets ================ */
-var openSheet=null;
+var openSheet=null,lastFocus=null;
 function showSheet(id){
   var sh=document.getElementById(id);
+  lastFocus=document.activeElement;
   document.getElementById("scrim").classList.add("show");
   sh.classList.add("show");
   document.body.classList.add("sheet-open");
   openSheet=sh;
   sh.querySelector(".sheet-scroll").scrollTop=0;
-  sh.focus&&sh.focus();
+  sh.focus();
 }
 function hideSheets(){
   document.getElementById("scrim").classList.remove("show");
   ["itemSheet","cartSheet"].forEach(function(x){document.getElementById(x).classList.remove("show");});
   document.body.classList.remove("sheet-open");
   openSheet=null;
+  if(lastFocus&&document.contains(lastFocus)&&lastFocus.focus){lastFocus.focus();}
+  lastFocus=null;
 }
 document.getElementById("scrim").addEventListener("click",hideSheets);
 document.addEventListener("keydown",function(e){ if(e.key==="Escape") hideSheets(); });
@@ -1128,7 +1141,8 @@ function openItem(id){
     var g=CUSTOM[ck];
     curMods[ck]=g.def;
     h+='<div class="opt-group"><div class="opt-title">'+t(T[g.t])+'</div><div class="opts">'
-      +g.opts.map(function(o,j){return '<button class="opt'+(j===g.def?" on":"")+'" data-cg="'+ck+'" data-ci="'+j+'">'+t(o)+'</button>';}).join("")
+      +g.opts.map(function(o,j){return '<button class="opt'+(j===g.def?" on":"")+'" data-cg="'+ck+'" data-ci="'+j+'">'+t(o)
+        +(o.p?' <span class="pp">+'+o.p+'</span>':'')+'</button>';}).join("")
       +'</div></div>';
   });
   if(m.addons){
@@ -1137,7 +1151,7 @@ function openItem(id){
       +'</div></div>';
   }
   h+='<div class="sheet-cta-row">'
-    +'<div class="qty"><button data-q="-1" aria-label="-">−</button><span id="qtyN">1</span><button data-q="1" aria-label="+">+</button></div>'
+    +'<div class="qty"><button data-q="-1" aria-label="'+t(T.qtyMinus)+'">−</button><span id="qtyN">1</span><button data-q="1" aria-label="'+t(T.qtyPlus)+'">+</button></div>'
     +'<button class="sheet-add" id="sheetAdd">'+t(T.addToOrder)+' · <bdi id="sheetPrice">'+m.price+'</bdi></button>'
     +'</div>';
   b.innerHTML=h;
@@ -1145,6 +1159,10 @@ function openItem(id){
 }
 function sheetUnit(){
   var u=curItem.price;
+  Object.keys(curMods).forEach(function(ck){
+    var o=CUSTOM[ck].opts[curMods[ck]];
+    u+=(o&&o.p)||0;
+  });
   document.querySelectorAll('#itemSheetBody .opt[data-ao].on').forEach(function(el){
     u+=ADDONS[+el.dataset.ao].p;
   });
@@ -1170,7 +1188,10 @@ document.getElementById("itemSheetBody").addEventListener("click",function(e){
     var mods=[];
     Object.keys(curMods).forEach(function(ck){
       var g=CUSTOM[ck];
-      if(curMods[ck]!==g.def) mods.push({id:ck+curMods[ck],nm:{ar:t(T[g.t])+": "+g.opts[curMods[ck]].ar,en:T[g.t].en+": "+g.opts[curMods[ck]].en},p:(ck==="milk"&&curMods[ck]>0)?2:0});
+      if(curMods[ck]!==g.def){
+        var o=g.opts[curMods[ck]];
+        mods.push({id:ck+curMods[ck],nm:{ar:T[g.t].ar+": "+o.ar,en:T[g.t].en+": "+o.en},p:o.p||0});
+      }
     });
     document.querySelectorAll('#itemSheetBody .opt[data-ao].on').forEach(function(el){
       var a=ADDONS[+el.dataset.ao];mods.push({id:a.id,nm:a.nm,p:a.p});
@@ -1189,7 +1210,7 @@ function renderCart(){
     return '<li><span class="cl-nm">'+t(m.nm)
       +(l.mods.length?'<small>'+l.mods.map(function(x){return t(x.nm);}).join(" · ")+'</small>':"")
       +'</span>'
-      +'<span class="qty" style="border-radius:10px"><button data-cq="-1" data-i="'+i+'">−</button><span>'+l.qty+'</span><button data-cq="1" data-i="'+i+'">+</button></span>'
+      +'<span class="qty" style="border-radius:10px"><button data-cq="-1" data-i="'+i+'" aria-label="'+t(T.qtyMinus)+'">−</button><span>'+l.qty+'</span><button data-cq="1" data-i="'+i+'" aria-label="'+t(T.qtyPlus)+'">+</button></span>'
       +'<span class="cl-pr">'+num(l.unit*l.qty)+'</span></li>';
   }).join("");
   var hasSweet=cart.some(function(l){return byId[l.id].ch==="sweet";});
@@ -1219,7 +1240,7 @@ function waMessage(){
   var L=[t(T.newOrder),t(T.table)+": 12",""];
   cart.forEach(function(l){
     var m=byId[l.id];
-    L.push("• "+t(m.nm)+" ×"+l.qty+(l.mods.length?" ("+l.mods.map(function(x){return t(x.nm);}).join("، ")+")":""));
+    L.push("• "+t(m.nm)+" ×"+l.qty+(l.mods.length?" ("+l.mods.map(function(x){return t(x.nm);}).join(LANG==="ar"?"، ":", ")+")":""));
   });
   L.push("");L.push(t(T.waMsgTotal)+": "+cartTotal()+" "+t(T.sar));
   return L.join("\n");
@@ -1255,6 +1276,9 @@ document.getElementById("cartSheetBody").addEventListener("click",function(e){
 
 /* ================ Global card clicks ================ */
 document.addEventListener("click",function(e){
+  if(e.target.closest(".after-hours")&&e.target.closest("[data-add],[data-open]")){
+    toast(t(T.breakfastClosed));return;
+  }
   var add=e.target.closest("[data-add]");
   if(add){ e.stopPropagation(); addToCart(add.dataset.add,[],1,add); return; }
   var go=e.target.closest("[data-goto]");
@@ -1263,16 +1287,19 @@ document.addEventListener("click",function(e){
   if(op){ openItem(op.dataset.open); return; }
 });
 document.addEventListener("keydown",function(e){
-  if(e.key==="Enter"){
-    var op=e.target.closest&&e.target.closest("[data-open]");
-    if(op) openItem(op.dataset.open);
-  }
+  if(e.key!=="Enter"&&e.key!==" ") return;
+  if(!e.target.closest) return;
+  if(e.target.closest("[data-add],[data-goto]")) return;
+  var op=e.target.closest("[data-open]");
+  if(op){ e.preventDefault(); openItem(op.dataset.open); }
 });
 
 /* ================ Boot ================ */
 applyLang();
 updateOrderBar(true);
-if("serviceWorker" in navigator && location.protocol==="https:"){
+addEventListener("resize",function(){ if(curChipId) setActiveChip(curChipId); });
+if("serviceWorker" in navigator &&
+   (location.protocol==="https:"||["localhost","127.0.0.1"].indexOf(location.hostname)>-1)){
   addEventListener("load",function(){ navigator.serviceWorker.register("sw.js").catch(function(){}); });
 }
 </script>
