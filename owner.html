@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>منيو سادة — منيو يبيع عنك | Menu Sadah</title>
+<meta name="description" content="منيو رقمي فاخر لكافيهك — مجاني شهر كامل، تعديلات فورية عبر واتساب. Premium e-menus for Gulf cafés.">
+<meta name="theme-color" content="#171310">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23171310'/%3E%3Ctext x='32' y='42' font-size='30' text-anchor='middle' fill='%23C9A25C' font-family='sans-serif'%3E%D8%B3%3C/text%3E%3C/svg%3E">
+<style>
+@font-face{font-family:"Noto Kufi Arabic";font-style:normal;font-weight:500;font-display:swap;
+  src:url(assets/fonts/noto-kufi-arabic-arabic-500-normal.woff2) format("woff2");
+  unicode-range:U+0600-06FF,U+0750-077F,U+FB50-FDFF,U+FE70-FEFF,U+200C-200E,U+0660-0669}
+@font-face{font-family:"Noto Kufi Arabic";font-style:normal;font-weight:700;font-display:swap;
+  src:url(assets/fonts/noto-kufi-arabic-arabic-700-normal.woff2) format("woff2");
+  unicode-range:U+0600-06FF,U+0750-077F,U+FB50-FDFF,U+FE70-FEFF,U+200C-200E,U+0660-0669}
+@font-face{font-family:"IBM Plex Sans Arabic";font-style:normal;font-weight:400;font-display:swap;
+  src:url(assets/fonts/ibm-plex-sans-arabic-arabic-400-normal.woff2) format("woff2");
+  unicode-range:U+0600-06FF,U+0750-077F,U+FB50-FDFF,U+FE70-FEFF,U+200C-200E}
+@font-face{font-family:"IBM Plex Sans Arabic";font-style:normal;font-weight:600;font-display:swap;
+  src:url(assets/fonts/ibm-plex-sans-arabic-arabic-600-normal.woff2) format("woff2");
+  unicode-range:U+0600-06FF,U+0750-077F,U+FB50-FDFF,U+FE70-FEFF,U+200C-200E}
+@font-face{font-family:"IBM Plex Sans Arabic";font-style:normal;font-weight:400;font-display:swap;
+  src:url(assets/fonts/ibm-plex-sans-arabic-latin-400-normal.woff2) format("woff2");
+  unicode-range:U+0000-00FF,U+2000-206F,U+20A0-20CF}
+@font-face{font-family:"IBM Plex Sans Arabic";font-style:normal;font-weight:600;font-display:swap;
+  src:url(assets/fonts/ibm-plex-sans-arabic-latin-600-normal.woff2) format("woff2");
+  unicode-range:U+0000-00FF,U+2000-206F,U+20A0-20CF}
+:root{
+  --bg:#171310; --card:#211A13; --card2:#292018;
+  --ink:#EFE7D8; --ink2:#CFC3AC; --muted:#9C8C74;
+  --gold:#C9A25C; --gold2:#E2C283; --sand:#C8A882;
+  --hair:rgba(201,162,92,.18); --hair2:rgba(201,162,92,.34);
+  --green:#22A55A; --shadow:0 18px 50px rgba(0,0,0,.55);
+  --f-d:"Noto Kufi Arabic",system-ui,sans-serif;
+  --f-b:"IBM Plex Sans Arabic",system-ui,sans-serif;
+  --ease:cubic-bezier(.32,.72,.28,1);
+}
+*{box-sizing:border-box}
+html{background:var(--bg);scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(90% 34% at 50% 0%,#241B10 0%,transparent 70%),var(--bg);
+  color:var(--ink);font-family:var(--f-b);font-size:15.5px;line-height:1.85;-webkit-font-smoothing:antialiased}
+html[lang="ar"] body{font-size:16.5px}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0}
+a{color:var(--gold2);text-decoration:none}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{max-width:660px;margin:0 auto;padding:0 20px 80px}
+header.top{position:sticky;top:0;z-index:40;background:rgba(23,19,16,.72);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--hair)}
+.top-in{max-width:660px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:var(--f-d);font-weight:700;font-size:17px;color:var(--gold2)}
+.lang-pill{font-weight:600;font-size:12.5px;color:var(--ink2);border:1px solid var(--hair2);
+  border-radius:999px;padding:6px 14px;transition:transform .18s var(--ease)}
+.lang-pill:active{transform:scale(.96)}
+.eyebrow{font-family:var(--f-d);font-weight:500;font-size:11.5px;color:var(--gold);text-transform:uppercase}
+html[lang="en"] .eyebrow{letter-spacing:.16em}
+h1{font-family:var(--f-d);font-weight:700;font-size:clamp(27px,7vw,40px);line-height:1.6;
+  margin:14px 0 10px;text-wrap:balance}
+h1 em{font-style:normal;color:var(--gold2)}
+h2{font-family:var(--f-d);font-weight:700;font-size:22px;line-height:1.6;margin:0 0 6px;text-wrap:balance}
+.sub{color:var(--ink2);font-size:15px;max-width:52ch;margin:0}
+section{padding-top:58px}
+.hero{padding-top:44px;text-align:center}
+.hero .sub{margin:0 auto}
+
+/* split visual */
+.split{display:flex;gap:14px;justify-content:center;margin:34px 0 8px;align-items:stretch}
+.phone{flex:1;max-width:250px;border:1px solid var(--hair2);border-radius:28px;overflow:hidden;
+  background:#0E0B08;box-shadow:var(--shadow);position:relative}
+.phone .ph-label{position:absolute;top:10px;inset-inline-start:50%;transform:translateX(50%);z-index:3;
+  font-size:10px;font-weight:600;border-radius:999px;padding:3px 12px;white-space:nowrap}
+html[dir="ltr"] .phone .ph-label{transform:translateX(-50%)}
+.phone.bad .ph-label{background:rgba(160,60,40,.25);color:#E8A28F;border:1px solid rgba(196,85,59,.4)}
+.phone.good .ph-label{background:rgba(34,165,90,.2);color:#8FE0B0;border:1px solid rgba(34,165,90,.45)}
+.pdf-mock{height:100%;min-height:340px;display:grid;place-items:center;position:relative;overflow:hidden}
+.pdf-sheet{width:150%;background:#E8E2D2;color:#333;transform:rotate(-7deg) scale(1.05);
+  filter:blur(1.6px);padding:20px 26px;font-size:6.5px;line-height:2;font-family:serif}
+.pdf-sheet td{border-bottom:1px dotted #999;padding:1px 4px;white-space:nowrap}
+.pdf-hint{position:absolute;bottom:12px;inset-inline:12px;text-align:center;font-size:10.5px;
+  color:#E8A28F;background:rgba(14,11,8,.8);border-radius:10px;padding:5px 8px}
+.frame-holder{height:480px;position:relative}
+.frame-holder iframe{width:390px;height:844px;border:0;transform:scale(.568);transform-origin:top left;
+  position:absolute;top:0;left:0;background:#171310}
+html[dir="rtl"] .frame-holder iframe{left:auto;right:0;transform-origin:top right}
+.try-row{display:flex;gap:12px;justify-content:center;align-items:center;margin-top:22px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:700;
+  border-radius:16px;padding:13px 22px;font-size:14.5px;transition:transform .18s var(--ease)}
+.btn:active{transform:scale(.96)}
+.btn.gold{background:var(--gold);color:#1D1712}
+.btn.ghost{border:1px solid var(--hair2);color:var(--ink)}
+.btn.wa{background:var(--green);color:#fff;width:100%;font-size:16px;padding:16px}
+.btn.wa svg{width:21px;height:21px;flex:none}
+.qr-row{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:22px}
+.qr-box{border:1px solid var(--hair);border-radius:16px;padding:12px;background:var(--card)}
+.qr-box svg{width:92px;height:92px;display:block}
+.qr-cap{font-size:12px;color:var(--muted);max-width:20ch;text-align:start}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:26px}
+.stat{border:1px solid var(--hair);border-radius:18px;background:var(--card);padding:18px 16px;text-align:center}
+.stat .n{font-family:var(--f-d);font-weight:700;font-size:31px;color:var(--gold2);
+  font-variant-numeric:tabular-nums;line-height:1.4;direction:ltr;unicode-bidi:isolate}
+.stat .d{font-size:12.5px;color:var(--ink2);line-height:1.8}
+.stat .a{font-size:10.5px;color:var(--muted);margin-top:6px;display:block}
+.math{border:1px solid var(--gold);border-radius:20px;margin-top:16px;padding:20px 22px;
+  background:linear-gradient(160deg,rgba(201,162,92,.10),transparent 55%)}
+.math .big{font-family:var(--f-d);font-weight:700;font-size:19px;color:var(--gold2)}
+.math p{margin:8px 0 0;font-size:13.5px;color:var(--ink2)}
+
+/* offer steps */
+.steps{display:flex;flex-direction:column;gap:14px;margin-top:22px}
+.step{display:flex;gap:16px;border:1px solid var(--hair);border-radius:18px;background:var(--card);padding:18px}
+.step .num{font-family:var(--f-d);font-weight:700;font-size:19px;color:#1D1712;width:38px;height:38px;
+  flex:none;background:var(--gold);border-radius:12px;display:grid;place-items:center}
+.step .s-t{font-family:var(--f-d);font-weight:500;font-size:15.5px;color:var(--ink)}
+.step .s-d{font-size:13px;color:var(--ink2);margin-top:3px}
+.close-line{text-align:center;font-family:var(--f-d);font-weight:500;font-size:15px;
+  color:var(--sand);margin-top:18px}
+
+/* wa mock */
+.wa-mock{border:1px solid var(--hair);border-radius:20px;background:#0F1712;padding:18px;margin-top:22px}
+.wa-head{display:flex;align-items:center;gap:10px;border-bottom:1px solid rgba(255,255,255,.06);
+  padding-bottom:10px;margin-bottom:14px}
+.wa-ava{width:34px;height:34px;border-radius:999px;background:var(--gold);color:#1D1712;
+  display:grid;place-items:center;font-weight:700;font-family:var(--f-d)}
+.wa-name{font-size:13px;font-weight:600}
+.wa-name small{display:block;color:#7FBE9E;font-weight:400;font-size:10.5px}
+.bubble{max-width:78%;border-radius:14px;padding:9px 14px;font-size:13px;margin-bottom:10px;position:relative}
+.bubble small{display:block;font-size:9.5px;opacity:.55;margin-top:3px;text-align:end}
+.bubble.them{background:#1E2A22;color:#DFE8E0;margin-inline-end:auto}
+.bubble.us{background:#144D31;color:#E8F5EC;margin-inline-start:auto}
+
+/* analytics mock */
+.ana{border:1px solid var(--hair);border-radius:20px;background:var(--card);padding:20px;margin-top:16px}
+.ana-title{display:flex;justify-content:space-between;align-items:baseline}
+.ana-title b{font-family:var(--f-d);font-weight:500;font-size:14px}
+.ana-title span{font-size:11px;color:var(--muted)}
+.bars{display:flex;align-items:flex-end;gap:4px;height:74px;margin-top:14px}
+.bar{flex:1;background:var(--card2);border-radius:4px 4px 0 0;min-height:6%}
+.bar.hot{background:var(--gold)}
+.bars-x{display:flex;justify-content:space-between;font-size:9.5px;color:var(--muted);margin-top:5px}
+.top5{margin:16px 0 0;padding:0;list-style:none;font-size:12.5px}
+.top5 li{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--hair)}
+.top5 .v{color:var(--muted);font-variant-numeric:tabular-nums}
+.insight{border-inline-start:2px solid var(--gold);padding-inline-start:12px;margin-top:14px;
+  font-size:12.5px;color:var(--sand)}
+.langsplit{display:flex;height:8px;border-radius:999px;overflow:hidden;margin-top:14px}
+.langsplit .ar-f{background:var(--gold);width:72%}
+.langsplit .en-f{background:var(--card2);flex:1}
+.langsplit-cap{display:flex;justify-content:space-between;font-size:10.5px;color:var(--muted);margin-top:5px}
+
+/* compare table */
+.tblwrap{overflow-x:auto;margin-top:22px;border:1px solid var(--hair);border-radius:18px}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:12px}
+th,td{padding:11px 14px;text-align:start;border-bottom:1px solid var(--hair);vertical-align:top}
+thead th{font-family:var(--f-d);font-weight:500;font-size:12.5px;color:var(--sand);
+  border-bottom:1px solid var(--hair2);white-space:nowrap}
+td:last-child,th:last-child{background:rgba(201,162,92,.09)}
+th:last-child{color:var(--gold2)}
+td{color:var(--ink2)}
+td .no{color:#B0806E}
+td .yes{color:#8FD9B4}
+
+/* trust */
+.trust{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:22px}
+.tr-card{border:1px solid var(--hair);border-radius:16px;background:var(--card);padding:16px;text-align:center}
+.tr-card .t-i{font-size:20px}
+.tr-card .t-t{font-family:var(--f-d);font-weight:500;font-size:12.5px;margin-top:6px}
+.tr-card .t-d{font-size:11px;color:var(--muted);margin-top:3px;line-height:1.8}
+.stand{display:flex;justify-content:center;margin-top:26px}
+.stand-mock{text-align:center}
+.stand-card{width:150px;border:1px solid var(--hair2);border-radius:14px;background:var(--card);
+  padding:16px 14px 12px;box-shadow:var(--shadow);position:relative}
+.stand-card::after{content:"";position:absolute;bottom:-26px;left:50%;transform:translateX(-50%) perspective(60px) rotateX(45deg);
+  width:70px;height:26px;background:var(--card2);border-radius:0 0 8px 8px}
+.stand-card .brand-sm{font-family:var(--f-d);font-weight:700;color:var(--gold2);font-size:15px}
+.stand-card svg{width:86px;height:86px;margin:10px auto 6px;display:block}
+.stand-card .scan{font-size:9.5px;color:var(--muted)}
+.stand-cap{font-size:11.5px;color:var(--muted);margin-top:40px}
+
+/* founder */
+.founder{border:1px solid var(--gold);border-radius:22px;margin-top:26px;padding:26px 22px;text-align:center;
+  background:linear-gradient(170deg,rgba(201,162,92,.10),transparent 55%)}
+.f-ava{width:64px;height:64px;border-radius:999px;background:var(--gold);color:#1D1712;
+  display:grid;place-items:center;font-family:var(--f-d);font-weight:700;font-size:26px;margin:0 auto 12px}
+.f-name{font-family:var(--f-d);font-weight:500;font-size:15px}
+.f-line{font-size:13.5px;color:var(--ink2);margin:8px auto 18px;max-width:38ch}
+.scarcity{text-align:center;font-size:12px;color:var(--sand);margin-top:16px}
+footer{margin-top:60px;border-top:1px solid var(--hair);padding-top:24px;text-align:center;
+  font-size:12px;color:var(--muted);line-height:2.2}
+@media (prefers-reduced-motion:no-preference){
+  .r{opacity:0;transform:translateY(16px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+  .r.in{opacity:1;transform:none}
+}
+@media (max-width:560px){
+  .split{flex-direction:column;align-items:center}
+  .phone{width:100%;max-width:270px}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <div class="brand">منيو سادة <span style="color:var(--muted);font-weight:400">Menu Sadah</span></div>
+    <button class="lang-pill" id="langBtn">English</button>
+  </div>
+</header>
+<div class="wrap" id="root"></div>
+
+<script>
+"use strict";
+var LANG = localStorage.getItem("ms-lang") || "ar";
+function t(o){ return o[LANG] != null ? o[LANG] : o.ar; }
+var WA = "https://wa.me/966500000000";
+var QR = '<svg class="qr" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" shape-rendering="crispEdges" role="img" aria-label="QR — menu-sadah.com"><path stroke="#C9A25C" d="M0 0.5h7m2 0h5m2 0h1m1 0h7M0 1.5h1m5 0h1m2 0h1m1 0h2m2 0h2m1 0h1m5 0h1M0 2.5h1m1 0h3m1 0h1m1 0h2m5 0h1m2 0h1m1 0h3m1 0h1M0 3.5h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h2m1 0h1m2 0h1m1 0h3m1 0h1M0 4.5h1m1 0h3m1 0h1m1 0h1m2 0h1m1 0h1m2 0h1m1 0h1m1 0h3m1 0h1M0 5.5h1m5 0h1m1 0h1m2 0h1m1 0h3m2 0h1m5 0h1M0 6.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M8 7.5h3m4 0h2M0 8.5h1m1 0h5m3 0h6m2 0h5M0 9.5h2m7 0h2m5 0h1m2 0h1m3 0h1M1 10.5h1m4 0h3m1 0h4m1 0h5m1 0h1m1 0h2M3 11.5h1m1 0h1m3 0h1m2 0h1m1 0h2m1 0h4m3 0h1M1 12.5h2m1 0h4m3 0h1m1 0h3m1 0h2m1 0h1m1 0h3M0 13.5h1m4 0h1m1 0h4m1 0h2m2 0h1m2 0h1m1 0h1m1 0h1M0 14.5h1m1 0h3m1 0h3m4 0h5m1 0h3m1 0h2M0 15.5h1m1 0h1m4 0h2m1 0h1m1 0h1m1 0h1m4 0h2m3 0h1M0 16.5h1m1 0h2m2 0h5m1 0h9m1 0h1M8 17.5h1m1 0h1m2 0h1m2 0h1m3 0h2M0 18.5h7m2 0h1m1 0h2m1 0h1m1 0h1m1 0h1m1 0h1m1 0h3M0 19.5h1m5 0h1m1 0h1m2 0h1m2 0h1m1 0h1m3 0h2M0 20.5h1m1 0h3m1 0h1m1 0h2m1 0h1m3 0h6m1 0h3M0 21.5h1m1 0h3m1 0h1m1 0h1m3 0h2m3 0h2m1 0h5M0 22.5h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h2m1 0h2m3 0h2m1 0h1M0 23.5h1m5 0h1m5 0h2m1 0h7m2 0h1M0 24.5h7m1 0h3m1 0h1m1 0h2m1 0h8"/></svg>';
+var WAICON = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.2 14.1c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .2-3.4-.7-2.9-1.1-4.7-4-4.9-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.4 1.2 2.5 1.6 2.9 1.7.3.2.5.1.7-.1l1-1.1c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.3.6.4 0 .2 0 .7-.2 1.3Z"/></svg>';
+
+var S = {
+  heroEyebrow:{ar:"لأصحاب الكافيهات في الخليج",en:"For Gulf café owners"},
+  heroH:{ar:"ضيفك يحكم على كافيهك <em>من أول مسحة</em>",en:"Your guest judges your café <em>from the first scan</em>"},
+  heroSub:{ar:"ملف PDF يحتاج تكبير وتصغير… أو منيو يفتح في أقل من ثانية، عربي أولًا، ويرفع متوسط الفاتورة. جرّب الاثنين بنفسك.",en:"A pinch-to-zoom PDF… or a menu that opens in under a second, Arabic-first, engineered to raise the average ticket. Try both yourself."},
+  oldWay:{ar:"الطريقة القديمة",en:"The old way"},
+  newWay:{ar:"منيو سادة",en:"Menu Sadah"},
+  pdfHint:{ar:"تكبير… تصغير… وين الأسعار؟ 🔍",en:"Zoom in… zoom out… where are the prices? 🔍"},
+  tryFull:{ar:"افتح المنيو التجريبي كامل الشاشة",en:"Open the demo full screen"},
+  qrCap:{ar:"أو امسح الرمز وشاهد منيو حيًّا على جوالك",en:"Or scan to see a live menu on your phone"},
+  statsEyebrow:{ar:"أرقام من السوق، ليست وعودًا",en:"Market numbers, not promises"},
+  statsH:{ar:"المنيو الرقمي الصحيح يبيع عنك",en:"The right digital menu sells for you"},
+  stats:[
+    {n:"+54%",d:{ar:"نمو إيرادات الطلبات الفندقية الرقمية",en:"growth in digital F&B revenue"},a:{ar:"ماندرين أورينتال × IRIS — مطبّق في الرياض",en:"Mandarin Oriental × IRIS — live in Riyadh"}},
+    {n:"+35%",d:{ar:"ارتفاع متوسط قيمة الطلب",en:"higher average spend"},a:{ar:"ChatFood — مطاعم خليجية",en:"ChatFood — Gulf venues"}},
+    {n:"+27%",d:{ar:"مبيعات أعلى للأصناف الموصوفة جيدًا",en:"more sales for well-described items"},a:{ar:"جامعة كورنيل",en:"Cornell University"}},
+    {n:"+30%",d:{ar:"زيادة طلب الأصناف المصوّرة",en:"lift for photographed items"},a:{ar:"Grubhub",en:"Grubhub"}},
+    {n:"12–16",d:{ar:"دقيقة توفّرها كل طاولة",en:"minutes saved per table"},a:{ar:"sunday · Qlub",en:"sunday · Qlub"}}
+  ],
+  mathBig:{ar:"١٨٤ ريالًا في الشهر = ٦ ريالات في اليوم",en:"SAR 184/month = SAR 6 a day"},
+  mathP:{ar:"أقل من نصف كوب V60. طلبان إضافيان في اليوم يدفعان قيمته خمس مرات. وكل تغيير سعر على الورق يكلفك طباعة — هنا؟ رسالة واتساب مجانية.",en:"Less than half a V60. Two extra orders a day pays for it five times over. Every paper price change costs a reprint — here, it's a free WhatsApp message."},
+  offerEyebrow:{ar:"العرض",en:"The offer"},
+  offerH:{ar:"منيوك جاهز قبل أن تدفع ريالًا واحدًا",en:"Your menu is live before you pay a single riyal"},
+  steps:[
+    {t:{ar:"نبني منيوك المخصص — مجانًا",en:"We build your tailored menu — free"},d:{ar:"باسمك وهويتك وأصنافك، جاهز خلال ٤٨ ساعة على menu-sadah.com/your-cafe",en:"Your name, identity and items — live in 48 hours at menu-sadah.com/your-cafe"}},
+    {t:{ar:"شهر كامل مجاني، بدعم لا ينام",en:"A full month free, with support that never sleeps"},d:{ar:"تعديلاتك تصلنا واتساب وتنعكس فورًا — نفد صنف؟ تغيّر سعر؟ نحدّثه عنك، أي وقت. لا لوحة تحكم، لا صداع.",en:"Message us on WhatsApp and it's updated instantly — sold out? new price? We push it for you, any hour. No dashboard, no headache."}},
+    {t:{ar:"يعجبك؟ يبقى شغّالًا بـ٤٩ دولارًا شهريًا",en:"Love it? Keep it live for $49/month"},d:{ar:"(~١٨٤ ريالًا، شاملة الضريبة). إلغاء برسالة واحدة. ولا نأخذ نسبة من طلباتك — أبدًا.",en:"(~SAR 184, VAT-clear). Cancel with one message. And we never take a cut of your orders — ever."}}
+  ],
+  closeLine:{ar:"ما نقول «اشترِ». نقول: هل نُبقيه شغّالًا؟",en:"We don't say 'buy'. We ask: shall we keep it live?"},
+  proofEyebrow:{ar:"الدعم على الطبيعة",en:"The support, for real"},
+  proofH:{ar:"تعديل حقيقي، خلال دقيقتين",en:"A real edit, in two minutes"},
+  waThem1:{ar:"الرابع نفد اليوم 😅",en:"The V60 sold out today 😅"},
+  waUs1:{ar:"تم، مخفي من المنيو ✓",en:"Done — hidden from the menu ✓"},
+  waThem2:{ar:"وسعر الكرك صار ١٠",en:"And karak is 10 now"},
+  waUs2:{ar:"محدّث ✓ شيء ثاني؟ ☕",en:"Updated ✓ Anything else? ☕"},
+  anaT:{ar:"تقرير الاثنين — كافيهك بالأرقام",en:"Monday report — your café in numbers"},
+  anaSpan:{ar:"يصلك واتساب، مكتوبًا بلغة البشر",en:"Arrives on WhatsApp, written in human"},
+  anaBarsCap:[{ar:"٦ص",en:"6a"},{ar:"١٢م",en:"12p"},{ar:"٦م",en:"6p"},{ar:"١٢ل",en:"12a"}],
+  top5:[
+    {n:{ar:"لاتيه الزعفران الذهبي",en:"Saffron Gold Latte"},v:"412"},
+    {n:{ar:"سبانش لاتيه",en:"Spanish Latte"},v:"388"},
+    {n:{ar:"كرك الديرة",en:"Deira Karak"},v:"301"},
+    {n:{ar:"كنافة الفستق",en:"Pistachio Kunafa"},v:"244"},
+    {n:{ar:"في-٦٠ خولاني",en:"Khawlani V60"},v:"198"}
+  ],
+  top5T:{ar:"الأكثر مشاهدة هذا الأسبوع",en:"Most viewed this week"},
+  insight:{ar:"ملاحظة: الكنافة تُشاهد كثيرًا وتُطلب قليلًا — نجرّب صورة جديدة؟",en:"Insight: kunafa gets views but few orders — try a new photo?"},
+  langCap:[{ar:"عربي ٧٢٪",en:"Arabic 72%"},{ar:"English 28%",en:"English 28%"}],
+  cmpEyebrow:{ar:"قارن بنفسك",en:"Compare for yourself"},
+  cmpH:{ar:"أين يقف منيو سادة؟",en:"Where Menu Sadah stands"},
+  cmpHead:[{ar:"",en:""},{ar:"مولدات QR المجانية",en:"Free QR generators"},{ar:"منصات ذاتية رخيصة",en:"Cheap self-serve"},{ar:"أنظمة المطاعم الكبيرة",en:"Enterprise / POS"},{ar:"منيو سادة",en:"Menu Sadah"}],
+  cmpRows:[
+    [{ar:"السعر",en:"Price"},{ar:"مجاني (مع إعلانات)",en:"Free (with ads)"},{ar:"$10–17 شهريًا",en:"$10–17 /mo"},{ar:"SAR 295–3,000 أو ٥٪ من الطلبات",en:"SAR 295–3,000 or 5% of orders"},{ar:"$49 ثابتة — بلا نسبة",en:"$49 flat — no cut"}],
+    [{ar:"من يبني ويحدّث؟",en:"Who builds & updates?"},{ar:"أنت",en:"You"},{ar:"أنت",en:"You"},{ar:"فريقهم (ببطء)",en:"Their team (slowly)"},{ar:"نحن — عبر واتساب، فورًا",en:"We do — via WhatsApp, instantly"}],
+    [{ar:"عربي حقيقي RTL",en:"True Arabic RTL"},{ar:"مكسور غالبًا",en:"Usually broken"},{ar:"ترجمة آلية",en:"Machine-translated"},{ar:"متفاوت",en:"Varies"},{ar:"مصمَّم عربي أولًا",en:"Designed Arabic-first"}],
+    [{ar:"سعرات SFDA + كافيين",en:"SFDA calories + caffeine"},{ar:"—",en:"—"},{ar:"—",en:"—"},{ar:"إضافة مدفوعة",en:"Paid add-on"},{ar:"مدمجة",en:"Built in"}],
+    [{ar:"طلب عبر واتساب",en:"WhatsApp ordering"},{ar:"—",en:"—"},{ar:"—",en:"—"},{ar:"عمولة",en:"Commission"},{ar:"مجاني وبلا عمولة",en:"Free, commission-free"}],
+    [{ar:"تقرير شهري مكتوب",en:"Written monthly insights"},{ar:"—",en:"—"},{ar:"لوحات معقدة",en:"Complex dashboards"},{ar:"لوحات معقدة",en:"Complex dashboards"},{ar:"يصلك واتساب",en:"Arrives on WhatsApp"}],
+    [{ar:"دعم بشري ٢٤/٧",en:"24/7 human support"},{ar:"—",en:"—"},{ar:"تذاكر بريد",en:"Email tickets"},{ar:"دوام رسمي",en:"Office hours"},{ar:"مؤسس يرد بدقائق",en:"The founder, in minutes"}]
+  ],
+  trustEyebrow:{ar:"جاهز لسوقنا",en:"Ready for our market"},
+  trust:[
+    {i:"⚖️",t:{ar:"متوافق مع اشتراطات SFDA",en:"SFDA-compliant"},d:{ar:"سعرات على كل صنف، كافيين بالملغ، تنبيه ٤٠٠ ملغ",en:"Calories on every item, caffeine in mg, 400 mg advisory"}},
+    {i:"🧾",t:{ar:"أسعار شاملة الضريبة",en:"VAT-inclusive pricing"},d:{ar:"وجاهز لرمز الريال الجديد",en:"New Riyal symbol ready"}},
+    {i:"📦",t:{ar:"ستاند QR هدية",en:"QR stand included"},d:{ar:"ستاند أكريليك بهويتك لكل طاولة، مع جلسة تنسيق صور لأول ٢٠ صنفًا",en:"Branded acrylic stand per table + photo styling for your first 20 items"}},
+    {i:"📶",t:{ar:"يعمل بلا إنترنت",en:"Works offline"},d:{ar:"المنيو يفتح حتى لو ضعف الواي فاي",en:"The menu opens even when the Wi-Fi doesn't"}}
+  ],
+  standScan:{ar:"امسح للمنيو",en:"Scan for menu"},
+  standCap:{ar:"ستاند الطاولة — يصلك خلال أسبوع الإطلاق",en:"Your table stand — delivered in launch week"},
+  founderName:{ar:"برو — مؤسس منيو سادة",en:"Bero — founder, Menu Sadah"},
+  founderLine:{ar:"راسلني مباشرة — أرد خلال دقائق، أي وقت. أرسل اسم كافيهك وأجهّز لك منيو تجريبيًا باسمك خلال ٣٠ دقيقة.",en:"Message me directly — I reply in minutes, any hour. Send your café's name and I'll have a demo in your name within 30 minutes."},
+  founderCta:{ar:"أرسل اسم كافيهك الآن",en:"Send your café's name now"},
+  waPrefill:{ar:"مرحبًا برو! اسم كافيهي: ______ — جهّز لي منيو تجريبيًا باسمنا 🔥",en:"Hi Bero! My café's name is: ______ — set up our demo menu 🔥"},
+  scarcity:{ar:"نبني ٥ منيوهات تجريبية أسبوعيًا — بجودة يدوية، لا قوالب",en:"We build 5 tailored demos a week — handcrafted, never templated"},
+  ftDemo:{ar:"شاهد المنيو التجريبي",en:"See the demo menu"},
+  ft:{ar:"منيو سادة — منيوهات رقمية فاخرة لكافيهات الخليج",en:"Menu Sadah — premium e-menus for Gulf cafés"}
+};
+
+function render(){
+  document.documentElement.lang=LANG;
+  document.documentElement.dir=(LANG==="ar")?"rtl":"ltr";
+  document.getElementById("langBtn").textContent=(LANG==="ar")?"English":"العربية";
+  var wa=WA+"?text="+encodeURIComponent(t(S.waPrefill));
+  var bars=[4,6,10,14,10,8,14,22,30,26,38,64,92,74,52].map(function(h,i){
+    return '<div class="bar'+(h>60?" hot":"")+'" style="height:'+h+'%"></div>';
+  }).join("");
+  var pdfRows="";
+  for(var i=0;i<14;i++){pdfRows+='<tr><td>Item name '+(i+1)+' ........... </td><td>SR '+(12+i)+'.00</td></tr>';}
+
+  document.getElementById("root").innerHTML=
+  '<section class="hero"><span class="eyebrow">'+t(S.heroEyebrow)+'</span>'
+  +'<h1>'+t(S.heroH)+'</h1><p class="sub">'+t(S.heroSub)+'</p>'
+  +'<div class="split">'
+    +'<div class="phone bad"><span class="ph-label">'+t(S.oldWay)+'</span><div class="pdf-mock">'
+      +'<table class="pdf-sheet"><tbody>'+pdfRows+'</tbody></table>'
+      +'<div class="pdf-hint">'+t(S.pdfHint)+'</div></div></div>'
+    +'<div class="phone good"><span class="ph-label">'+t(S.newWay)+'</span><div class="frame-holder">'
+      +'<iframe src="index.html" title="WASM demo menu" loading="lazy"></iframe></div></div>'
+  +'</div>'
+  +'<div class="try-row"><a class="btn gold" href="index.html" target="_blank" rel="noopener">'+t(S.tryFull)+'</a></div>'
+  +'<div class="qr-row"><div class="qr-box">'+QR+'</div><div class="qr-cap">'+t(S.qrCap)+'</div></div>'
+  +'</section>'
+
+  +'<section><span class="eyebrow">'+t(S.statsEyebrow)+'</span><h2>'+t(S.statsH)+'</h2>'
+  +'<div class="stats">'+S.stats.map(function(x){
+    return '<div class="stat r"><div class="n">'+x.n+'</div><div class="d">'+t(x.d)+'</div><span class="a">'+t(x.a)+'</span></div>';
+  }).join("")+'</div>'
+  +'<div class="math r"><div class="big">'+t(S.mathBig)+'</div><p>'+t(S.mathP)+'</p></div>'
+  +'</section>'
+
+  +'<section><span class="eyebrow">'+t(S.offerEyebrow)+'</span><h2>'+t(S.offerH)+'</h2>'
+  +'<div class="steps">'+S.steps.map(function(x,i){
+    return '<div class="step r"><span class="num">'+(i+1)+'</span><div><div class="s-t">'+t(x.t)+'</div><div class="s-d">'+t(x.d)+'</div></div></div>';
+  }).join("")+'</div>'
+  +'<p class="close-line">'+t(S.closeLine)+'</p>'
+  +'<a class="btn wa" href="'+wa+'" target="_blank" rel="noopener">'+WAICON+t(S.founderCta)+'</a>'
+  +'</section>'
+
+  +'<section><span class="eyebrow">'+t(S.proofEyebrow)+'</span><h2>'+t(S.proofH)+'</h2>'
+  +'<div class="wa-mock r"><div class="wa-head"><span class="wa-ava">س</span>'
+  +'<div class="wa-name">'+((LANG==="ar")?"منيو سادة":"Menu Sadah")+'<small>'+((LANG==="ar")?"متصل الآن":"online")+'</small></div></div>'
+  +'<div class="bubble them">'+t(S.waThem1)+'<small>9:41</small></div>'
+  +'<div class="bubble us">'+t(S.waUs1)+'<small>9:43 ✓✓</small></div>'
+  +'<div class="bubble them">'+t(S.waThem2)+'<small>9:44</small></div>'
+  +'<div class="bubble us">'+t(S.waUs2)+'<small>9:45 ✓✓</small></div>'
+  +'</div>'
+  +'<div class="ana r"><div class="ana-title"><b>'+t(S.anaT)+'</b><span>'+t(S.anaSpan)+'</span></div>'
+  +'<div class="bars">'+bars+'</div>'
+  +'<div class="bars-x">'+S.anaBarsCap.map(function(c){return '<span>'+t(c)+'</span>';}).join("")+'</div>'
+  +'<div class="eyebrow" style="margin-top:16px">'+t(S.top5T)+'</div>'
+  +'<ul class="top5">'+S.top5.map(function(x){return '<li><span>'+t(x.n)+'</span><span class="v">'+x.v+'</span></li>';}).join("")+'</ul>'
+  +'<div class="langsplit"><div class="ar-f"></div><div class="en-f"></div></div>'
+  +'<div class="langsplit-cap"><span>'+t(S.langCap[0])+'</span><span>'+t(S.langCap[1])+'</span></div>'
+  +'<div class="insight">'+t(S.insight)+'</div></div>'
+  +'</section>'
+
+  +'<section><span class="eyebrow">'+t(S.cmpEyebrow)+'</span><h2>'+t(S.cmpH)+'</h2>'
+  +'<div class="tblwrap r"><table><thead><tr>'+S.cmpHead.map(function(h){return '<th>'+t(h)+'</th>';}).join("")+'</tr></thead><tbody>'
+  +S.cmpRows.map(function(row){
+    return '<tr>'+row.map(function(c,i){
+      var v=t(c);
+      if(v==="—") v='<span class="no">—</span>';
+      if(i===row.length-1) v='<span class="yes">'+t(c)+'</span>';
+      return (i===0?'<th scope="row">':'<td>')+v+(i===0?'</th>':'</td>');
+    }).join("")+'</tr>';
+  }).join("")+'</tbody></table></div>'
+  +'</section>'
+
+  +'<section><span class="eyebrow">'+t(S.trustEyebrow)+'</span>'
+  +'<div class="trust">'+S.trust.map(function(x){
+    return '<div class="tr-card r"><div class="t-i">'+x.i+'</div><div class="t-t">'+t(x.t)+'</div><div class="t-d">'+t(x.d)+'</div></div>';
+  }).join("")+'</div>'
+  +'<div class="stand"><div class="stand-mock"><div class="stand-card"><div class="brand-sm">وَسْم</div>'+QR+'<div class="scan">'+t(S.standScan)+'</div></div>'
+  +'<div class="stand-cap">'+t(S.standCap)+'</div></div></div>'
+  +'</section>'
+
+  +'<section><div class="founder r"><div class="f-ava">ب</div>'
+  +'<div class="f-name">'+t(S.founderName)+'</div>'
+  +'<p class="f-line">'+t(S.founderLine)+'</p>'
+  +'<a class="btn wa" href="'+wa+'" target="_blank" rel="noopener">'+WAICON+t(S.founderCta)+'</a>'
+  +'<div class="scarcity">'+t(S.scarcity)+'</div></div>'
+  +'</section>'
+
+  +'<footer><a href="index.html">'+t(S.ftDemo)+' ↗</a><br>'+t(S.ft)+'</footer>';
+
+  observe();
+}
+document.getElementById("langBtn").addEventListener("click",function(){
+  LANG=(LANG==="ar")?"en":"ar";
+  localStorage.setItem("ms-lang",LANG);
+  render();
+});
+window.setLang=function(l){ if(l!==LANG){ LANG=l; localStorage.setItem("ms-lang",LANG); render(); } };
+var io;
+function observe(){
+  if(io) io.disconnect();
+  io=new IntersectionObserver(function(es){
+    es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target);} });
+  },{rootMargin:"0px 0px -8% 0px"});
+  document.querySelectorAll(".r").forEach(function(el){io.observe(el);});
+}
+render();
+</script>
+</body>
+</html>
