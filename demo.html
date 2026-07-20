@@ -242,6 +242,41 @@ svg.item-ic{color:var(--gold)}
 .chapter.after-hours .closed-note{display:block}
 .chapter.after-hours .items{opacity:.5}
 
+/* ===== Filters ===== */
+.filters{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:20px 0 -6px}
+.filters:empty{margin:0}
+.filters .fl{font-size:11.5px;color:var(--muted)}
+.fchip{font-size:12px;color:var(--ink2);border:1px solid var(--hair2);border-radius:999px;
+  padding:5px 13px;transition:background .2s,color .2s,transform .18s var(--ease)}
+.fchip.on{background:var(--gold);color:var(--on-accent);border-color:var(--gold);font-weight:600}
+.fchip:active{transform:scale(.95)}
+.card.fhide{display:none}
+
+/* seasonal chapter badge */
+.ch-lim{font-family:var(--f-b);font-weight:600;font-size:10.5px;color:var(--gold2);
+  border:1px solid var(--hair2);border-radius:999px;padding:2.5px 10px;white-space:nowrap;flex:none}
+
+/* loyalty ribbon */
+.loyal{border:1px solid var(--hair2);border-radius:16px;padding:12px 16px;margin-top:16px;
+  background:linear-gradient(160deg,var(--tint2),transparent 60%)}
+.loyal .lt{font-size:12.5px;color:var(--ink2);margin-top:4px}
+.loyal .stamps{display:flex;gap:8px;margin-top:10px}
+.loyal .stamp{width:26px;height:26px;border-radius:999px;border:1px dashed var(--hair2);
+  display:grid;place-items:center;color:var(--on-accent);font-size:13px;font-weight:700}
+.loyal .stamp.f{background:var(--gold);border:1px solid var(--gold)}
+.loyal .demo-tag2{font-size:10px;color:var(--muted);margin-top:9px}
+
+/* header state buttons */
+.icon-btn.on{background:var(--gold);color:var(--on-accent);border-color:var(--gold)}
+#fsBtn{font-size:13px;font-weight:700}
+
+/* kinetic chapter-title reveal */
+@media (prefers-reduced-motion:no-preference){
+  .ch-head.r .ch-title{clip-path:inset(0 100% 0 0);transition:clip-path .8s var(--ease) .12s}
+  html[dir="rtl"] .ch-head.r .ch-title{clip-path:inset(0 0 0 100%)}
+  .ch-head.r.in .ch-title{clip-path:inset(0 0 0 0)}
+}
+
 /* ===== RISE entrance ===== */
 @media (prefers-reduced-motion:no-preference){
   .r{opacity:0;transform:translateY(16px);
@@ -408,6 +443,12 @@ footer .f-block{margin-bottom:18px;line-height:2}
 @media (min-width:700px){
   body{padding-top:8px}
 }
+
+/* text-size steps (kept last so they win the cascade) */
+html[data-fs="1"] body{font-size:17.5px}
+html[data-fs="1"][lang="ar"] body{font-size:18.5px}
+html[data-fs="2"] body{font-size:19px}
+html[data-fs="2"][lang="ar"] body{font-size:20px}
 </style>
 </head>
 <body>
@@ -424,6 +465,10 @@ footer .f-block{margin-bottom:18px;line-height:2}
     <div class="wordmark-sm">وَسْم</div>
     <div class="top-actions">
       <button class="lang-pill" id="langBtn" aria-label="Switch language">English</button>
+      <button class="icon-btn" id="fsBtn" aria-label="Text size">أ+</button>
+      <button class="icon-btn" id="rmBtn" aria-label="Ramadan mode">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13.5A8.5 8.5 0 0 1 10.5 4 8.5 8.5 0 1 0 20 13.5Z"/></svg>
+      </button>
       <a class="icon-btn" id="waTop" href="https://wa.me/966500000000" target="_blank" rel="noopener" aria-label="WhatsApp">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.2 14.1c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .2-3.4-.7-2.9-1.1-4.7-4-4.9-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.4 1.2 2.5 1.6 2.9 1.7.3.2.5.1.7-.1l1-1.1c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.3.6.4 0 .2 0 .7-.2 1.3Z"/></svg>
       </a>
@@ -446,6 +491,8 @@ footer .f-block{margin-bottom:18px;line-height:2}
   </section>
 
   <div class="parade" id="parade" aria-label="Signatures parade"></div>
+
+  <div class="filters" id="filters"></div>
 
   <main id="menu"></main>
 
@@ -545,11 +592,29 @@ var T = {
   creditCta:{ar:"احصل على منيو مثل هذا لكافيهك ←",en:"Get a menu like this for your café →"},
   breakfastClosed:{ar:"انتهى وقت الفطور اليوم — يعود غدًا ٦:٣٠ صباحًا",en:"Breakfast is done for today — back tomorrow 6:30 AM"},
   storyFirstRain:{ar:"«الوسم» أول مطر الخريف — به سُمّي المقهى، وبه سُمّي هذا الكوب: كولد برو يُرَشّ بندى ورد الطائف لحظة التقديم.",en:"'Wasm' is the first autumn rain — it named this café, and this cup: cold brew misted with Taif rose the moment it's served."},
-  roastNote:{ar:"تحميصنا الأسبوعي — تاريخ التحميص على كل كيس",en:"Roasted weekly — roast date on every bag"}
+  roastNote:{ar:"تحميصنا الأسبوعي — تاريخ التحميص على كل كيس",en:"Roasted weekly — roast date on every bag"},
+  greetRamadan:{ar:"رمضان كريم ✦ يفتتح الإفطار مع أذان المغرب",en:"Ramadan Kareem ✦ iftar opens at maghrib"},
+  ramadanOn:{ar:"وضع رمضان مفعّل — محاكاة للعرض ✦",en:"Ramadan mode on — demo preview ✦"},
+  ramadanOff:{ar:"عدنا للمنيو الاعتيادي",en:"Back to the everyday menu"},
+  ramadanChip:{ar:"أوقات رمضان",en:"Ramadan hours"},
+  limited:{ar:"لفترة محدودة",en:"Limited time"},
+  filterLabel:{ar:"مناسب لك",en:"For you"},
+  fNuts:{ar:"بدون مكسرات",en:"Nut-free"},
+  fDairy:{ar:"بدون حليب",en:"Dairy-free"},
+  fVegan:{ar:"نباتي",en:"Vegan"},
+  fDecaf:{ar:"بدون كافيين",en:"Caffeine-free"},
+  fCount:{ar:"صنفًا يناسبك",en:"items match"},
+  loyalT:{ar:"مكافأة الزيارة",en:"Visit reward"},
+  loyalLeft:{ar:"أضف {n} أصناف أخرى وتفتح كوكيز الزعفران — هدية",en:"Add {n} more items to unlock the saffron cookie — on us"},
+  loyalLeft1:{ar:"صنف واحد يفصلك عن كوكيز الزعفران — هدية",en:"One more item unlocks the saffron cookie — on us"},
+  loyalDone:{ar:"فتحت مكافأتك: كوكيز الزعفران تُقدَّم مع طلبك 🎁",en:"Unlocked: a saffron cookie joins your order 🎁"},
+  loyalDemo:{ar:"محاكاة لبرنامج الولاء — يُفعَّل لمنيو كافيهك",en:"Loyalty simulation — enabled on your café's menu"},
+  a2hs:{ar:"أضِف وَسْم لشاشتك الرئيسية — يعمل كتطبيق، حتى بلا إنترنت ✦",en:"Add WASM to your home screen — works like an app, even offline ✦"}
 };
 
 var CHAPTERS = [
   {id:"sig", nm:{ar:"توقيعنا",en:"Signatures"}, sub:{ar:"ما لا يشبه أحدًا",en:"Like no one else"}},
+  {id:"season", lim:true, nm:{ar:"موسم الصيف",en:"Summer Season"}, sub:{ar:"حتى نهاية أغسطس — ثم يرحل",en:"Through August — then it's gone"}},
   {id:"qahwa", nm:{ar:"قهوتنا السعودية",en:"Saudi Coffee & Dates"}, sub:{ar:"الضيافة أول الكلام",en:"Hospitality speaks first"}},
   {id:"brew", nm:{ar:"المحمصة",en:"The Brew Bar"}, sub:{ar:"من المزرعة إلى الفنجان — مرتبة حسب الارتفاع",en:"Farm to finjan — ordered by altitude"}},
   {id:"esp", nm:{ar:"الإسبريسو",en:"Espresso Bar"}, sub:{ar:"الأساسيات، بلا تنازلات",en:"The essentials, uncompromised"}},
@@ -559,6 +624,9 @@ var CHAPTERS = [
   {id:"bf", nm:{ar:"الفطور",en:"Breakfast"}, sub:{ar:"حتى ١٢:٠٠ ظهرًا",en:"Until 12:00 noon"}},
   {id:"sets", nm:{ar:"الأطقم والرحلات",en:"Sets & Flights"}, sub:{ar:"للمجالس ولرحلة التذوق",en:"For the majlis, and the tasting journey"}}
 ];
+var IFTAR_CH = {id:"iftar", nm:{ar:"الإفطار والسحور",en:"Iftar & Suhoor"}, sub:{ar:"من المغرب إلى الإمساك — الضيافة أولًا",en:"From maghrib to imsak — hospitality first"}};
+var RAMADAN = localStorage.getItem("wasm-ramadan")==="1" || new URLSearchParams(location.search).get("ramadan")==="1";
+function activeChapters(){ return RAMADAN ? [IFTAR_CH].concat(CHAPTERS) : CHAPTERS; }
 
 /* art washes */
 var ART = {
@@ -584,7 +652,8 @@ var ART = {
   shak:"radial-gradient(130% 95% at 50% 0%,rgba(136,66,40,.5),transparent 62%)",
   crois:"radial-gradient(130% 95% at 50% 0%,rgba(134,110,58,.45),transparent 62%)",
   toastw:"radial-gradient(130% 95% at 50% 0%,rgba(114,84,46,.5),transparent 62%)",
-  set:"radial-gradient(130% 95% at 50% 0%,rgba(120,96,56,.4),transparent 62%)"
+  set:"radial-gradient(130% 95% at 50% 0%,rgba(120,96,56,.4),transparent 62%)",
+  mango:"radial-gradient(130% 95% at 50% 0%,rgba(196,124,38,.5),transparent 62%)"
 };
 
 /* ================ SVG icons ================ */
@@ -762,6 +831,26 @@ var MENU = [
  nm:{ar:"توست زبدة التمر",en:"Date-Butter Toast"},price:18,kcal:300,allergens:["gluten","dairy"],
  ds:{ar:"خبز خميرة محمّص بزبدة التمر وملح البحر",en:"Sourdough with whipped date butter & sea salt"}},
 
+{ch:"season",id:"mango-yuzu",tier:"hero",art:"mango",ic:"glass",badge:"new",
+ nm:{ar:"مانجو يوزو مثلج",en:"Iced Mango Yuzu"},price:27,kcal:160,
+ ds:{ar:"مانجو يمني ناضج على فوَران اليوزو، بورقة نعناع مجففة",en:"Ripe Yemeni mango over yuzu sparkle, one dried mint leaf"},
+ custom:["ice"]},
+{ch:"season",id:"melon-mint",tier:"thumb",art:"pom",ic:"glass",
+ nm:{ar:"بطيخ ونعناع مبروش",en:"Watermelon, Shaved Mint"},price:22,kcal:90,
+ ds:{ar:"بطيخ مثلج مبروش كالثلج، يُروى بماء الورد",en:"Iced watermelon shaved like snow, kissed with rose water"}},
+
+{ch:"iftar",id:"iftar-set",tier:"bundle",art:"dates",ic:"tray",was:58,
+ nm:{ar:"مفطر وَسْم",en:"The WASM Iftar Set"},price:49,kcal:520,allergens:["dairy"],
+ ds:{ar:"ثلاث تمرات سكري، قهوة سعودية، لبن زعفران، وشوربة اليوم",en:"Three Sukkari dates, Saudi qahwa, saffron laban, and today's soup"},
+ window:{ar:"يُقدَّم من المغرب حتى العشاء",en:"Maghrib to isha"}},
+{ch:"iftar",id:"suhoor-plate",tier:"thumb",art:"toastw",ic:"toast",
+ nm:{ar:"صحن السحور",en:"The Suhoor Plate"},price:32,kcal:450,allergens:["dairy","gluten"],
+ ds:{ar:"لبنة بزيت النعناع، تمر، وتوست زبدة التمر",en:"Labneh with mint oil, dates, and date-butter toast"},
+ window:{ar:"من منتصف الليل حتى الإمساك",en:"Midnight to imsak"}},
+{ch:"iftar",id:"saffron-laban",tier:"row",art:"milkpud",ic:"glass",
+ nm:{ar:"لبن بالزعفران",en:"Saffron Laban"},price:12,kcal:120,allergens:["dairy"],
+ ds:{ar:"بارد، مخفوق مع خيوط الزعفران",en:"Cold, whipped with saffron threads"}},
+
 {ch:"sets",id:"flight",tier:"flight",art:"set",ic:"flight",
  nm:{ar:"تذوق الباريستا",en:"The Barista's Tasting"},price:55,kcal:180,caf:250,
  ds:{ar:"ثلاث محطات، رحلة واحدة",en:"Three stops, one journey"},
@@ -829,6 +918,13 @@ function pairsHtml(m){
   if(!m.pairs||!byId[m.pairs]) return "";
   return '<div class="pairs"><button data-goto="'+m.pairs+'">'+t(T.pairs)+' · '+t(byId[m.pairs].nm)+'</button></div>';
 }
+function windowHtml(m){
+  return m.window?'<div class="origin"><span>'+t(m.window)+'</span></div>':"";
+}
+function locNum(n){
+  if(LANG!=="ar") return String(n);
+  return String(n).replace(/\d/g,function(d){return "٠١٢٣٤٥٦٧٨٩"[+d];});
+}
 
 function cardHtml(m,i){
   var d='style="--d:'+(i%6)*0.07+'s"';
@@ -836,6 +932,7 @@ function cardHtml(m,i){
     return '<div class="card row-card r" '+d+' data-open="'+m.id+'" role="button" tabindex="0">'
       +'<div class="body">'+badgeHtml(m)
       +'<div class="row-top"><span class="nm">'+t(m.nm)+'</span>'+priceHtml(m)+'</div>'
+      +windowHtml(m)
       +'<p class="desc">'+t(m.ds)+'</p>'+metaHtml(m)+'</div>'
       +'<button class="addb" data-add="'+m.id+'" aria-label="'+t(T.addToOrder)+'">+</button></div>';
   }
@@ -855,6 +952,7 @@ function cardHtml(m,i){
       +'<div class="art side" style="background:'+ART[m.art]+',var(--card2)">'+IC(m.ic)+'</div>'
       +'<div class="body">'+badgeHtml(m)
       +'<div class="row-top"><span class="nm">'+t(m.nm)+'</span>'+priceHtml(m)+'</div>'
+      +windowHtml(m)
       +'<p class="desc">'+t(m.ds)+'</p>'+metaHtml(m)+pairsHtml(m)+'</div>'
       +'<button class="addb" data-add="'+m.id+'" aria-label="'+t(T.addToOrder)+'">+</button></div>';
   }
@@ -875,6 +973,7 @@ function cardHtml(m,i){
     +'<div class="body">'
     +'<div class="row-top"><span class="nm">'+t(m.nm)+'</span>'+priceHtml(m)+'</div>'
     +(m.note?'<div class="origin"><span>'+t(T[m.note])+'</span></div>':"")
+    +windowHtml(m)
     +'<p class="desc">'+t(m.ds)+'</p>'+metaHtml(m)+pairsHtml(m)
     +'</div>'
     +'<button class="addb" data-add="'+m.id+'" aria-label="'+t(T.addToOrder)+'">+</button></div>';
@@ -884,10 +983,12 @@ var DIVIDER='<svg class="divider" width="220" height="12" viewBox="0 0 220 12" f
 
 function renderMenu(){
   var out="";
-  CHAPTERS.forEach(function(c){
+  activeChapters().forEach(function(c){
     var items=MENU.filter(function(m){return m.ch===c.id;});
     out+='<section class="chapter" id="ch-'+c.id+'" data-ch="'+c.id+'">'
-      +'<div class="ch-head"><h2 class="ch-title">'+t(c.nm)+'</h2></div>'
+      +'<div class="ch-head r"><h2 class="ch-title">'+t(c.nm)+'</h2>'
+      +(c.lim?'<span class="ch-lim">'+t(T.limited)+'</span>':"")
+      +'</div>'
       +'<p class="ch-sub">'+t(c.sub)+'</p>';
     if(c.id==="qahwa"){
       out+='<div class="heritage r">'+IC("dallah")
@@ -924,7 +1025,7 @@ function renderMenu(){
 function renderChips(){
   var el=document.getElementById("chips");
   el.innerHTML='<span class="glider" id="glider" aria-hidden="true"></span>'
-    +CHAPTERS.map(function(c){return '<button class="chip" data-chip="'+c.id+'">'+t(c.nm)+'</button>';}).join("");
+    +activeChapters().map(function(c){return '<button class="chip" data-chip="'+c.id+'">'+t(c.nm)+'</button>';}).join("");
 }
 function renderParade(){
   var sigs=MENU.filter(function(m){return m.ch==="sig"||m.tier==="hero";}).slice(0,8);
@@ -939,8 +1040,10 @@ function renderHero(){
   document.getElementById("tagline").textContent=t(T.tagline);
   document.getElementById("story").textContent=t(T.story);
   var h=new Date().getHours();
-  document.getElementById("greet").textContent=(h>=5&&h<12)?t(T.greetMorning):t(T.greetEvening);
-  document.getElementById("heroMeta").innerHTML=T.metaChips.map(function(c){return '<span class="hmchip">'+t(c)+'</span>';}).join("");
+  document.getElementById("greet").textContent=RAMADAN?t(T.greetRamadan):((h>=5&&h<12)?t(T.greetMorning):t(T.greetEvening));
+  var hm=RAMADAN?[T.ramadanChip].concat(T.metaChips):T.metaChips;
+  document.getElementById("heroMeta").innerHTML=hm.map(function(c){return '<span class="hmchip">'+t(c)+'</span>';}).join("");
+  document.getElementById("rmBtn").classList.toggle("on",RAMADAN);
   document.getElementById("langBtn").textContent=t(T.langBtn);
   document.getElementById("obLabel").textContent=t(T.sar)+" · "+t(T.vatShort);
   document.getElementById("obView").textContent=t(T.viewOrder);
@@ -965,9 +1068,74 @@ function renderFooter(){
 function applyLang(){
   document.documentElement.lang=LANG;
   document.documentElement.dir=(LANG==="ar")?"rtl":"ltr";
-  renderHero();renderChips();renderParade();renderMenu();renderFooter();updateOrderBar(true);
+  renderHero();renderChips();renderParade();renderMenu();renderFilters();renderFooter();updateOrderBar(true);
+  applyFilters();applyFS();
   bindChips();observeRise();observeSpy();checkBreakfast();
 }
+
+/* ================ Dietary filters ================ */
+var FILTERS={nuts:false,dairy:false,vegan:false,decaf:false};
+function anyFilter(){ return FILTERS.nuts||FILTERS.dairy||FILTERS.vegan||FILTERS.decaf; }
+function passFilters(m){
+  var al=m.allergens||[];
+  if(FILTERS.nuts&&al.indexOf("nuts")>-1) return false;
+  if(FILTERS.dairy&&al.indexOf("dairy")>-1) return false;
+  if(FILTERS.vegan&&(al.indexOf("dairy")>-1||al.indexOf("egg")>-1)) return false;
+  if(FILTERS.decaf&&(m.caf||0)>0) return false;
+  return true;
+}
+function renderFilters(){
+  var defs=[["nuts",T.fNuts],["dairy",T.fDairy],["vegan",T.fVegan],["decaf",T.fDecaf]];
+  document.getElementById("filters").innerHTML=
+    '<span class="fl">'+t(T.filterLabel)+'</span>'
+    +defs.map(function(d){return '<button class="fchip'+(FILTERS[d[0]]?" on":"")+'" data-f="'+d[0]+'" aria-pressed="'+FILTERS[d[0]]+'">'+t(d[1])+'</button>';}).join("");
+}
+function applyFilters(){
+  var on=anyFilter(), n=0;
+  document.querySelectorAll("#menu .card[data-open]").forEach(function(el){
+    var m=byId[el.dataset.open]; if(!m) return;
+    var hide=on&&!passFilters(m);
+    el.classList.toggle("fhide",hide);
+    if(!hide) n++;
+  });
+  return n;
+}
+document.getElementById("filters").addEventListener("click",function(e){
+  var f=e.target.closest(".fchip"); if(!f) return;
+  FILTERS[f.dataset.f]=!FILTERS[f.dataset.f];
+  f.classList.toggle("on",FILTERS[f.dataset.f]);
+  f.setAttribute("aria-pressed",FILTERS[f.dataset.f]);
+  var n=applyFilters();
+  if(anyFilter()) toast(locNum(n)+" "+t(T.fCount));
+});
+
+/* ================ Ramadan mode ================ */
+document.getElementById("rmBtn").addEventListener("click",function(){
+  RAMADAN=!RAMADAN;
+  localStorage.setItem("wasm-ramadan",RAMADAN?"1":"0");
+  applyLang();
+  toast(t(RAMADAN?T.ramadanOn:T.ramadanOff));
+  if(RAMADAN){
+    var sec=document.getElementById("ch-iftar");
+    if(sec) sec.scrollIntoView({behavior:"smooth",block:"start"});
+  }
+});
+
+/* ================ Text size ================ */
+var FS=Math.min(2,Math.max(0,+(localStorage.getItem("wasm-fs")||0)||0));
+function applyFS(){
+  if(FS>0) document.documentElement.setAttribute("data-fs",FS);
+  else document.documentElement.removeAttribute("data-fs");
+  var b=document.getElementById("fsBtn");
+  b.textContent=(LANG==="ar"?"أ":"A")+"+";
+  b.setAttribute("aria-label",t(T.fsLabel||{ar:"حجم الخط",en:"Text size"}));
+}
+document.getElementById("fsBtn").addEventListener("click",function(){
+  FS=(FS+1)%3;
+  localStorage.setItem("wasm-fs",FS);
+  applyFS();
+  if(curChipId) setActiveChip(curChipId);
+});
 document.getElementById("langBtn").addEventListener("click",function(){
   var pg=document.getElementById("page");
   pg.style.transition="opacity .22s ease";pg.style.opacity="0";
@@ -1012,7 +1180,7 @@ function observeSpy(){
     es.forEach(function(en){ if(en.isIntersecting) setActiveChip(en.target.dataset.ch); });
   },{rootMargin:"-30% 0px -60% 0px"});
   document.querySelectorAll(".chapter").forEach(function(s){spyIO.observe(s);});
-  setActiveChip(CHAPTERS[0].id);
+  setActiveChip(activeChapters()[0].id);
 }
 
 /* ================ RISE ================ */
@@ -1240,8 +1408,16 @@ function renderCart(){
       +'<span class="cl-pr">'+num(l.unit*l.qty)+'</span></li>';
   }).join("");
   var hasSweet=cart.some(function(l){return byId[l.id].ch==="sweet";});
+  var goal=5,cnt=Math.min(cartCount(),goal),stamps="";
+  for(var s=0;s<goal;s++){stamps+='<span class="stamp'+(s<cnt?" f":"")+'">'+(s<cnt?"✓":"")+'</span>';}
+  var left=goal-cnt;
+  var lt=left<=0?t(T.loyalDone):(left===1?t(T.loyalLeft1):t(T.loyalLeft).replace("{n}",locNum(left)));
+  var loyal='<div class="loyal"><span class="eyebrow">'+t(T.loyalT)+'</span>'
+    +'<div class="lt">'+lt+'</div><div class="stamps">'+stamps+'</div>'
+    +'<div class="demo-tag2">'+t(T.loyalDemo)+'</div></div>';
   b.innerHTML='<h2>'+t(T.yourOrder)+'</h2>'
     +'<ul class="cart-lines">'+lines+'</ul>'
+    +loyal
     +(!hasSweet?'<div class="suggest"><span class="s-t">'+t(T.suggest)+'</span><button data-sug="saffron-cake">'+t(T.addIt)+' · '+num(24)+'</button></div>':"")
     +'<div class="cart-total"><span>'+t(T.total)+'</span><span>'+num(cartTotal())+' '+t(T.sar)+'</span></div>'
     +'<div class="vat-note">'+t(T.vatNote)+'</div>'
@@ -1323,6 +1499,17 @@ document.addEventListener("keydown",function(e){
 /* ================ Boot ================ */
 applyLang();
 updateOrderBar(true);
+/* one-time add-to-home-screen hint */
+(function(){
+  try{
+    if(localStorage.getItem("wasm-a2hs")==="1") return;
+    if(matchMedia("(display-mode: standalone)").matches) return;
+    setTimeout(function(){
+      toast(t(T.a2hs));
+      try{ localStorage.setItem("wasm-a2hs","1"); }catch(e){}
+    },18000);
+  }catch(e){}
+})();
 addEventListener("resize",function(){ if(curChipId) setActiveChip(curChipId); });
 if("serviceWorker" in navigator &&
    (location.protocol==="https:"||["localhost","127.0.0.1"].indexOf(location.hostname)>-1)){
