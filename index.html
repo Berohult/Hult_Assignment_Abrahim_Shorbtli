@@ -291,7 +291,8 @@ var S = {
     {n:"+35%",d:{ar:"ارتفاع متوسط قيمة الطلب",en:"higher average spend"},a:{ar:"ChatFood — مطاعم خليجية",en:"ChatFood — Gulf venues"}},
     {n:"+27%",d:{ar:"مبيعات أعلى للأصناف الموصوفة جيدًا",en:"more sales for well-described items"},a:{ar:"جامعة كورنيل",en:"Cornell University"}},
     {n:"+30%",d:{ar:"زيادة طلب الأصناف المصوّرة",en:"lift for photographed items"},a:{ar:"Grubhub",en:"Grubhub"}},
-    {n:"12–16",d:{ar:"دقيقة توفّرها كل طاولة",en:"minutes saved per table"},a:{ar:"sunday · Qlub",en:"sunday · Qlub"}}
+    {n:"12–16",d:{ar:"دقيقة توفّرها كل طاولة",en:"minutes saved per table"},a:{ar:"sunday · Qlub",en:"sunday · Qlub"}},
+    {n:"5x",d:{ar:"تقييمات ٥ نجوم أكثر على Google",en:"more 5-star Google reviews"},a:{ar:"sunday — عبر Forbes",en:"sunday — via Forbes"}}
   ],
   mathBig:{ar:"١٩٩ ريالًا في الشهر = أقل من ٧ ريالات في اليوم",en:"SAR 199/month = under SAR 7 a day"},
   mathP:{ar:"أقل من سعر كورتادو. طلبان إضافيان في اليوم يغطّونه سبع مرات. وكل تغيير سعر على الورق يكلفك طباعة — هنا؟ رسالة واتساب مجانية.",en:"Less than a cortado. Two extra orders a day covers it seven times over. Every paper price change costs a reprint — here, it's a free WhatsApp message."},
@@ -321,6 +322,7 @@ var S = {
   ],
   top5T:{ar:"الأكثر مشاهدة هذا الأسبوع",en:"Most viewed this week"},
   insight:{ar:"ملاحظة: الكنافة تُشاهد كثيرًا وتُطلب قليلًا — نجرّب صورة جديدة؟",en:"Insight: kunafa gets views but few orders — try a new photo?"},
+  anaTry:{ar:"جرّبها بنفسك الآن: افتح المنيو التجريبي واضغط شعار «وَسْم» ثلاث مرات — تنفتح لوحة المالك.",en:"Try it yourself: open the demo and triple-tap the وَسْم wordmark — the owner cockpit appears."},
   langCap:[{ar:"عربي ٧٢٪",en:"Arabic 72%"},{ar:"English 28%",en:"English 28%"}],
   cmpEyebrow:{ar:"قارن بنفسك",en:"Compare for yourself"},
   cmpH:{ar:"أين يقف منيو سادة؟",en:"Where Menu Sadah stands"},
@@ -421,7 +423,8 @@ function render(){
   +'<ul class="top5">'+S.top5.map(function(x){return '<li><span>'+t(x.n)+'</span><span class="v">'+x.v+'</span></li>';}).join("")+'</ul>'
   +'<div class="langsplit"><div class="ar-f"></div><div class="en-f"></div></div>'
   +'<div class="langsplit-cap"><span>'+t(S.langCap[0])+'</span><span>'+t(S.langCap[1])+'</span></div>'
-  +'<div class="insight">'+t(S.insight)+'</div></div>'
+  +'<div class="insight">'+t(S.insight)+'</div>'
+  +'<div class="insight" style="margin-top:10px">'+t(S.anaTry)+'</div></div>'
   +'</section>'
 
   +'<section><span class="eyebrow">'+t(S.cmpEyebrow)+'</span><h2>'+t(S.cmpH)+'</h2>'

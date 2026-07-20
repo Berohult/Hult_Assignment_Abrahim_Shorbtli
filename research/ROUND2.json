@@ -1,0 +1,233 @@
+{
+ "minedCount": 101,
+ "synthesis": {
+  "ranked_features": [
+   {
+    "rank": 1,
+    "name": "Owner Mode — hidden menu-engineering cockpit",
+    "one_liner": "A secret second view that flips the menu into a simulated Foodics/FineDine BI dashboard, fed live by the guest taps the owner just made himself.",
+    "build_spec": "Second full-screen view (div#owner-view, translateY slide-in) opened via ?owner=1 or triple-tap on the wordmark — RESERVE the triple-tap gesture exclusively for this (see warnings). Instrumentation: log {ts, type:'sheet_open'|'cart_add'|'order_send', itemId} to a localStorage ring buffer (cap 500) from handlers that already exist. Blend with a seeded demo dataset (per-item view/order ints in the config object). Four panels, all CSS: (a) star/plowhorse/puzzle/dog matrix — 38 absolutely-positioned gold dots on a hairline grid (left%=popularity, bottom%=margin), tap a dot to show the item name; (b) 'الأكثر مشاهدة / Most viewed' horizontal bars via transform:scaleX on .in-view; (c) 24-cell hour heat strip via opacity steps; (d) three bilingual insight cards templated from seed data, e.g. 'اللاتيه الإسباني يتحمل زيادة ٢ ريال — هامش متوقع +٨٪ / Spanish Latte can absorb a 2 SAR raise — projected +8% margin'. Exit chip 'عودة للقائمة / Back to menu'. No canvas, no charts lib, ~200 lines JS+CSS in the same file.",
+    "wow_factor": "The owner plays with the guest menu for one minute, you flip him into the cockpit — and his own taps are already plotted on the matrix. 'This is the screen Foodics sells me' — the product reframes from pretty menu to business weapon on the spot.",
+    "effort": "L",
+    "sources": [
+     "https://www.finedinemenu.com/en/ai-menu-engineering-/",
+     "https://www.finedinemenu.com/en/ai-reporting/",
+     "https://fastcompanyme.com/news/foodics-acquires-ai-firm-norma-to-expand-hospitality-technology-capabilities/"
+    ]
+   },
+   {
+    "rank": 2,
+    "name": "Reasoned cart upsell — the thinking cashier line",
+    "one_liner": "Cart-shape-aware suggestions that state their reason and their savings, one line at a time (Bite Lift's +20% check pattern).",
+    "build_spec": "Ordered rules array evaluated as a pure function on every cart change: predicates over category counts, total vs bundle thresholds, party-size inference from drink count. First matching rule renders ONE dismissible hairline line in the existing cart bar — never stacks, respecting the badge budget. Rule copy examples: 3 drinks + no food → 'طلبكم فيه ٣ مشروبات — دلة قهوة للمجلس توفر عليكم ١٢ ريال / Three drinks in your order — a majlis dallah pot saves you 12 SAR' (savings math reuses the existing struck-through anchor logic); 2 desserts + no coffee → 'حلا بدون قهوة؟ / Dessert without coffee?'. ~8 rules, ~60 lines, extends (does not replace) the built dessert upsell.",
+    "wow_factor": "The owner adds a third drink to the demo cart and the menu whispers a group-aware dallah suggestion with the exact savings — he recognizes a +20% check story instantly because it explains itself like a good cashier.",
+    "effort": "S",
+    "sources": [
+     "https://www.getbite.com/bite-lift"
+    ]
+   },
+   {
+    "rank": 3,
+    "name": "Post-order 5-star moment with Google deep link",
+    "one_liner": "Every order ends with five gold stars; happy guests land on the cafe's actual Google review page, unhappy ones get a private WhatsApp line to the owner.",
+    "build_spec": "After the WhatsApp order CTA fires (or request-bill), slide up a small sheet (existing sheet component): 5 inline-SVG gold stars, heading 'شاركنا رأيك / Tell us how it was'. Stars 4–5 → <a href='https://search.google.com/local/writereview?placeid=PLACE_ID'> (pure URL, per-client config, no API); stars 1–3 → wa.me link with prefilled bilingual private feedback: 'أحب أن أشارك ملاحظة خاصة مع صاحب المقهى — I'd like to share private feedback with the owner'. IMPORTANT compliance tweak vs sunday's pattern: keep a small 'أو قيمنا على Google' link visible at every rating so it is routing, not gating (see warnings). Two anchors + one sheet, transform/opacity only.",
+    "wow_factor": "The moment the owner sees 4 stars deep-link into HIS Google Maps listing, he does the math on footfall — 'this pays for itself' is usually said out loud here.",
+    "effort": "S",
+    "sources": [
+     "https://sundayapp.com/online-reputation/",
+     "https://www.forbes.com/sites/sindhyavalloppillil/2025/11/13/sundays-21m-series-b-and-the-global-race-to-transform-restaurant-payments/"
+    ]
+   },
+   {
+    "rank": 4,
+    "name": "Memory suite: 'your usual' one-tap reorder + abandoned-cart rescue",
+    "one_liner": "The menu remembers the guest's last order and their unfinished cart — CRM behavior with zero CRM, on the localStorage rails already built.",
+    "build_spec": "On order send, serialize {items, customizations, total, ts, visitCount} to localStorage (the WhatsApp message builder already serializes this shape). On load with a stored order: slim strip under the sticky header — 'أهلاً بعودتك — طلبك المعتاد؟ سبانش لاتيه، حليب شوفان — ١٩ ر.س / Welcome back — your usual? Spanish Latte, oat milk — 19 SAR' with one 'أعده / Again' chip that rehydrates the cart through existing addToCart + fly-to-bar. If idle >14 days, copy becomes 'اشتقنا لك / We missed you'. Rescue: visibilitychange listener timestamps tab-hide; on return with a non-empty cart older than ~3 min, a non-blocking toast rises: 'مشروبك ما زال بانتظارك — أكمل طلبك (٤٧ ر.س) / Your drink is still waiting — finish your order (47 SAR)'. ~70 lines total, no permissions, survives offline via the PWA.",
+    "wow_factor": "The owner locks his phone mid-demo, reopens it, and the menu nudges him back to his own cart — an automation he associates with $500/mo US platforms demos itself by accident. Next-day rescan showing his exact usual seals it.",
+    "effort": "S",
+    "sources": [
+     "https://www.owner.com/automatic-marketing",
+     "https://www.ipsos.com/en-us/ipsos-announces-results-its-2025-channel-check-qsr-mobile-ordering-study"
+    ]
+   },
+   {
+    "rank": 5,
+    "name": "Live drink-assembly preview in the customization sheet",
+    "one_liner": "A CSS cup that visibly builds itself as options are tapped — the single most screenshot-able guest moment (Crav Burgers' stacking move).",
+    "build_spec": "Inside the existing bottom sheet: a 90px inline-SVG/CSS cup silhouette with 4–5 absolutely-positioned flat layer divs (espresso #3B2418, milk cream, foam, saffron-gold flecks, date syrup). Wiring into option handlers that already exist: sweetness level → transform:scaleY on the syrup layer (transform-origin:bottom); milk choice → background-color transition on the milk layer; priced add-on toggle (saffron) → gold-fleck layer drops in via translateY+opacity; ice → two translucent cubes fade in. No images, transform/opacity only, ~40 lines JS. Caption under the cup: 'كوبك يتكوّن / your cup, taking shape'.",
+    "wow_factor": "Owner taps 'extra saffron' and gold dust visibly settles into the drawn glass. Phones come out. No cafe menu in the Gulf does this.",
+    "effort": "M",
+    "sources": [
+     "https://www.awwwards.com/sites/crav-burgers",
+     "https://www.awwwards.com/inspiration/loader-animation-crav-burgers"
+    ]
+   },
+   {
+    "rank": 6,
+    "name": "Split-the-bill calculator (Qlub pattern, offline, honest)",
+    "one_liner": "Equal or by-item bill splitting with live VAT-inclusive per-person totals — the Gulf-famous feature, without payment rails.",
+    "build_spec": "Inside the existing cart sheet, a segment control 'قسّم الفاتورة / Split the bill': (a) بالتساوي / Equally — guest-count stepper ٢–٦, total/n with halala rounding rule shown; (b) بالأصناف / By item — person chips, tap item rows to assign, running per-person VAT-inclusive subtotals under each chip. Output: per-person lines appended to the existing structured WhatsApp order message, or individual wa.me share links per person. Honest framing line: 'حاسبة القسمة — الدفع عند الكاشير / split calculator — pay at the counter'. Pure arithmetic over existing cart state + existing sheet UI; RTL-native chips.",
+    "wow_factor": "The owner recognizes the Qlub experience his group tables ask about — 16-minutes-saved-per-table famous — running with no terminal, no fees, no POS integration.",
+    "effort": "M",
+    "sources": [
+     "https://qlub.io/ae/en/pay-at-table",
+     "https://fintech.global/2025/07/21/fintech-firm-qlub-secures-30m-for-global-dining-expansion/"
+    ]
+   },
+   {
+    "rank": 7,
+    "name": "3-tap Taste Match with counting match percentages",
+    "one_liner": "Three chip questions, then '٩٢٪ لك' badges count up on a gold 'Picked for you' row — the me&u/Vivino enterprise-AI look, deterministic and offline.",
+    "build_spec": "Dismissible bottom sheet (existing component), 3 chip-only questions — 'بارد أو حار؟ / iced or hot?', 'حليبي أو أسود؟ / milky or black?', 'حلو أو مايل للمرار؟ / sweet or toward bitter?' — no text inputs (no-forms rule holds). Each of the 38 items carries data-taste='temp,milk,sweet,intensity' (4-int vector, mostly derivable from existing customization metadata). Score = 100 − scaled L1 distance; top 3 render into a 'مختار لك / Picked for you' horizontal row pinned under the header, percentage numerals counting up via one rAF loop, one templated why-line: 'لأنك تميل للبارد الحليبي / because you lean iced and milky'. Preference vector persists in localStorage; every WhatsApp order nudges it 20% toward the ordered item's vector so return visits show updated numbers unprompted. ~120 lines.",
+    "wow_factor": "Owner answers three taps and watches percentages count up on his own drinks with a stated reason — 'it learned me in ten seconds.' It is the feature FineDine gates behind Premium, on a static file.",
+    "effort": "M",
+    "sources": [
+     "https://www.meandu.com/",
+     "https://www.vivino.com/en/wine-news/vivinos-match-for-you-score-explained-how-we-learn-your-taste",
+     "https://www.finedinemenu.com/en/pricing/"
+    ]
+   },
+   {
+    "rank": 8,
+    "name": "Catch it from the parade — the marquee becomes orderable",
+    "one_liner": "Sushiro Digiro's famous move: pluck a passing drink out of the auto-scrolling chef's parade straight into the cart.",
+    "build_spec": "Upgrade the existing marquee: each floating dish becomes a <button> with aria-label. On tap: read current translateX via getComputedStyle matrix, pause the lane (also solves the moving-target a11y issue), clone the node, FLIP-animate the clone into the cart bar reusing the existing fly-to-bar path, tick the live total, resume the lane after 400ms. Lane direction already mirrors under dir=rtl. Micro-caption above the lane, shown once: 'المس طبقًا وهو يمر / catch a dish as it passes'. ~60 lines vanilla JS, zero new assets, transform/opacity only.",
+    "wow_factor": "Within the first 10 seconds of the demo the owner plucks a cardamom latte out of the moving parade with one thumb and watches the total tick — the wallpaper just became a toy, and it is Japan's most famous ordering-screen mechanic.",
+    "effort": "M",
+    "sources": [
+     "https://news.mynavi.jp/article/20231003-2784043/",
+     "https://www.ryutsuu.biz/it/r090377.html"
+    ]
+   },
+   {
+    "rank": 9,
+    "name": "The Evening Bar — a zero-proof chapter that appears after 8pm",
+    "one_liner": "After dark the menu grows a 'بار المساء' chapter with cocktail grammar (coupes, flutes, 'proudly zero-proof') — Tonic Riyadh energy at 1/100th the cost.",
+    "build_spec": "Inverse of the built breakfast auto-collapse: a 5–7 item chapter hidden until Date().getHours() >= 20, with ?evening=1 override for daytime sales meetings. Its chip appears in the scroll-spy nav at 20:00. Items use cocktail grammar: inline-SVG coupe/flute glyphs, karak-Negroni-style spritz, saffron 'بيلي-نو / Belli-No', sparkling date cordial in a flute; label set once per item as gold small caps EN 'zero-proof' / AR 'بلا كحول بفخر'; three-word taste signatures ('قشدي · تمري · قصير'). Section background steps one shade darker via a single opacity overlay. Reuses chapter, chips, and sheets wholesale.",
+    "wow_factor": "Riyadh cafes live at night; the owner watches the menu change personality after dark — the most Gulf-native wow in the research, and it mirrors the Four Seasons' Tonic story he has read about.",
+    "effort": "M",
+    "sources": [
+     "https://press.fourseasons.com/riyadh/hotel-news/2025/new-tonic-bar/",
+     "https://www.caterermiddleeast.com/saudi-arabia/keep-up-saudi-dry-bar-boom"
+    ]
+   },
+   {
+    "rank": 10,
+    "name": "One-tap 9:16 Story Card share",
+    "one_liner": "A finished gold-on-black Snapchat/Instagram story card per item — every share is a free ad carrying the QR back to the menu.",
+    "build_spec": "Share glyph in the item bottom sheet. On tap, draw an offscreen 1080x1920 <canvas>: espresso ground, gold hairline arch (same path as the hero arch mask), item name in Noto Kufi (font already loaded — wait on document.fonts.ready), price in bare numerals, cafe wordmark, small QR embedded as a pre-generated per-cafe data-URI (generated at build time, no library). canvas.toBlob → new File → navigator.share({files}) behind a navigator.canShare feature-detect; fallback = download anchor. Bilingual toast on success: 'جاهزة لسناب شات / ready for your story'. ~80 lines, zero network.",
+    "wow_factor": "The owner taps share on the saffron latte and a designed, branded 9:16 card lands directly in the Snapchat share sheet — he immediately pictures every customer story as a free ad with his QR on it (Snap reaches 90% of eligible Saudis).",
+    "effort": "M",
+    "sources": [
+     "https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API",
+     "https://datareportal.com/reports/digital-2025-saudi-arabia",
+     "https://forbusiness.snapchat.com/blog/attention-measurement-saudi-arabia"
+    ]
+   }
+  ],
+  "copy_gold": [
+   {
+    "where": "Hidden reveal at the absolute end of the menu (IntersectionObserver sentinel after the footer)",
+    "line_ar": "آخر قطرة في الفنجان هي أعظم الفرح",
+    "line_en": "The last drop in the cup is the greatest joy",
+    "source": "Ichiran's bowl-bottom message ritual — https://www.klook.com/en-US/blog/ichiran-ramen-guide-japan/"
+   },
+   {
+    "where": "Microcopy under the WhatsApp order CTA, with a pulsing gold online dot",
+    "line_ar": "يرد عليك إنسان — عادةً خلال دقيقتين",
+    "line_en": "A human replies — usually within two minutes",
+    "source": "Four Seasons Chat: 100% human, 90-second average response — https://hospitalitytech.com/four-seasons-chat-achieves-faster-response-times-and-expands-service"
+   },
+   {
+    "where": "Single italic gold line on at most two hero items (tableside ritual flag)",
+    "line_ar": "يُسكب أمامك",
+    "line_en": "Finished at your table",
+    "source": "Burj Al Arab tableside trolley grammar — https://www.jumeirah.com/en/article/stories/dubai/your-guide-to-dining-at-burj-al-arab"
+   },
+   {
+    "where": "House Notes block near the footer — the prayer-pause custom, stated with grace",
+    "line_ar": "نتوقف قليلاً وقت الصلاة — وطلبك يكمل بعدها مباشرة",
+    "line_en": "We pause briefly at salah — your order resumes right after",
+    "source": "Five-star spa etiquette pattern, Gulf-translated — https://www.fourseasons.com/vail/spa/spa-etiquette/"
+   },
+   {
+    "where": "Streak-mercy line in the loyalty drawer when a missed week is auto-pardoned",
+    "line_ar": "حفظنا لك مقعدك",
+    "line_en": "We kept your seat",
+    "source": "Duolingo streak-freeze mercy mechanic, karam-ified — https://blog.duolingo.com/how-duolingo-streak-builds-habit/"
+   },
+   {
+    "where": "First item of any iftar/hospitality moment — price slot shows a word, not a numeral",
+    "line_ar": "تمر وماء — على السنة · هدية من الدار",
+    "line_en": "Dates and water, as tradition asks — a gift of the house",
+    "source": "Saudipedia on canonical iftar opening — https://saudipedia.com/en/ramadan-iftar-in-saudi-arabia"
+   },
+   {
+    "where": "Accessibility Passport sheet headline (also the differentiation slide of every sales demo)",
+    "line_ar": "هذه القائمة صُمّمت لتليق بجَدّك وبضيفك الكفيف",
+    "line_en": "Built to honor your grandfather and your blind guest",
+    "source": "DGA WCAG guidance + Good Food Talks positioning — https://dga.gov.sa/en/Web_Accessibility_of_Government_Websites"
+   },
+   {
+    "where": "Goal-gradient tier of the loyalty copy, when one stamp remains",
+    "line_ar": "فنجان واحد يفصلك عن هدية المجلس",
+    "line_en": "One cup between you and the majlis gift",
+    "source": "Kivetz et al. goal-gradient acceleration — https://business.columbia.edu/insights/chazen-global-insights/goal-gradient-hypothesis-resurrected-purchase-acceleration"
+   }
+  ],
+  "pitch_ammo": [
+   {
+    "stat": "Restaurants using in-flow review prompts get 5x more 5-star Google reviews; NYC group Hole in the Wall attributes 82% of its positive Google reviews to the QR flow",
+    "attribution": "sunday ($21M Series B), Forbes, Nov 2025 — sundayapp.com/online-reputation"
+   },
+   {
+    "stat": "QR pay-at-table saves 16 minutes per table and lifts tips up to 300% across 3,000+ GCC venues",
+    "attribution": "Qlub ($30M Series B, Jul 2025) — qlub.io / fintech.global"
+   },
+   {
+    "stat": "Cart-aware AI upsell suggestions raise average check ~20% vs a human cashier (partners up to +38%)",
+    "attribution": "Bite, 'Bite Lift' kiosk AI — getbite.com/bite-lift"
+   },
+   {
+    "stat": "Foodics BI (35,000+ brands, Saudi) claims up to 10% sales boost and 20% margin improvement from menu analytics",
+    "attribution": "Fast Company Middle East, Foodics-Norma acquisition"
+   },
+   {
+    "stat": "Snapchat reaches 24.7M Saudis — 90.7% of the eligible audience; urban Saudis open the camera ~40x/day",
+    "attribution": "DataReportal Digital 2025: Saudi Arabia / Snap for Business KSA"
+   },
+   {
+    "stat": "79% of Saudi QSR customers say they buy through social platforms",
+    "attribution": "Snapchat for Business, Saudi attention measurement study"
+   },
+   {
+    "stat": "Loyalty members visit 22% more often and spend 38% more per visit",
+    "attribution": "Circana (visits) / Paytronix (spend)"
+   },
+   {
+    "stat": "A loyalty card with 2 pre-earned stamps nearly doubles completion: 34% vs 19% for an identical-effort empty card",
+    "attribution": "Nunes & Drèze, Journal of Marketing Research (endowed-progress field study)"
+   },
+   {
+    "stat": "65% of diners aged 60+ are uncomfortable with QR menus — fine print is the top complaint (Care Mode is the answer)",
+    "attribution": "William Blair survey, via Restaurant Dive"
+   },
+   {
+    "stat": "3 in 4 TikTok users say it influences where they eat; 36% visited a restaurant after a single video",
+    "attribution": "TikTok dining-discovery data, via Restaurant Dive"
+   }
+  ],
+  "warnings": [
+   "Gesture collision: at least three swarm insights independently claim triple-tap-on-wordmark (Owner Mode, secret menu unlock, Ramadan preview). Assign triple-tap to exactly one (recommend Owner Mode) and move the others to query params or long-press, or demos will misfire in front of buyers.",
+   "Review gating is against Google's review policy. sunday's exact pattern (happy → Google, unhappy → private) can get a cafe's reviews filtered or the listing penalized. Ship it as routing with the Google link visible at every star level, and never say 'review gating' on the pitch page.",
+   "The existing cinematic gold-particle intro and auto-marquee violate prefers-reduced-motion expectations — vestibular dysfunction affects ~35% of adults 40+. The flagship needs a calm twin (crossfade wordmark, paused-but-swipeable marquee) plus a visible 'تقليل الحركة' switch, or the signature moment is physically sickening a slice of every majlis.",
+   "Halation audit: if the espresso ground is true #000 or body text true #FFF, gold and cream text will smear for the ~1-in-3 guests with astigmatism. Verify tokens sit near #0F0E0C ground / #E8E4DC text at >=7:1, and keep peak-bright gold for display sizes only.",
+   "Arabic renders visibly smaller than Latin at the same px (lower x-height). The AR body token needs ~10-15% more size and 1.8 line-height vs the EN token, and the file must survive Android font-scale 'Largest' + 200% zoom — competitor menus break here, so this is also a live head-to-head demo win, but only if we actually pass it.",
+   "The iOS-style drag-only bottom sheets fail WCAG 2.2 SC 2.5.7 (Dragging Movements) as built. Add a visible 44px close button, tap-on-scrim dismissal, and Android back-button handling (history.pushState) — tremor and arthritis hands currently cannot close them.",
+   "Making the marquee tappable creates a moving-target accessibility problem — pause the lane on touchstart and keep dish buttons >=44px, or the most fun feature becomes the most frustrating one.",
+   "Bilingual screen-reader correctness is currently unaddressed: without lang-of-parts spans, TalkBack reads Arabic names in an English voice and prices as digit strings. Saudi's DGA mandates WCAG 2.1 AA for government-adjacent services — a 2-3 hour markup audit turns this from liability into a pitch line.",
+   "Gimmick-overload is the biggest taste risk in the swarm: it surfaced 20+ gamification mechanics (gacha, scratch cards, streaks, collectibles, tiers, drops, secret items). The luxury restraint IS the differentiation — cap playful mechanics at 2-3 visible ones per menu and keep everything else behind opt-in drawers, or the Majlis becomes an arcade.",
+   "All localStorage 'loyalty' (stamps, tiers, gift codes) is trivially resettable and vanishes on browser data clear or a different device. Frame these as hospitality gestures with human verification lines in the WhatsApp message ('ختم الولاء: ٦/٨'), never as accounting-grade currency — and say so honestly in the owner pitch."
+  ]
+ }
+}

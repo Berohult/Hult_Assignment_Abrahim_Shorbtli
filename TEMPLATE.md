@@ -27,6 +27,10 @@ on menu-sadah.com never share carts.
 
 Open `<id>.html`, everything lives in three JS blocks near `/* ============ MENU DATA */`:
 
+0. **Config consts** — `GOOGLE_PLACE_ID` (the cafe's Google Place ID; powers the
+   post-order 4–5★ review deep link — find it via Google's Place ID finder). Until
+   set, the demo shows a "simulated" toast instead. The WhatsApp number was already
+   set by the generator.
 1. **`T` strings** — `cafeName` (neighborhood line), `tagline`, `story`
    (the 2-line founder vignette — ask the owner one question on WhatsApp:
    *"who started the cafe, and why?"* — and write these two lines from the answer;
