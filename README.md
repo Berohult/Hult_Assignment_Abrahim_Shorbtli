@@ -9,13 +9,16 @@ Gulf market compliance, menu psychology, and more. See `research/` for the full 
 
 | File | What it is |
 |---|---|
-| `index.html` | **The flagship demo** — WASM Specialty Café, 8 chapters, ordering loop, WhatsApp checkout, bottom-sheet item details with Ichiran-style customization, SFDA calories/caffeine, provenance bean cards, Reserve block, sets & flights. Zero dependencies, self-hosted fonts. |
-| `owner.html` | **The closer page** — fear-first pitch for cafe owners: PDF-vs-demo split with the live demo embedded, market ROI stats with attributions, the offer (1 month free → $49/mo), WhatsApp support proof, Monday analytics mock, 4-column comparison, founder close. Every CTA is a prefilled wa.me link. |
+| `index.html` | **The brand landing** (menu-sadah.com) — cinematic wordmark hero, signature-craft grid, live demo in a phone frame vs the blurry-PDF old way, market ROI stats with attributions, the offer (free tailored build → card unlocks a free month → SAR 199/mo), WhatsApp support proof, Monday analytics mock, 4-column comparison, founder close. Every CTA is a prefilled wa.me link. |
+| `demo.html` | **The flagship demo** — WASM Specialty Café: 10 chapters (incl. limited-time Summer Season + Ramadan-mode Iftar & Suhoor), ordering loop, WhatsApp checkout, bottom-sheet item details with Ichiran-style customization, SFDA calories/caffeine, provenance bean cards, Reserve block, sets & flights, dietary filters, loyalty stamps, text-size cycle. Zero dependencies, self-hosted fonts. |
+| `kit/new-client.mjs` + `TEMPLATE.md` | **The assembly line** — generate a tailored per-prospect demo (identity, palette preset, WhatsApp number) in one command; 30-minute personalization playbook. |
+| `owner.html` | Redirect stub to the landing (kept for previously shared links). |
 | `assets/fonts/` | Noto Kufi Arabic (display) + IBM Plex Sans Arabic (body), subset woff2, self-hosted — loads instantly on cafe Wi-Fi, no CDN. |
 | `research/DOSSIER.md` | 167 research insights across 14 dimensions, with sources. |
 | `research/SPEC.md` | The synthesized build spec ("Majlis at night" design system). |
-| `BRIEF.md` | The mission brief this branch executes. |
+| `BRIEF.md` | The mission brief this branch executes (v2 offer: SAR 199/mo). |
 | `manifest.webmanifest` + `sw.js` | PWA: add-to-home-screen + offline menu (the "works when the Wi-Fi doesn't" party trick). |
+| `qa/` | Playwright harness: `shoot.js` (console/overflow/screenshots), `sections.js` (per-section design shots), `probe-features.js` (functional assertions). |
 
 ## Deploy
 

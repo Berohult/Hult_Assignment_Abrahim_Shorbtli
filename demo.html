@@ -270,11 +270,13 @@ svg.item-ic{color:var(--gold)}
 .icon-btn.on{background:var(--gold);color:var(--on-accent);border-color:var(--gold)}
 #fsBtn{font-size:13px;font-weight:700;direction:ltr}
 
-/* kinetic chapter-title reveal */
+/* kinetic chapter-title reveal — the reveal rule must match the RTL start
+   rule's specificity (html prefix) and come after it, or Arabic titles
+   would stay clipped */
 @media (prefers-reduced-motion:no-preference){
   .ch-head.r .ch-title{clip-path:inset(0 100% 0 0);transition:clip-path .8s var(--ease) .12s}
   html[dir="rtl"] .ch-head.r .ch-title{clip-path:inset(0 0 0 100%)}
-  .ch-head.r.in .ch-title{clip-path:inset(0 0 0 0)}
+  html .ch-head.r.in .ch-title{clip-path:inset(0 0 0 0)}
 }
 
 /* ===== RISE entrance ===== */
