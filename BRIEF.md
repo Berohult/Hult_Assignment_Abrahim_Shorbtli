@@ -4,15 +4,21 @@
 
 ## Mission
 
-Menu Sadah (menu-sadah.com) is a solo-run micro-SaaS selling premium digital e-menus to Gulf cafes and restaurants. This build's single purpose: **a demo so impressive a Gulf cafe owner says yes within 30 seconds of scanning it.**
+Menu Sadah (menu-sadah.com) is a solo-run micro-SaaS selling premium digital e-menus to Gulf cafes and restaurants. Two deliverables: **a brand site that feels like a $10M premium innovative e-menu design studio** (the root, `index.html`), and **a demo so impressive a Gulf cafe owner says yes within 30 seconds of scanning it** (`demo.html`).
 
-## The sales machine it feeds
+## The sales machine it feeds (v2 — updated 2026-07-20 by Bero)
 
-1. Owner sees a tailored, insanely polished demo menu — their world, their language, their prices.
-2. Offer: the menu is **free for 1 month**, with **24/7 WhatsApp support and live edits** — anything they need.
-3. They pass through the paywall (card on file) for the free month.
-4. The menu is so personal and so good that $49/month feels silly to cancel.
-5. 100 clients × $49 = $4,900 MRR. Even at 70% retention, the machine works.
+Audience: Gulf cafe owners of every kind — trendy small spots, big brands, luxury venues, lounges. Target perception: *the most tailored, most innovative, most visually pleasing menus, easiest to set up.*
+
+1. Owner sees a tailored, insanely polished demo menu — their world, their language, their prices. Built **free**.
+2. Card on file unlocks the **full free month** — nothing charged at that point; the card only activates the trial. During it: **24/7 WhatsApp human support, unlimited edits**, changes live within minutes (promise ceiling: 24 h).
+3. Then **SAR 199/month flat** — hosting, unlimited edits, 24/7 support, monthly written report all included. Cancel with one message. Never a commission on orders.
+4. The menu is so personal and so good that 199 SAR/month feels silly to cancel.
+5. 100 clients × SAR 199 ≈ SAR 19,900 (~$5,300) MRR. Even at 70% retention, the machine works.
+
+Positioning logic (Bero's words): honest cheap pricing — nobody can get this level of design service + innovation for free elsewhere; the 199 with unlimited edits and 24/7 WhatsApp is the diamond wedge. Enterprise rivals charge SAR 295–3,000+ or take order commissions; cheap self-serve tools leave the owner doing everything alone.
+
+> Historical note: pricing was $49/mo (~SAR 184) until 2026-07-20; all customer-facing copy now says SAR 199. Do not reintroduce dollar pricing.
 
 ## Phase 1 — Global research swarm
 
