@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>مقهى وَسْم — المنيو | WASM Specialty Café</title>
 <meta name="description" content="منيو مقهى وَسْم — قهوة مختصة، قهوة سعودية، وحلا. Specialty coffee, Saudi qahwa & desserts.">
-<meta name="theme-color" content="#171310">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23171310'/%3E%3Ctext x='32' y='42' font-size='30' text-anchor='middle' fill='%23C9A25C' font-family='sans-serif'%3E%D9%88%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#FAF6EE">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23FAF6EE'/%3E%3Ctext x='32' y='42' font-size='30' text-anchor='middle' fill='%23A61C2B' font-family='sans-serif'%3E%D9%88%3C/text%3E%3C/svg%3E">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/noto-kufi-arabic-arabic-700-normal.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/ibm-plex-sans-arabic-arabic-400-normal.woff2" crossorigin>
@@ -31,17 +31,17 @@
   src:url(assets/fonts/ibm-plex-sans-arabic-latin-600-normal.woff2) format("woff2");
   unicode-range:U+0000-00FF,U+2000-206F,U+20A0-20CF}
 
-/* ===== Tokens — "Majlis at night" ===== */
+/* ===== Tokens — "Khuyūt خيوط — Sadu threads on morning wool" ===== */
 :root{
-  --bg:#171310; --bg2:#1C1712; --card:#211A13; --card2:#292018;
-  --ink:#EFE7D8; --ink2:#CFC3AC; --muted:#9C8C74;
-  --gold:#C9A25C; --gold2:#E2C283; --sand:#C8A882;
-  --hair:rgba(201,162,92,.18); --hair2:rgba(201,162,92,.34);
-  --on-accent:#1D1712; --glass:rgba(23,19,16,.72); --glass2:rgba(38,30,21,.78);
-  --glass3:rgba(38,30,21,.9); --scrimc:rgba(10,8,6,.6);
-  --glow:rgba(226,194,131,.35); --glow2:rgba(226,194,131,.8);
-  --watermark:rgba(201,162,92,.045); --tint:rgba(201,162,92,.10); --tint2:rgba(201,162,92,.08);
-  --green:#7FBE9E; --shadow:0 18px 50px rgba(0,0,0,.55);
+  --bg:#FAF6EE; --bg2:#F3ECDD; --card:#FFFDF6; --card2:#F5EDDD;
+  --ink:#201B16; --ink2:#4A4238; --muted:#665C4E;
+  --gold:#A61C2B; --gold2:#BE3144; --sand:#8A5A18;
+  --hair:rgba(32,27,22,.14); --hair2:rgba(166,28,43,.28);
+  --on-accent:#FFF6EC; --glass:rgba(250,246,238,.78); --glass2:rgba(255,253,246,.84);
+  --glass3:rgba(255,253,246,.93); --scrimc:rgba(38,28,18,.45);
+  --glow:rgba(201,138,42,.32); --glow2:rgba(166,28,43,.50);
+  --watermark:rgba(166,28,43,.05); --tint:rgba(201,138,42,.10); --tint2:rgba(201,138,42,.07);
+  --green:#2F6B44; --shadow:0 18px 44px rgba(63,46,24,.16);
   --f-d:"Noto Kufi Arabic",system-ui,sans-serif;
   --f-b:"IBM Plex Sans Arabic",system-ui,sans-serif;
   --ease:cubic-bezier(.32,.72,.28,1); --dur:.42s;
@@ -51,7 +51,7 @@
 html{background:var(--bg);scroll-behavior:smooth}
 body{
   margin:0;background:
-    radial-gradient(90% 40% at 50% 0%,#221A11 0%,transparent 70%),
+    radial-gradient(90% 40% at 50% 0%,#F6EBD3 0%,transparent 70%),
     var(--bg);
   color:var(--ink);font-family:var(--f-b);font-size:15.5px;line-height:1.75;
   -webkit-font-smoothing:antialiased;
@@ -152,9 +152,23 @@ html[dir="rtl"] .parade-track{animation-name:marquee-rtl}
   text-wrap:balance}
 .ch-sub{font-size:13px;color:var(--muted);margin:2px 0 16px}
 .divider{display:block;margin:6px auto 0;color:var(--hair2);width:100%}
+@media (prefers-reduced-motion:no-preference){
+  .divider path{stroke-dasharray:260;stroke-dashoffset:260;
+    transition:stroke-dashoffset .9s var(--ease) .1s}
+  html[lang="ar"] .divider path{stroke-dashoffset:-260}
+  .divider.woven path{stroke-dashoffset:0}
+  .price.glint{background:linear-gradient(100deg,var(--gold2) 40%,#E2A84B 50%,var(--gold2) 60%) 120% 0/250% 100% no-repeat;
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+    animation:glint .9s var(--ease) both}
+  @keyframes glint{to{background-position:-20% 0}}
+  html[lang="ar"] .price.glint{animation-name:glintR}
+  @keyframes glintR{from{background-position:-20% 0}to{background-position:120% 0}}
+  .price.glint s{background:none;-webkit-text-fill-color:var(--muted)}
+}
+.ob-cta:active,.sheet-add:active,.addb:active{filter:brightness(.85)}
 
 /* item cards */
-svg.item-ic{color:var(--gold)}
+svg.item-ic{color:var(--sand)}
 .items{display:flex;flex-direction:column;gap:14px}
 .card{
   border:1px solid var(--hair);border-radius:20px;background:var(--card);
@@ -191,7 +205,7 @@ svg.item-ic{color:var(--gold)}
   position:absolute;bottom:14px;inset-inline-end:14px;z-index:2;
   width:36px;height:36px;border-radius:999px;background:var(--gold);color:var(--on-accent);
   display:grid;place-items:center;font-weight:700;font-size:20px;line-height:1;
-  transition:transform .18s var(--ease);box-shadow:0 6px 18px rgba(0,0,0,.4)}
+  transition:transform .18s var(--ease);box-shadow:0 6px 18px rgba(63,46,24,.22)}
 .addb:active{transform:scale(.9)}
 .card.row-card{display:flex;align-items:center;gap:0}
 .card.row-card .body{flex:1;padding:13px 18px}
@@ -213,8 +227,16 @@ svg.item-ic{color:var(--gold)}
 .method b{display:block;color:var(--sand);font-family:var(--f-d);font-weight:500;font-size:12px}
 
 /* reserve */
-.reserve{border:1px solid var(--gold);border-radius:20px;padding:4px;margin-top:18px;
-  background:linear-gradient(160deg,var(--tint),transparent 55%)}
+.reserve{border:1px solid transparent;border-radius:20px;padding:4px;margin-top:18px;
+  position:relative;background:linear-gradient(160deg,var(--tint),transparent 55%)}
+.stitch{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.stitch rect{width:calc(100% - 3px);height:calc(100% - 3px);
+  fill:none;stroke:var(--gold);stroke-width:1.5;stroke-dasharray:7 6;stroke-linecap:round}
+@media (prefers-reduced-motion:no-preference){
+  .stitch rect{animation:stitch 1.8s linear infinite}
+  @keyframes stitch{to{stroke-dashoffset:-26}}
+  html[lang="ar"] .stitch rect{animation-direction:reverse}
+}
 .reserve-in{border:1px dashed var(--hair2);border-radius:16px;padding:16px 18px}
 .reserve h3{font-family:var(--f-d);font-weight:700;font-size:16px;color:var(--gold2);margin:0}
 .reserve .note{font-size:11.5px;color:var(--sand);margin:2px 0 10px}
@@ -224,9 +246,9 @@ svg.item-ic{color:var(--gold)}
 
 /* qahwa heritage block */
 .heritage{border:1px solid var(--hair);border-radius:20px;padding:18px;
-  background:radial-gradient(120% 100% at 50% 0%,rgba(107,74,36,.35),transparent 65%),var(--card);
+  background:radial-gradient(120% 100% at 50% 0%,rgba(201,138,42,.16),transparent 65%),var(--card);
   display:flex;gap:16px;align-items:center;margin-bottom:14px}
-.heritage svg{width:52px;height:52px;flex:none;color:var(--gold)}
+.heritage svg{width:52px;height:52px;flex:none;color:var(--sand)}
 .heritage .h-t{font-family:var(--f-d);font-weight:500;font-size:14px;color:var(--ink)}
 .heritage .h-s{font-size:12px;color:var(--muted);margin-top:3px;line-height:1.9}
 
@@ -330,7 +352,7 @@ svg.item-ic{color:var(--gold)}
 .opt .pp{font-size:10.5px;opacity:.75}
 .sheet-cta-row{display:flex;gap:12px;align-items:center;margin-top:24px;
   position:sticky;bottom:0;background:var(--bg2);padding:10px 0;
-  box-shadow:0 -14px 18px -10px rgba(10,8,6,.55)}
+  box-shadow:0 -14px 18px -10px rgba(63,46,24,.14)}
 .qty{display:flex;align-items:center;gap:2px;border:1px solid var(--hair2);border-radius:14px}
 .qty button{width:38px;height:44px;font-size:19px;color:var(--gold2)}
 .qty span{min-width:22px;text-align:center;font-weight:600;font-variant-numeric:tabular-nums}
@@ -562,29 +584,29 @@ var CHAPTERS = [
 
 /* art washes */
 var ART = {
-  saffron:"radial-gradient(130% 95% at 50% 0%,rgba(158,102,28,.55),transparent 62%)",
-  rose:"radial-gradient(130% 95% at 50% 0%,rgba(122,59,74,.5),transparent 62%)",
-  choc:"radial-gradient(130% 95% at 50% 0%,rgba(94,54,30,.6),transparent 62%)",
-  rain:"radial-gradient(130% 95% at 50% 0%,rgba(74,90,102,.5),transparent 62%)",
-  clay:"radial-gradient(130% 95% at 50% 0%,rgba(122,74,40,.5),transparent 62%)",
-  qahwa:"radial-gradient(130% 95% at 50% 0%,rgba(130,90,40,.5),transparent 62%)",
-  dates:"radial-gradient(130% 95% at 50% 0%,rgba(94,62,32,.55),transparent 62%)",
-  ethiopia:"radial-gradient(130% 95% at 50% 0%,rgba(92,104,54,.45),transparent 62%)",
-  colombia:"radial-gradient(130% 95% at 50% 0%,rgba(110,86,48,.5),transparent 62%)",
-  yemen:"radial-gradient(130% 95% at 50% 0%,rgba(112,66,50,.5),transparent 62%)",
-  matcha:"radial-gradient(130% 95% at 50% 0%,rgba(78,110,64,.45),transparent 62%)",
-  pom:"radial-gradient(130% 95% at 50% 0%,rgba(112,50,66,.5),transparent 62%)",
-  yuzu:"radial-gradient(130% 95% at 50% 0%,rgba(122,110,44,.42),transparent 62%)",
-  mint:"radial-gradient(130% 95% at 50% 0%,rgba(56,100,86,.45),transparent 62%)",
-  cake:"radial-gradient(130% 95% at 50% 0%,rgba(148,106,44,.5),transparent 62%)",
-  kunafa:"radial-gradient(130% 95% at 50% 0%,rgba(134,96,40,.5),transparent 62%)",
-  basque:"radial-gradient(130% 95% at 50% 0%,rgba(104,78,52,.5),transparent 62%)",
-  milkpud:"radial-gradient(130% 95% at 50% 0%,rgba(104,92,76,.45),transparent 62%)",
-  luqaimat:"radial-gradient(130% 95% at 50% 0%,rgba(140,92,32,.5),transparent 62%)",
-  shak:"radial-gradient(130% 95% at 50% 0%,rgba(136,66,40,.5),transparent 62%)",
-  crois:"radial-gradient(130% 95% at 50% 0%,rgba(134,110,58,.45),transparent 62%)",
-  toastw:"radial-gradient(130% 95% at 50% 0%,rgba(114,84,46,.5),transparent 62%)",
-  set:"radial-gradient(130% 95% at 50% 0%,rgba(120,96,56,.4),transparent 62%)"
+  saffron:"radial-gradient(130% 95% at 50% 0%,rgba(201,138,42,.24),transparent 62%)",
+  rose:"radial-gradient(130% 95% at 50% 0%,rgba(198,84,100,.20),transparent 62%)",
+  choc:"radial-gradient(130% 95% at 50% 0%,rgba(141,86,48,.22),transparent 62%)",
+  rain:"radial-gradient(130% 95% at 50% 0%,rgba(84,104,96,.16),transparent 62%)",
+  clay:"radial-gradient(130% 95% at 50% 0%,rgba(178,96,58,.22),transparent 62%)",
+  qahwa:"radial-gradient(130% 95% at 50% 0%,rgba(176,116,48,.24),transparent 62%)",
+  dates:"radial-gradient(130% 95% at 50% 0%,rgba(146,94,42,.24),transparent 62%)",
+  ethiopia:"radial-gradient(130% 95% at 50% 0%,rgba(150,148,64,.18),transparent 62%)",
+  colombia:"radial-gradient(130% 95% at 50% 0%,rgba(166,120,58,.22),transparent 62%)",
+  yemen:"radial-gradient(130% 95% at 50% 0%,rgba(150,74,56,.22),transparent 62%)",
+  matcha:"radial-gradient(130% 95% at 50% 0%,rgba(122,148,74,.22),transparent 62%)",
+  pom:"radial-gradient(130% 95% at 50% 0%,rgba(178,52,80,.20),transparent 62%)",
+  yuzu:"radial-gradient(130% 95% at 50% 0%,rgba(186,160,52,.20),transparent 62%)",
+  mint:"radial-gradient(130% 95% at 50% 0%,rgba(88,138,110,.18),transparent 62%)",
+  cake:"radial-gradient(130% 95% at 50% 0%,rgba(196,150,54,.22),transparent 62%)",
+  kunafa:"radial-gradient(130% 95% at 50% 0%,rgba(188,128,44,.24),transparent 62%)",
+  basque:"radial-gradient(130% 95% at 50% 0%,rgba(160,110,66,.20),transparent 62%)",
+  milkpud:"radial-gradient(130% 95% at 50% 0%,rgba(158,132,96,.16),transparent 62%)",
+  luqaimat:"radial-gradient(130% 95% at 50% 0%,rgba(192,124,36,.24),transparent 62%)",
+  shak:"radial-gradient(130% 95% at 50% 0%,rgba(186,84,48,.22),transparent 62%)",
+  crois:"radial-gradient(130% 95% at 50% 0%,rgba(184,140,60,.22),transparent 62%)",
+  toastw:"radial-gradient(130% 95% at 50% 0%,rgba(164,116,58,.20),transparent 62%)",
+  set:"radial-gradient(130% 95% at 50% 0%,rgba(160,128,84,.16),transparent 62%)"
 };
 
 /* ================ SVG icons ================ */
@@ -908,7 +930,7 @@ function renderMenu(){
     if(c.id==="brew"){
       out+='<div class="prov">'+provs.map(cardHtml).join("")+'</div>';
       out+='<div class="items" style="margin-top:14px">'+others.map(cardHtml).join("")+'</div>';
-      out+='<div class="reserve r"><div class="reserve-in">'
+      out+='<div class="reserve r"><svg class="stitch" aria-hidden="true"><rect x="1.5" y="1.5" rx="18"/></svg><div class="reserve-in">'
         +'<h3>'+t(T.reserveTitle)+'</h3><div class="note">'+t(T.reserveNote)+' · '+t(T.roastNote)+'</div>'
         +'<div class="ritem"><span class="nm" style="font-size:15px">'+(LANG==="ar"?"بنما جيشا — مغسولة":"Panama Gesha — washed")+'<br><span class="tnote" style="border:0;padding:0;background:none">'+(LANG==="ar"?"ياسمين · برغموت":"jasmine · bergamot")+'</span></span><span class="price">'+num(65)+'</span></div>'
         +'<div class="ritem"><span class="nm" style="font-size:15px">'+(LANG==="ar"?"يمنية — دفعة المزاد":"Yemenia — auction lot")+'<br><span class="tnote" style="border:0;padding:0;background:none">'+(LANG==="ar"?"سلالة أفضل بن اليمن":"Best-of-Yemen lineage")+'</span></span><span class="price">'+num(85)+'</span></div>'
@@ -1015,14 +1037,36 @@ function observeSpy(){
   setActiveChip(CHAPTERS[0].id);
 }
 
-/* ================ RISE ================ */
-var riseIO;
+/* ================ RISE + weave + glint ================ */
+var riseIO,weaveIO,glintIO;
 function observeRise(){
   if(riseIO) riseIO.disconnect();
   riseIO=new IntersectionObserver(function(es){
     es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add("in"); riseIO.unobserve(en.target);} });
   },{rootMargin:"0px 0px -8% 0px"});
   document.querySelectorAll(".r").forEach(function(el){riseIO.observe(el);});
+
+  if(weaveIO) weaveIO.disconnect();
+  weaveIO=new IntersectionObserver(function(es){
+    es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add("woven"); weaveIO.unobserve(en.target);} });
+  },{threshold:.5});
+  document.querySelectorAll(".divider").forEach(function(el){weaveIO.observe(el);});
+
+  if(glintIO) glintIO.disconnect();
+  if(matchMedia("(prefers-reduced-motion: no-preference)").matches){
+    glintIO=new IntersectionObserver(function(es){
+      es.forEach(function(en){
+        if(!en.isIntersecting) return;
+        var p=en.target.querySelector(".price");
+        if(p&&!p.dataset.glinted){
+          document.querySelectorAll(".price.glint").forEach(function(x){x.classList.remove("glint");});
+          p.dataset.glinted=1;p.classList.add("glint");
+          p.addEventListener("animationend",function(){p.classList.remove("glint");},{once:true});
+        }
+      });
+    },{rootMargin:"-42% 0px -42% 0px"});
+    document.querySelectorAll(".card").forEach(function(c){glintIO.observe(c);});
+  }
 }
 
 /* ================ Breakfast daypart ================ */

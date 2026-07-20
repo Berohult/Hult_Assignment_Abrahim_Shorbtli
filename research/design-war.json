@@ -1,0 +1,1011 @@
+{
+ "research": [
+  {
+   "topic": "saudi-cafe-instagram",
+   "insights": [
+    {
+     "finding": "The hyped Saudi specialty cafes of 2024-2026 (Camel Step, Elixir Bunn, Roasting House) signal status through EARTH + HERITAGE MATERIALS, not dark luxury: Camel Step's Hail shop (by Riyadh artist Faris Alosaimi) won an ArchDaily Building of the Year 2025 award using local granite and mud-heritage renovation; Elixir Bunn's AZAZ Architects flagship turns a column into Islamic arches finished in traditional MUD PLASTER, with Italian terrazzo floors, a deep-blue spiral staircase and bronze lighting.",
+     "design_implication": "Ditch espresso-brown/gold entirely. The credible premium codes are mud-plaster texture, sand/clay tones, terrazzo speckle, and ONE saturated jewel accent (deep blue or bronze) — translate these into the e-menu as warm plaster backgrounds, arch-shaped card masks, and a single bold accent color.",
+     "colors": [
+      "mud-plaster sand",
+      "terrazzo cream",
+      "deep blue (Elixir Bunn staircase)",
+      "bronze"
+     ],
+     "source": "sandytimes.ae, worldarchitecture.org, archdaily.com/1017684"
+    },
+    {
+     "finding": "The Saudi Instagram/TikTok 'aesthetic cafe' canon is light, not dark: ALF (serene all-white minimalism), O'PO (pastel minimalist), Fabrica De Cafe (minimalist), Ashjar (greenery-filled), Capri Cafe (plants + cherry blossom centerpiece). TikTok discover pages like 'Riyadh Cafe Aesthetic' and 'Cozy Cafe in Riyadh' are dominated by bright cream/white spaces that photograph well.",
+     "design_implication": "The e-menu's default look should be a bright, airy light theme (cream/off-white base) because that is what Saudi Gen-Z photographs and shares; a dark mode can exist but must not be the identity. Food photos should sit on light, sun-lit backgrounds like the cafes themselves.",
+     "colors": [
+      "white",
+      "cream",
+      "pastels",
+      "soft green"
+     ],
+     "source": "saudimoments.com, cosmopolitanme.com, tiktok.com/discover/riyadh-cafe-aesthetic"
+    },
+    {
+     "finding": "%Arabica (first KSA store at The Zone, Takhassusi, Riyadh) exports the Kyoto crisp-white + glowing sign formula to Saudi and is hugely popular; a cited survey says 59% of consumers prefer clean minimalist coffee-shop design, and KPMG reports 78% of Saudi consumers aged 18-34 are drawn to minimalist specialty cafes as symbols of modernity.",
+     "design_implication": "Minimalism is the mainstream premium signal in Saudi, but pure white Kyoto-clones are now table stakes — the redesign should keep radical whitespace and typographic confidence while differentiating with Saudi material warmth (clay, sand, Sadu geometry) that %Arabica cannot claim.",
+     "colors": [
+      "#FFFFFF crisp white"
+     ],
+     "source": "arabica.design, getchee.com, dikurniawanarif.medium.com"
+    },
+    {
+     "finding": "The newest wave (2025-2026) is heritage-industrial and creative-district led: ORIGIN cafe opened May 2026 in Riyadh's JAX District (repurposed warehouses in Diriyah, designed by Dubai's Aylul Studio); Diriyah Gate itself is being built in Najdi mud-brick style; The Roasting House is described as 'funky, heritage, educational'.",
+     "design_implication": "'Mind-boggling' for Saudi owners in 2026 = JAX-district energy: raw texture + gallery-like curation + Najdi heritage remixed. The menu can borrow this via editorial art-direction — big Arabic display type treated like gallery signage, generous negative space, tactile paper/plaster textures instead of glossy gradients.",
+     "source": "superfuture.com/2026/05, newlinesmag.com"
+    },
+    {
+     "finding": "Najdi visual vocabulary is the go-to heritage layer in contemporary Saudi branding: triangular openings/battlements, geometric carved motifs, mud-brick, courtyard logic; Sadu weaving patterns (Bedouin geometric bands) are widely reinterpreted. Saudi heritage-cafe identity guides explicitly recommend 'Najdi clay, warm sand, vintage wood brown with creamy white/soft beige' palettes.",
+     "design_implication": "Use Najdi triangles and Sadu-style geometric bands as section dividers, category icons, and loading/transition motifs in the e-menu — a culturally-owned ornament system no Western template has, instantly readable as Saudi to local customers.",
+     "colors": [
+      "Najdi clay",
+      "warm sand",
+      "creamy white",
+      "soft beige"
+     ],
+     "source": "basirahcreative.com, wikipedia.org/Najdi_architecture, nicholas.design"
+    },
+    {
+     "finding": "Desert-modern palettes with concrete hex anchors dominate the reference space for Saudi/regional cafe identity: sandy beige #F2E6D0, terracotta/clay #C97C5D, ochre/gold #C98A2A, deep canyon brown #2E2A27 or near-black #14110F for contrast; most-used pairings are beige+terracotta, beige+sage, beige+charcoal.",
+     "design_implication": "A concrete replacement palette for the rejected brown+gold: base #F2E6D0 sand, ink #14110F, hero accent #C97C5D terracotta, secondary sage green, restrained ochre #C98A2A only for micro-highlights — appetizing, warm, photographs food well, and reads Saudi-desert rather than hotel-lobby.",
+     "colors": [
+      "#F2E6D0",
+      "#C97C5D",
+      "#C98A2A",
+      "#2E2A27",
+      "#14110F",
+      "sage green"
+     ],
+     "source": "media.io desert palettes, thecolorpalettestudio.com, basirahcreative.com"
+    },
+    {
+     "finding": "Homegrown chains with 'clean aesthetic + strong branding' are the growth story: Half Million is now one of the most recognizable Saudi specialty concepts nationally precisely because of contemporary design and strong branding resonating with younger consumers; Draft Cafe (founded by interior designer Wadha AlRashid, KAFD flagship) sells 'designed space as lifestyle' with wood, plants, neutrals and books; the Kingdom is heading toward 5,350+ coffee outlets by 2027, mostly Saudi-founded.",
+     "design_implication": "Saudi cafe owners buying the e-menu see themselves as design-led brands, not restaurants — the demo must feel like a branded product page (custom type, motion, art direction) rather than a generic ordering UI, and should look like it belongs in Half Million/Draft's world of neutral warmth + bold logotype.",
+     "colors": [
+      "neutral warm tones",
+      "wood",
+      "plant green"
+     ],
+     "source": "superfuture.com, perfectdailygrind.com/2025/11, accio.com trendy-cafe-riyadh"
+    },
+    {
+     "finding": "Award-winning Saudi Arabic-coffee branding on Behance (e.g. Ubayyah, 461 appreciations) draws directly from Najd ancient-house architecture; premium executions pair intricate Arabic calligraphy with restrained luxury (one example: black box + gold calligraphy + a refined green band). Modern Arabic display typography is the hero element across these projects.",
+     "design_implication": "Make Arabic typography the star of the RTL-first menu — a large expressive Arabic display face for category headers and dish names (calligraphy-informed but modern), with Latin as the quiet secondary; this is the single strongest 'culturally resonant premium' lever and differentiates from every English-first template.",
+     "colors": [
+      "black",
+      "gold calligraphy accent",
+      "refined green band"
+     ],
+     "source": "behance.net/gallery/168706533 (Ubayyah), worldbranddesign.com"
+    },
+    {
+     "finding": "Matcha and photogenic 'coffee moments' are the beverage-culture engine: matcha and iced signature drinks are thriving in Saudi cafes (mirroring global spikes like Caffe Nero's 1.3M matcha drinks summer 2025), and Saudi Gen-Z curates shareable drink shots; cafes double as study/work/social spaces where the menu is browsed at length.",
+     "design_implication": "Give drinks cinematic full-bleed photography cards with matcha-green and pistachio accent moments in the palette; design the menu to be lingered over (smooth scroll, delightful micro-interactions) since Saudi customers treat the cafe visit as a multi-hour experience worth sharing.",
+     "colors": [
+      "matcha green",
+      "pistachio"
+     ],
+     "source": "hardtank.com, tastewise.io, perfectdailygrind.com"
+    },
+    {
+     "finding": "The overall 2026 aesthetic formula visible across sources is 'Scandinavian/Japandi minimalism x Saudi heritage': Brew92 spaces by Liqui Design mix reclaimed wood, green foliage, blue tones and industrial parts, with their newest Jeddah location explicitly described as 'Japandi'; commentary describes the urban canon as Scandinavian minimalism + Japanese brewing + local heritage cues.",
+     "design_implication": "The winning direction is 'Desert Japandi': Japandi restraint and airiness executed in Saudi materials (sand, clay, palm green, mud plaster) with Najdi/Sadu geometry and hero Arabic type — modern enough to feel global, rooted enough to feel unmistakably Saudi, and far from the rejected dark-brown hotel look.",
+     "colors": [
+      "reclaimed wood brown",
+      "foliage green",
+      "muted blue",
+      "sand"
+     ],
+     "source": "luxurious-studio.com, liquidesign.co.uk, dikurniawanarif.medium.com"
+    }
+   ]
+  },
+  {
+   "topic": "riyadh-season",
+   "insights": [
+    {
+     "finding": "Riyadh Season is a genuine mass-culture phenomenon, not a niche event: 16M+ visitors in 2024 and a record ~20M in 2025 (GEA/Turki Al-Sheikh figures), with 2M in the first week alone. Boulevard City/World is its beating heart in Hittin district, open 4PM-2AM — Saudi social life is fundamentally nocturnal.",
+     "design_implication": "A menu that assumes a dark, night-out context is culturally correct — but it should feel like Boulevard-at-night (electric, kinetic, glowing) rather than hotel-lobby dark. Dark mode as 'night city' not 'luxury leather'. Peak menu usage will be 8PM-1AM on phones outdoors.",
+     "source": "spa.gov.sa / gea.gov.sa / economymiddleeast.com / visitsaudi.com"
+    },
+    {
+     "finding": "The Riyadh Season visual language is deep night-black canvases hit with saturated multi-hue neon — the seasonal logos are colorful ribbon/gradient marks (purple-magenta-cyan-orange spectrums) around a hexagon rooted in Islamic geometry, explicitly described as mixing 'Eastern typography' with modern vibrancy. Boulevard's own BLVD brand leans hard on purple.",
+     "design_implication": "Signature palette move: near-black base (#0A0A14-ish night sky) + one dominant electric hue (Boulevard purple ~#7B2CBF/#A020F0 territory or magenta ~#E9007F) + a second accent (cyan ~#00E5FF or amber) used sparingly as 'neon' glows on CTAs, price chips, and category dividers. Islamic-geometry hexagon can become the menu's card/badge motif — culturally rooted, not clip-art.",
+     "colors": [
+      "#0A0A14",
+      "#7B2CBF",
+      "#E9007F",
+      "#00E5FF",
+      "#FFB300"
+     ],
+     "source": "logos.fandom.com / wasmenia.com / saudipedia.com / blvdcity.com"
+    },
+    {
+     "finding": "The emotional core of these events is LIGHT IN MOTION: Guinness-record drone shows (7,998 drones), 3,500-drone opening 'aerial ballets', the glowing Boulevard World sphere, and Noor Riyadh — the world's largest light-art festival (~3M visitors/yr, projection-mapped skyscrapers, theme 'In the Blink of an Eye'). Saudis photograph light reflections; the lit-up sphere and neon Shibuya replica are the most-shared spots.",
+     "design_implication": "Motion is the premium signal, not gold foil. Borrow festival-grade light behavior at menu scale: soft animated glow/gradient shifts on the hero, shimmer on featured items, a subtle 'light sweep' on category change. Keep it slow and ambient (Noor-style art light), never blinking casino light — that's the line between festival-grade and circus.",
+     "source": "arabnews.com / cyberdrone.com / en.wikipedia.org/wiki/Noor_Riyadh / dreamstime.com"
+    },
+    {
+     "finding": "Boulevard World's architecture of desire is ZONING: 24+ themed sub-zones (Tokyo/Shibuya neon crossing, Anime Town, new Indonesia/South Korea/Kuwait pavilions), each a self-contained world with its own color mood, that people traverse like a journey. The 2023 season branded itself with the slogan 'Big Time' and spun out sub-identities per zone (Wonder Garden, Riyadh Zoo) from one master system.",
+     "design_implication": "Structure the menu as zones, not a list: each category (espresso bar, matcha, Saudi coffee, dessert) gets its own subtle color-world/gradient identity under one master system — the Boulevard trick of one brand, many moods. Category navigation becomes an act of 'entering a zone', which makes a long menu feel like exploration instead of scrolling.",
+     "source": "boulevardriyadhsa.com / thenationalnews.com / saudigazette.com.sa / behance.net (Wonder Garden, Riyadh Zoo identities)"
+    },
+    {
+     "finding": "Festival branding in Saudi is drop-culture: Pepsi released Riyadh Season limited-edition cans and a glow-in-the-dark 'Night Edition' with live T-shirt printing stamped with the exact pickup time; seasons re-brand every year with a fresh logo/theme, making each edition collectible and urgent.",
+     "design_implication": "Give the menu a 'seasonal drop' mechanic: a visually distinct limited-time section ('توقيع الموسم' / Season Signature) with its own neon badge and countdown-flavored styling. Owners love it because it moves LTOs; customers love it because Riyadh Season trained them that limited = exciting. The menu skin itself can be positioned to owners as 'seasonally refreshable'.",
+     "source": "behance.net (Pepsi Riyadh Season can) / goal.com / timeoutriyadh.com / sustg.com"
+    },
+    {
+     "finding": "Riyadh's cafe scene is already converging with this aesthetic: third-wave cafes are 'engineered to be photographed', with neon signage, bright monochrome interiors (e.g. all-blue cafes with matching cups), and dramatic drink plating — driven by Vision 2030 lifestyle opening and a social-media-native young majority.",
+     "design_implication": "A neon-night menu will not feel alien to cafe owners — it matches where their interiors are already going. Design menu item cards as 'shareable frames': big luminous product photography on dark ground with a thin neon keyline, so screenshotting an item looks like an Instagram story asset. Appetizing warm light on the food itself, cool neon only on the chrome around it.",
+     "source": "houseofsaud.com / factmagazines.com / newlinesmag.com / listmag.com"
+    },
+    {
+     "finding": "The restraint lesson: what separates Riyadh Season/Noor Riyadh from a funfair is curation — black sky as negative space, one hero light statement at a time (a sphere, a projection, a drone logo), Islamic geometric grounding, and premium typography. The 'circus' failure mode (everything flashing at once) is exactly what their art direction avoids.",
+     "design_implication": "Rule set for the redesign: max one glowing element per viewport; neon reserved for interactive/featured elements; generous black space (think night sky, 60%+ of screen); Arabic display type as the hero graphic (RTL-first, large, luminous) since 'Eastern typography as centerpiece' is the festival's own move. This yields mind-boggling-but-premium instead of bazaar.",
+     "colors": [
+      "#000000",
+      "#0A0A14"
+     ],
+     "source": "forbes.com (Noor Riyadh) / riyadhart.rcrc.gov.sa / logos.fandom.com"
+    }
+   ]
+  },
+  {
+   "topic": "appetite-color",
+   "insights": [
+    {
+     "finding": "Warm hues (red, orange, yellow) measurably stimulate appetite — red raises heart rate/arousal and evolutionary priors link red to ripe, calorie-dense food, while blue is the closest thing to a universal appetite suppressant (almost no natural foods are blue; blue/purple signals mold/toxicity, and blue plates increase satiety). This is why McDonald's, Pizza Hut, and nearly all food commerce brands run red/yellow.",
+     "design_implication": "Keep the e-menu's food-adjacent surfaces and CTAs in a warm register — appetite accents in the red-orange-amber-saffron band — and never use blue near dish imagery or item cards; reserve blue only for trust-utility chrome if at all.",
+     "colors": [
+      "red",
+      "orange",
+      "yellow",
+      "avoid: blue"
+     ],
+     "source": "biologyinsights.com, wisk.ai, colorpsychology.org"
+    },
+    {
+     "finding": "Gastrophysics (Charles Spence, Oxford) hard evidence: sweet is crossmodally mapped to red/pink, sour to yellow-green, bitter to black; red backgrounds/packaging heighten perceived sweetness, and both hue AND saturation of surrounding color shift flavor expectation. A 2025 sensory study found red plating got highest acceptance (7.27) while blue plating triggered 'disgusted' (72%) and 'no appetite' (74%) responses — and plate/background color changes perceived food color via simultaneous contrast.",
+     "design_implication": "Card/background color behind food photos is a flavor lever, not decoration: put desserts/sweet drinks on warm rose-red tints, coffee on cream/warm-white (white plates are the restaurant-industry default because food photographs most vividly against them), and treat each category's card tint as its 'plate'.",
+     "colors": [
+      "red/pink = sweet",
+      "yellow-green = sour",
+      "black = bitter",
+      "white = neutral plate"
+     ],
+     "source": "Spence & Levitan 2021 (SAGE), PMC12651177, Nature Sci Reports"
+    },
+    {
+     "finding": "Luxury color code research: premium palettes are defined by restraint — 3-4 colors max, deep/muted/metallic tones used sparingly; gold, navy, deep burgundy, and onyx appear in 80%+ of premium brand identities, and ~60% of consumers rate product quality higher when paired with 'elegant' colors like black. But 'expensive' comes from desaturation + few colors + generous space, not from the literal black+gold cliché.",
+     "design_implication": "The rejected espresso-brown+gold failed as generic 'hotel luxury', not because premium cues are wrong — keep the mechanics (restraint, muted depth, one metallic-adjacent accent, whitespace) but swap the cliché pigments for a culturally specific palette; luxury = fewer, quieter, more deliberate colors.",
+     "colors": [
+      "#000000-adjacent onyx",
+      "gold (sparingly)",
+      "deep burgundy",
+      "navy"
+     ],
+     "source": "zoviz.com luxury color guide, zigpoll, muffingroup"
+    },
+    {
+     "finding": "Sunlight/mobile evidence is decisive against dark-first menus: light mode rates higher on comfort and readability for reading in daylight; dark screens turn into mirrors outdoors; ~42% of top Android apps FAIL WCAG contrast in dark mode (gray-on-dark traps) vs light mode where 4.5:1 body-text contrast is easy to hit. Saudi cafes = extreme ambient brightness (sun terraces, bright interiors).",
+     "design_implication": "Flip the demo to a light, warm-cream base as the default (near-black warm-charcoal text, not pure black), with dark mode as an optional evening toggle — this simultaneously fixes sunlight readability, WCAG 4.5:1 compliance, and the 'food looks better on light' problem.",
+     "colors": [
+      "warm off-white base",
+      "near-black #1a-2a charcoal text",
+      "4.5:1 minimum contrast"
+     ],
+     "source": "AEL Data, gadgethacks dark-mode research roundup, WCAG guides"
+    },
+    {
+     "finding": "Middle East color semantics: green = Islam/peace/prosperity (Prophet's robe; Saudi flag green + white = purity), white = purity, blue = protection/spirituality — and a PLOS One study of Saudi coffee-shop signage ('On the road to Mecca') shows Saudi cafe branding is an active negotiation of heritage + global hybrid identity. Barn's rebrand green literally matches Starbucks green; Camel Step and Half Million win via 'aspirational accessibility' blending Saudi cultural symbols with global minimalism.",
+     "design_implication": "A desaturated sage/olive green accent is culturally safe and locally resonant (Islam, the flag, Barn's precedent) without being appetite-hostile like blue; the winning register for Saudi owners is exactly this heritage-modern hybrid, not imported Euro-luxury.",
+     "colors": [
+      "Saudi flag green #165d31",
+      "sage/olive accents",
+      "white"
+     ],
+     "source": "PLOS One 10.1371/journal.pone.0309829, soulofsaudi.com, milknetwork.com/work/barn-s-cafe"
+    },
+    {
+     "finding": "'Diriyah Tan' — an official Pantone color created by Diriyah Company with the Pantone Color Institute — is an earthy golden mudbrick tan formulated from actual Najdi mudbrick sampled at 15 sites across the Kingdom, now the visual emblem of Vision 2030 heritage design (wayfinding, signage, architecture at At-Turaif UNESCO site). It proves Saudi Arabia has state-endorsed 'national premium earth tones'.",
+     "design_implication": "Anchor the new palette in Najdi-mudbrick tan / desert sand / date-brown territory instead of espresso brown — it reads instantly Saudi-premium (Vision 2030, AlUla/Diriyah aesthetic), is warm (appetizing), light (sunlight-readable), and no competitor e-menu owns it.",
+     "colors": [
+      "Diriyah Tan (Pantone, mudbrick golden tan ~#C19A6B territory)",
+      "desert sand",
+      "date brown"
+     ],
+     "source": "soulofsaudi.com/diriyah-tan-pantone-color-launch, vision2030.gov.sa, commercialinteriordesign.com"
+    },
+    {
+     "finding": "2025-26 specialty-cafe trend data: the dominant global cafe palette is warm naturals — oat/cream/beige base, caramel-cocoa mid-tones, deep espresso typography, plus ONE muted accent (terracotta, sage, olive, dusty rose); these work because they mirror real cafe materials (beans, steamed milk, wood, ceramic), making spaces feel appetizing pre-verbally. Named schemes: 'Oat Milk Minimal', 'Espresso Slate', 'Blush Espresso'.",
+     "design_implication": "An oat-cream base + espresso-ink type + terracotta/saffron appetite accent is simultaneously on-trend, appetizing (warm), premium (restrained), and converges perfectly with the Diriyah Tan heritage direction — the safest radical move is cream-first, not dark-first.",
+     "colors": [
+      "cream #FFF8E1",
+      "light beige #F5F5DC",
+      "terracotta #E07C3D",
+      "espresso ink"
+     ],
+     "source": "media.io coffee palettes, blog.lovers.coffee, huehive.co/13492"
+    },
+    {
+     "finding": "Saudi food-commerce apps that mainstream customers use daily (HungerStation, Jahez, Mrsool, Talabat) all run high-energy warm branding — Talabat is a solid bright orange field with white wordmark ('energy and enthusiasm'), and HungerStation (yellow) dominates the Kingdom — so Saudi users' learned muscle memory for 'tap to order food' is a saturated warm accent on a clean field.",
+     "design_implication": "Order/add-to-cart CTAs in the e-menu should be a single saturated warm accent (saffron-orange or terracotta) on the cream base — it matches both appetite science and the interaction pattern Saudi users already trust from delivery apps, while the rest of the palette stays muted to keep the premium read.",
+     "colors": [
+      "Talabat orange",
+      "HungerStation yellow",
+      "single saturated warm CTA on neutral field"
+     ],
+     "source": "whatthelogo.com/talabat, saudiscoop.com food delivery guide"
+    },
+    {
+     "finding": "Menu-engineering evidence: high contrast (dark text on light ground) is the reliable choice in variable lighting; light-on-dark 'can work but is hard to get right'; good layout/color alone lifts sales up to 15%; and research on food imagery found each food item has an OPTIMAL background color — one global background is a compromise.",
+     "design_implication": "Use per-category tinted card backgrounds (warm rose for desserts, cream for espresso drinks, sage-tint for matcha/teas) within one light system — a defensible 'wow' mechanic backed by the optimal-background-per-food finding, with measurable sales upside.",
+     "colors": [
+      "per-category tints on a shared light base"
+     ],
+     "source": "grafterr.com menu psychology, Frontiers/PMC7658407 food-image background study, altametrics"
+    }
+   ]
+  },
+  {
+   "topic": "fnb-trends-2026",
+   "insights": [
+    {
+     "finding": "The post-beige pivot is confirmed and specific: 2026 restaurant branding forecasts (restaurantbrandingbynice.com, webstaurantstore) describe grounded warm neutrals (warm taupe, soft clay, terracotta, stone gray) energized by ONE bold accent pop — sunlit yellow, electric teal, or garnet red — replacing both stark black/white minimalism and all-beige palettes.",
+     "design_implication": "Keep a warm, appetizing neutral base (clay/sand reads Najdi, not 'hotel'), but pick a single electric signature accent that owns the brand — do not scatter multiple golds. This is the safest 'mind-boggling yet mainstream' formula.",
+     "colors": [
+      "warm taupe",
+      "soft clay/terracotta",
+      "sunlit yellow",
+      "electric teal",
+      "garnet red"
+     ],
+     "source": "https://restaurantbrandingbynice.com/2026-restaurant-design-trends/"
+    },
+    {
+     "finding": "The two 2026 colors-of-the-year point in opposite, combinable directions: Pantone Cloud Dancer 11-4201 (#F0EEE9), an airy off-white for 'clarity in an overstimulated world' already popular in premium F&B packaging, and WGSN+Coloro Transformative Teal 092-37-14 (~#23545B), a deep blue-green fusion. WGSN's S/S26 key colors also include Electric Fuchsia, Blue Aura, Amber Haze, and Jelly Mint.",
+     "design_implication": "A Cloud-Dancer-white canvas with Transformative Teal or Amber Haze as the hero is literally the authoritative 2026 palette — white space makes food photography pop and reads premium without gold; teal is a startlingly fresh, ownable direction for a Saudi cafe (nobody local uses it).",
+     "colors": [
+      "#F0EEE9 (Cloud Dancer)",
+      "#23545B (Transformative Teal)",
+      "Electric Fuchsia",
+      "Amber Haze",
+      "Jelly Mint"
+     ],
+     "source": "https://www.wgsn.com/en/blog/colour-year-2026-transformative-teal"
+    },
+    {
+     "finding": "The winning 2026 aesthetic is a HYBRID, not a side: 'quiet luxury vs dopamine' commentary (France & Son, Vegan Design, DesignMantic) converges on blending both — tactile quality materials and calm bases combined with saturated dopamine moments; 'neon yellows, electric blues, and deep chocolate tones paired in unexpected combos' is called out explicitly.",
+     "design_implication": "Deep chocolate + electric accent is the exact upgrade path from the rejected espresso-brown look: keep the chocolate for appetite/heritage, but pair it with a shocking modern partner (electric blue, neon yellow) instead of gold. Quiet base, loud moments.",
+     "colors": [
+      "deep chocolate",
+      "neon yellow",
+      "electric blue"
+     ],
+     "source": "https://franceandson.com/blogs/recents-blogs/quiet-luxury-vs-dopamine-decor-which-interior-trend-is-winning-2026"
+    },
+    {
+     "finding": "Food-named 'delicious pastels' dominate 2025-26: butter yellow (desaturated, warm, 'artisanal'), pistachio/matcha green (Grazia: pistachio is 'the new food dictating fashion'), and cherry red are the trending food-adjacent hues; red remains the proven appetite trigger in packaging research.",
+     "design_implication": "Pistachio + butter yellow + cherry accents are edible-feeling colors mainstream Saudi customers already love (matcha/pistachio cafes like So Matcha in Riyadh with its pink-and-green interior are hits) — using drink-derived colors (matcha green, pistachio latte, saffron, date caramel) as the menu's category color system would be both appetizing and Instagrammable.",
+     "colors": [
+      "butter yellow",
+      "pistachio green",
+      "matcha green",
+      "cherry red"
+     ],
+     "source": "https://graziadaily.co.uk/fashion/trends/pistachio-matcha-green/"
+    },
+    {
+     "finding": "Gradients and chrome are back but matured: 2026 forecasts (Adobe Express, Envato, Kittl, ReallyGoodDesigns) describe 'aura' gradients — soft, smoky, cinematic color fades acting like ambient lighting — plus 'Acid Fade' neon prismatic blends, grain/noise texture, soft glow paired with sharp edges; Y2K liquid-chrome type persists in streetwear/DTC branding through 2026.",
+     "design_implication": "A subtle atmospheric gradient background (e.g., desert-dusk amber-to-teal fade with grain) instantly modernizes an e-menu beyond anything competitors have, without kitsch; reserve chrome/liquid-metal only for one hero moment (logo or price chips) if at all — full Y2K chrome would alienate mainstream Saudi owners.",
+     "colors": [
+      "smoky amber-to-teal fades",
+      "prismatic neon blends",
+      "iridescent chrome silver"
+     ],
+     "source": "https://www.adobe.com/express/learn/blog/design-trends-2026"
+    },
+    {
+     "finding": "Specialty coffee branding is shifting from 'distant/technical' to 'expressive/approachable': Perfect Daily Grind (2025) documents a rebrand wave using dreamy illustrations, oversized typography, and playful naming; real examples include Blank Street's 2025 rebrand around a new green range and a literal blank space in the logo, and Java Factory's bright joyful graphics; SCA 2025 Coffee Design Award branding winner Yettu won with custom letterforms rooted in local heritage (Usgalimal petroglyphs, Tamil Nadu tools).",
+     "design_implication": "Award juries now reward heritage-rooted CUSTOM typography plus playfulness — for the Saudi demo, a bespoke-feeling Arabic display face with oversized, confident sizing (not generic Cairo/Tajawal at small sizes) is the single highest-leverage premium signal, and playful item naming/illustration beats formality.",
+     "colors": [
+      "Blank Street greens"
+     ],
+     "source": "https://perfectdailygrind.com/2025/11/how-to-build-specialty-coffee-brand-stand-out/"
+    },
+    {
+     "finding": "Saudi-specific 2025 research (Basirah Creative, sustain-home, Perfect Daily Grind on KSA's booming market) says customers want 'heritage revived in innovative ways' — Najdi clay, warm sand, vintage wood brown with creamy white — while third-wave leaders Brew92 and Elixir Bunn win 18-34s (78% preference) with minimalist-modern aesthetics; Riyadh is the premium epicenter.",
+     "design_implication": "Cultural resonance should come from Najdi-derived earth tones and geometry used as accents on a modern light canvas — NOT from dark 'majlis luxury.' The rejected brown+gold was heritage done as hotel; the winning move is heritage done as contemporary craft (clay + cream + one modern electric color).",
+     "colors": [
+      "Najdi clay",
+      "warm sand",
+      "creamy white",
+      "vintage wood brown"
+     ],
+     "source": "https://basirahcreative.com/en/modern-heritage-cafe-identity-interior-design/"
+    },
+    {
+     "finding": "2026 metallics are cooling and diversifying: brushed brass/copper/warm gold persist but the forecast momentum is toward pewter, titanium, and 'champagne chrome' for a polished contemporary feel; typography direction is geometric sans paired with returning serifs ('old meets new') and script/textured lettering flagged as ideal for cafes; menus lean on bold typography as wayfinding, and F&B goes 'fully multisensory' (layered texture, bold color).",
+     "design_implication": "If any metallic survives the redesign, swap yellow-gold for champagne-chrome/titanium micro-details (hairlines, tabs) — it reads 2026 instead of 2016-hotel; structure the e-menu with big type as navigation and tactile texture (grain, paper, embossed cards) for the multisensory premium cue.",
+     "colors": [
+      "champagne chrome",
+      "pewter",
+      "titanium",
+      "brushed brass"
+     ],
+     "source": "https://www.webstaurantstore.com/blog/2374/top-restaurant-design-trends.html"
+    },
+    {
+     "finding": "Nostalgia/heritage-revival is a top-3 2026 menu design trend globally (Resy: 'what's old world is new again'; KitchenHub: nostalgia remix as menu strategy) — hand-drawn illustration, distressed texture, and mid-century-style type telling a craftsmanship story, always anchored by warm palettes with a single bold pop.",
+     "design_implication": "A 'Saudi nostalgia remix' direction — retro-modern Arabic lettering, hand-drawn dallah/date illustrations, warm film-grain photography — is a distinctly ownable middle path: it feels mind-boggling because no local e-menu does it, yet emotionally safe for mainstream customers because it's their own memory bank.",
+     "colors": [
+      "sepia warm tones",
+      "garnet red pop"
+     ],
+     "source": "https://blog.resy.com/2026/05/when-it-comes-to-restaurant-design-whats-old-world-is-new-again/"
+    },
+    {
+     "finding": "Synthesis of what is NEXT (not current): the current Saudi cafe look is beige-minimal or dark brown+gold; the 2026 convergence across Pantone, WGSN, Adobe, restaurant forecasters and award winners is: light airy canvas (Cloud Dancer white / warm sand) + one saturated hero (teal, garnet, or pistachio) + food-derived dopamine pastels as a category system + atmospheric grain gradients + oversized custom bilingual type + champagne-metal micro-details.",
+     "design_implication": "The redesign brief in one line: 'desert dawn, not hotel night' — flip from dark-luxury to light-luminous, derive every color from Saudi ingredients and landscape (sand, clay, date, saffron, pistachio, dusk teal), and spend the drama budget on typography and one gradient signature moment rather than gold ornament.",
+     "colors": [
+      "#F0EEE9",
+      "#23545B",
+      "clay terracotta",
+      "saffron yellow",
+      "pistachio",
+      "garnet"
+     ],
+     "source": "synthesis of all sources above"
+    }
+   ]
+  },
+  {
+   "topic": "saudi-competitors",
+   "insights": [
+    {
+     "finding": "Jahez (Saudi's #1 food delivery app, Wondereight rebrand) owns a red-plus-yellow-dot identity — a bold red UI with a yellow dot as its 'customer-centricity' brand mark, rolled out across delivery boxes, uniforms, and car branding. Red/orange 'appetite-stimulant' UI is the default vocabulary of Saudi food-ordering apps.",
+     "design_implication": "Avoid saturated delivery-app red/orange as a primary color and avoid the 'app-y' utilitarian card grid — anything red-forward will read as a Jahez clone, i.e. commodity delivery, not a premium in-cafe experience.",
+     "colors": [
+      "red (Jahez primary)",
+      "yellow (Jahez dot accent)"
+     ],
+     "source": "https://wondereight.com/work/jahez-brand-identity-ecommerce-social-media-for-saudi-delivery-app/, https://brandfetch.com/jahez.net"
+    },
+    {
+     "finding": "HungerStation (Delivery Hero) is defined by its bright yellow branding — confirmed across its logo files, Behance rebrand case studies, and a 2024 logo refresh with a mascot campaign. ToYou, the other Saudi super-app, layers food/grocery/rides into one busy multi-service UI with a 2023 logo redesign.",
+     "design_implication": "Bright taxi-yellow and 'super-app clutter' (dense promo banners, badges, multi-category tiles) are both claimed territory; the e-menu should feel calm, editorial and single-purpose — the opposite of a super-app home screen.",
+     "colors": [
+      "bright yellow (HungerStation)"
+     ],
+     "source": "https://www.behance.net/gallery/78476193/Hungerstation-Rebranding-Project, https://brandfetch.com/toyou.io"
+    },
+    {
+     "finding": "Foodics dominates Saudi restaurant tech as a purple-branded B2B SaaS/POS ecosystem (Riyadh-based, 35+ countries, acquired POSRocket); its consumer-facing ordering surfaces inherit that functional SaaS look — clean white screens, purple accents, utilitarian components.",
+     "design_implication": "Avoid SaaS-purple accents and generic 'dashboard-clean' white UI kits; a menu built on Foodics-like components signals 'vendor default' to any Saudi cafe owner who has seen a hundred of them.",
+     "colors": [
+      "purple (Foodics brand)"
+     ],
+     "source": "https://www.foodics.com/, https://tapfood.net/blog/tapfood-vs-foodics-alternative-saudi-arabia-2026"
+    },
+    {
+     "finding": "The Saudi QR-menu vendor field (TableQR, WowMenu, FineDine via Trustangle, Ordable, YallaPlus, Logix360, OddMenu) converges on one template: white background, vertical list of rounded photo cards, category tab bar, logo dropped in the header. TableQR literally markets against this: 'Every QR code menu platform gives you the same thing... Same grid of food photos that could belong to anyone.'",
+     "design_implication": "The single biggest differentiation lever: kill the white-card-list-with-photo-thumbnails layout entirely. Any radical direction (immersive full-bleed imagery, editorial typography, unconventional navigation) instantly separates the demo from every QR vendor in the Kingdom. Also note SFDA compliance (calories, caffeine, high-sodium, activity-equivalent labels) must be designed-in beautifully, since vendors treat it as an ugly bolt-on.",
+     "colors": [
+      "white backgrounds",
+      "generic rounded cards"
+     ],
+     "source": "https://tableqr.co/digital-menu/saudi-arabia/, https://www.wowmenu.me/countries/saudi-arabia/"
+    },
+    {
+     "finding": "The stock 'Arabic restaurant' template market (Pikbest has 33,000+ Arabic menu templates, Dreamstime 5,700+ backgrounds) is saturated with exactly the rejected look: black/dark backgrounds, hand-drawn gold arabesque patterns, gold serif type, lanterns/hookah/camel/palm iconography.",
+     "design_implication": "Confirms the founder's instinct — dark espresso + gold + ornamental arabesque is the most commoditized aesthetic in the entire Arabic F&B template economy. Ban: gold foil accents, dark-luxury gradients, mandala/arabesque borders, lantern-and-dallah clip art.",
+     "colors": [
+      "black/dark backgrounds",
+      "gold accents"
+     ],
+     "source": "https://pikbest.com/free-templates/arabic-menu.html, https://www.dreamstime.com/illustration/background-design-arabic-restaurant.html"
+    },
+    {
+     "finding": "Riyadh's actual specialty-cafe scene (Brew92, Elixir Bunn, %Arabica influence; Saudi Arabia is the Middle East's largest branded coffee market at 5,130 outlets) has swung to the opposite cliche: minimalist beige/cream/greige 'quiet' interiors and identities — warm neutrals chosen to be Instagram-safe.",
+     "design_implication": "The second trap to avoid: the ubiquitous beige-minimalist 'third wave' look is now as generic in Riyadh as dark-gold. A mind-boggling direction must be neither hotel-gold nor greige-minimal — it needs saturated confident color and personality that neither camp uses.",
+     "colors": [
+      "beige",
+      "cream",
+      "greige",
+      "soft brown"
+     ],
+     "source": "https://perfectdailygrind.com/2025/11/exploring-saudi-arabia-booming-specialty-coffee-market/, https://sustain-home.com/coffee-shop-interior-design/"
+    },
+    {
+     "finding": "Half Million (½M, founded 2018, now in London) proves Saudi mainstream customers embrace bold non-traditional color: its pink cup (launched via breast-cancer screening charity drives) sold out in ~20 minutes, spawned a black market, and spread to Bahrain/Kuwait — 'aspirational accessibility' built on one ownable color moment.",
+     "design_implication": "Strong evidence that a single audacious signature color/object (like ½M pink) can become a cultural phenomenon with mainstream Saudi customers — the redesign should engineer one ownable, meme-able color moment rather than a safe palette.",
+     "colors": [
+      "Half Million pink"
+     ],
+     "source": "https://www.listmag.com/en/eat-and-drink/the-half-million-pink-cup-frenzy-has-taken-over-the-kingdom-2780"
+    },
+    {
+     "finding": "Design commentary on new Saudi heritage cafes (Basirah Creative; PLOS One study of coffee-shop signage branding) says leading brands now reinterpret the 'Saudi natural palette' — Najdi clay, warm sand, stone grey, palm green — elevated with contemporary accents like mineral blue, copper, or deep black, explicitly warning against 'repetition and stereotyping' of desert/camel motifs. Barn's (200+ outlets) and Dose are cited as the strongest homegrown brand identities.",
+     "design_implication": "Cultural resonance without cliche is achievable by abstracting Saudi references (Najdi geometry, clay/mineral tones, Sadu weaving rhythm) into modern graphic systems with an unexpected accent (mineral blue/copper) — never literal camels, dallahs, palms, or lanterns; also do not mimic Barn's/Dose since owners know those identities intimately.",
+     "colors": [
+      "Najdi clay",
+      "warm sand",
+      "stone grey",
+      "palm green",
+      "mineral blue",
+      "copper"
+     ],
+     "source": "https://basirahcreative.com/en/modern-heritage-cafe-identity-interior-design/, https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0309829"
+    },
+    {
+     "finding": "Menu-UX literature for specialty coffee converges on: 6-8 core drinks per category, high-margin items in prominent positions, no low-res photos, no overdecoration — clutter and slow decision-making are the top operational complaints of cafe owners.",
+     "design_implication": "The radical visual direction must still be operationally sharp: tight item counts per view, decisive hierarchy, fast scanning in Arabic RTL — 'mind-boggling' should come from art direction and motion, not from added decoration or navigational novelty that slows ordering.",
+     "source": "https://bellwethercoffee.com/blog/how-to-build-a-coffee-shop-menu, https://www.fltrpaper.com/p/the-most-common-cafe-design-mistakes"
+    }
+   ]
+  },
+  {
+   "topic": "wow-features",
+   "insights": [
+    {
+     "finding": "CSS scroll-driven animations (animation-timeline: scroll()/view()) are now Baseline — Chrome since Dec 2024, Safari 26, Firefox flagged — and run OFF the main thread on the compositor, unlike JS scroll listeners. Josh Comeau, MDN, and Smashing Magazine (Dec 2024) all document text/image reveals, progress bars, and parallax driven purely by scroll position with zero JS.",
+     "design_implication": "The e-menu's section reveals, category header parallax, sticky nav progress bar, and dish-card entrance animations should be pure CSS scroll-timeline with a tiny IntersectionObserver fallback — guaranteed 60fps on mid Android because nothing touches the main thread. This is the highest wow-per-byte technique available.",
+     "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Scroll-driven_animations + https://www.joshwcomeau.com/animation/scroll-driven-animations/"
+    },
+    {
+     "finding": "The 'aurora' ambient background recipe (Superdesign, Dalton Walsh): 3-4 radial-gradient color layers plus one heavily blurred conic-gradient ::before over a base color, animated with filter: hue-rotate — which is GPU-composited (applies a color matrix to the rasterized layer, never repaints the gradient). Conic-gradient is Baseline since 2022.",
+     "design_implication": "A slowly drifting saffron/date-amber/pistachio aurora behind the menu hero gives the 'alive, premium' feel with pure CSS at near-zero cost — ideal replacement for the flat espresso-brown. Animate only transform/blur/hue-rotate; can subtly shift hue per menu category (coffee=amber, matcha=green) for a generative-gradient signature.",
+     "colors": [
+      "hue-rotate over saffron #E8A33D",
+      "date amber",
+      "pistachio green"
+     ],
+     "source": "https://superdesign.dev/styles/aurora + https://daltonwalsh.com/blog/aurora-css-background-effect/"
+    },
+    {
+     "finding": "3D tilt cards with parallax depth need only ~15 lines of vanilla JS: perspective:1000px on parent, transform-style:preserve-3d, pointermove writes rotateX/rotateY, child layers (dish photo, price badge, title) pushed to different translateZ depths, plus a radial-gradient glare overlay that shifts with tilt (the pattern behind vanilla-tilt.js and Card3d.js, which also supports mobile gyroscope via deviceorientation).",
+     "design_implication": "Dish cards that tilt toward the finger/gyroscope with a light glare sweeping across the food photo is the single most 'mind-boggling' card treatment achievable without libraries — feels like holding a physical card. Use will-change:transform, apply on pointerdown/gyro on mobile, cap to one active card at a time for 60fps.",
+     "source": "https://www.cssscript.com/parallax-tilt-hover-effect-card/ + https://medium.com/@francesco.saviano87/how-to-create-a-3d-tilt-effect-on-a-card-with-html-css-and-javascript-1d0b0ab5a9d7"
+    },
+    {
+     "finding": "View Transitions API circular theme reveal: document.startViewTransition() + ::view-transition-new(root) with clip-path: circle() keyframes expanding from the toggle's clientX/clientY makes light/dark mode switch as a growing circle from the tap point — pure vanilla JS, documented by Akash Hamirwasia and animbits.dev, graceful no-op fallback where unsupported.",
+     "design_implication": "A 'day cafe / night cafe' scene toggle (bright morning palette vs warm evening palette) with the circular wipe from the user's thumb is a signature moment costing ~20 lines. Frame it as two moods of the cafe, not just dark mode — culturally resonant with Saudi late-night cafe culture.",
+     "source": "https://akashhamirwasia.com/blog/full-page-theme-toggle-animation-with-view-transitions-api/ + https://theme-toggle.rdsx.dev/"
+    },
+    {
+     "finding": "Canvas 2D particle ambience stays at 60fps on mid Android if: requestAnimationFrame only, ~50 particles mobile (vs 150 desktop), trail effects via semi-transparent fillRect over the whole canvas each frame instead of clearing, and all allocation done outside the loop (HTML5 canvas optimization gists; sparticles library proves the ceiling). Full Navier-Stokes fluid (Jos Stam solver) exists in vanilla canvas but is too heavy for mid Android — particle-based 'steam' with upward drift + sine wobble + alpha fade is the feasible stand-in.",
+     "design_implication": "Rising coffee-steam particles (30-50, cream-colored, alpha-faded, wobbling upward) over the hero cup, or falling cardamom/date-gold specks on order confirmation, is safe and delightful. Skip true fluid sim; the fillRect-trail trick gives a smoky look cheaply. Pause the loop when the canvas leaves the viewport.",
+     "source": "https://gist.github.com/jaredwilli/5469626 + https://github.com/simeydotme/sparticles + https://topaz1008.github.io/canvas-fluid-solver/"
+    },
+    {
+     "finding": "Arabic calligraphy 'hand-drawing' animation is a solved vanilla technique: CSS-Tricks 'Animate Calligraphy with SVG' and browser-unplugged.net document drawing a smooth mask path along the brush line, then animating stroke-dashoffset to 0 — handling variable-width Arabic strokes and overlapping letterforms by cutting the calligraphy into stacked non-overlapping mask pieces.",
+     "design_implication": "The cafe's Arabic wordmark or section titles (قهوة، حلا) literally writing themselves on first load or scroll-into-view is the most culturally resonant wow moment possible — Arabic-first, premium, and zero libraries. One-time SVG prep per word; animation itself is a single CSS keyframe, trivially 60fps.",
+     "source": "https://css-tricks.com/animate-calligraphy-with-svg/ + https://browser-unplugged.net/blog/calligraphy.en.html"
+    },
+    {
+     "finding": "Kinetic typography in 2025-26 centers on variable-font axis animation (wght/wdth/slnt interpolated live, one font file) and clip-path text reveals, with two hard rules from every guide: animate only transform/opacity (GPU, no reflow) and respect prefers-reduced-motion. Scroll-driven text morphing needs no JS at all when tied to animation-timeline.",
+     "design_implication": "Menu category titles that thicken (wght 300→800) as they scroll into center view — using an Arabic variable font like a variable Naskh/Kufi — give a living-typography feel unique among Saudi cafe menus. Pure CSS via view() timeline; ship a prefers-reduced-motion: reduce override killing all motion.",
+     "source": "https://www.upskillist.com/blog/top-7-kinetic-typography-trends-2025/ + https://www.3str.net/blog/kinetic-typography-in-web-design"
+    },
+    {
+     "finding": "Haptic-feel without sound: microinteraction guides converge on 200-500ms spring/squish feedback on the compositor thread (CSS transforms), and navigator.vibrate(50) works on Android Chrome/Firefox after sticky user activation — exactly the mainstream Saudi device profile — while iOS silently ignores it (safe progressive enhancement).",
+     "design_implication": "Add-to-order button: scale-squish spring (cubic-bezier overshoot, ~250ms) + navigator.vibrate(30) on Android + a flying dish-thumbnail arc to the cart badge. Feels 'app-native' on the phones most Saudi customers actually hold; degrades invisibly on iPhone. Reserve vibration for add-to-cart and order-confirm only.",
+     "source": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/vibrate + https://designshack.net/articles/ux-design/microinteractions-mobile-ux/"
+    },
+    {
+     "finding": "Awwwards food/restaurant winners rely on a small repeatable set: Amrit Palace's scroll-linked menu, Middle Child's hover dish-photo preview (menu text list where the dish image follows the cursor/finger), Geex Arts' interactive scroll menu with big typography, and Dishoom's SOTD illustrated storytelling pages. Apple-style canvas image sequences are feasible statically but cost ~1.5MB+ even as WebP spritesheets — the known mobile trap; single-fallback-image or reduced-frame strategies are the documented mitigation.",
+     "design_implication": "Steal the Middle Child pattern: an elegant typographic Arabic menu list where the dish photo materializes and follows the touch point — huge perceived sophistication, tiny JS. Avoid full Apple image-sequence scrubbing on this project (payload kills mid-Android on cafe wifi); if scrubbing is wanted, limit to ~30 frames of one hero pour shot in a spritesheet.",
+     "source": "https://www.awwwards.com/inspiration/restaurant-menu-dish-preview-middle-child + https://css-tricks.com/lets-make-one-of-those-fancy-scrolling-animations-used-on-apple-product-pages/"
+    }
+   ]
+  },
+  {
+   "topic": "cultural-delights",
+   "insights": [
+    {
+     "finding": "Prayer-time awareness is now an established UX category: apps like Prayer Pause and Prayr auto-detect the five daily Salah times and gracefully pause/soften the experience, offering dhikr or a quiet moment instead of content. In Saudi Arabia every cafe already physically closes ordering at prayer time, but almost no e-menu acknowledges it digitally.",
+     "design_implication": "Give the e-menu a graceful 'Salah mode': a serene banner ('نستأنف بعد الصلاة — we resume after prayer') with a countdown to reopening, calm dimmed palette, geometric pattern. This turns an operational annoyance (kitchen closed) into a signature screenshot-worthy moment no competitor menu has, and shows owners the product understands Saudi operations.",
+     "colors": [],
+     "source": "https://prayerpause.app/, https://mwm.ai/apps/prayr-salah-focus/6752878561"
+    },
+    {
+     "finding": "Ramadan modes with iftar countdowns are beloved: iftar countdown apps (Iftar: Countdown Ramadan Table, My Iftar Time) with Live Activities on lock screens are hugely popular, and HungerStation's Ramadan 'Tip with Time' campaign (with Wunderman Thompson KSA) won press by replacing money tips with gifting drivers extra time — Ramadan generosity translated into product mechanics.",
+     "design_implication": "Ship a seasonal 'Ramadan theme' toggle for the menu: crescent/lantern accents, deep-night palette, a live Maghrib/iftar countdown pinned to the header, and a 'Suhoor menu' section that appears after midnight. Seasonal skins are cheap to build, feel magical to owners, and are exactly what Saudis screenshot and share.",
+     "colors": [
+      "deep midnight blue #1B2A4A",
+      "warm lantern gold #D4A853"
+     ],
+     "source": "https://www.arabaddigital.com/en/article/4060, https://apps.apple.com/us/app/iftar-countdown-ramadan-table/id1556857925"
+    },
+    {
+     "finding": "Saudi National Day (Sept 23) and Founding Day (Feb 22) have official, government-published brand identity kits — GEA's ND95 theme 'عزنا بطبعنا / Our Pride Is in Our Nature' came with approved colors, patterns, typefaces and slogans that hotels and restaurants were explicitly instructed to adopt; cafes nationwide run heritage menus and free-gahwa promos on Founding Day.",
+     "design_implication": "Build National Day / Founding Day 'easter egg' themes (Saudi green takeover, falling confetti of palm-and-swords motifs, a 'دام عزك يا وطن' splash) that auto-activate by date. Pitch to owners: your menu celebrates with the Kingdom automatically — mirroring the official GEA identity kits makes it feel legitimate, not gimmicky.",
+     "colors": [
+      "Saudi flag green #165D31",
+      "#006C35"
+     ],
+     "source": "https://www.gea.gov.sa/en/media-center/news/nd95, https://thesauditimes.net/en/founding-day-2026-the-best-deals-and-offers-across-saudi-arabia/"
+    },
+    {
+     "finding": "Gahwa is UNESCO-listed intangible heritage described as 'a symbol of generosity, not a beverage', with a rich ritual vocabulary designers can mine: the dallah pot (on Saudi coins, hotel entrances, poetry), the handleless finjan cup, the youngest pourer (gahwaji), serving clockwise starting with the honored guest, and 'sabbat al hashma' — the small first 'pour of respect' filling only a third of the cup.",
+     "design_implication": "Encode the ritual, don't just draw a dallah icon: an animated 'pour of respect' loading state (a dallah tilting to fill a finjan one-third full), a dallah-silhouette progress bar, or the first menu item presented like the honored guest's first pour. Ritual-literate details make older Saudis nod and younger Saudis screenshot.",
+     "colors": [
+      "cardamom cream #E8DCC4",
+      "saffron #F4C430",
+      "brass dallah #B8860B"
+     ],
+     "source": "https://www.thenationalnews.com/arts-culture/2025/05/12/coffee-ceremony-arabic-gulf-gahwa-brewing-tradition/, https://thecoffeeguru.net/the-art-and-significance-of-the-dallah-coffee-pot-an-in-depth-guide/"
+    },
+    {
+     "finding": "Saudi hospitality has a distinct greeting lexicon with real emotional charge: 'Hayyak Allah' (may God greet you), 'Hala wallah', 'Ya hala', 'Hala bilghali' (welcome, precious one) — documented as the warmest, most Saudi-specific welcomes; Michelin Guide framed Saudi hospitality itself as 'The Art of Welcome'.",
+     "design_implication": "Open the menu with a calligraphic 'حيّاك' / 'يا هلا بالغالي' welcome moment instead of a generic 'Menu' header, and use Saudi-dialect microcopy throughout (e.g. 'سمّ' on the order button, 'تكرم عينك' on confirmation). Dialect microcopy is rare in digital menus and is precisely the kind of detail Saudis post about.",
+     "colors": [],
+     "source": "https://truly-saudi.com/en/know-your-hala-from-your-hiloo-uniquely-saudi-phrases-you-should-learn/, https://guide.michelin.com/en/article/features/the-art-of-welcome-saudi-arabia"
+    },
+    {
+     "finding": "Digital gifting is exploding in Saudi: banks' 'Send Eidiya' features (animated money envelopes with personal messages) hit 400% over target with 500,000 transfers in 3 days of Eid (VML's 'Contactless Eidiyah' case), and eGift cards are the fastest-growing Ramadan/Eid gifting format in MENA.",
+     "design_implication": "Add a 'اهده قهوة' (gift a coffee) flow: pick a drink, wrap it in an animated envelope with a handwritten-style Arabic note, send via WhatsApp link. It maps a proven, culturally beloved mechanic (digital eidiya) onto the cafe menu and gives owners a viral acquisition loop.",
+     "colors": [],
+     "source": "https://www.vml.com/work/the-contactless-eidiyah, https://www.arabnews.com/node/2637061/saudi-arabia"
+    },
+    {
+     "finding": "Group/majlis dining is the native Saudi mode: HungerStation markets 'easy group ordering and hassle-free bill splitting that unite friends and family', and cafe-culture analysis contrasts the traditional majlis (shared coffee reinforcing social cohesion) with the modern cafe as its Gen-Z successor — Saudis rarely order alone.",
+     "design_implication": "A 'majlis order' feature: one person opens the menu, shares a link/QR, everyone at the table adds their drink to a shared tray rendered as cups arranged on a serving tray. Framing group ordering as a digital majlis tray is both practical (real Saudi behavior) and emotionally resonant.",
+     "colors": [],
+     "source": "https://www.hungerstation.social/, https://dikurniawanarif.medium.com/revisiting-saudi-coffee-culture-2025-tradition-meets-transformation-6a5e976d9f32"
+    },
+    {
+     "finding": "Modern Kufic (square/geometric) Arabic calligraphy is the dominant premium-branding style for Saudi F&B — design roundups ('25+ Best Arabic Logo Designs for Saudi Business 2025-2026', Dribbble modern-Kufic work) show geometric Kufic reads as sleek and disciplined for food brands, with a trend toward minimalist calligraphy plus AR/QR-triggered calligraphy moments.",
+     "design_implication": "Use one large expressive calligraphy moment per screen — e.g. category headers as modern-Kufic wordmarks (قهوة، حلا، بارد) rather than decorating everything with arabesque borders. A single confident Kufic hero is what separates 'modern Saudi premium' from 'hotel-lobby oriental'.",
+     "colors": [],
+     "source": "https://www.isharearena.com/arabic-design/25-best-arabic-logo-designs-for-saudi-business-2024-2026/, https://dribbble.com/shots/26421477-Arabic-Logo-Design-Modern-Kufic-Calligraphy-Branding"
+    },
+    {
+     "finding": "Riyadh's screenshot economy is real and brand-led: Camel Step, Brew92 and Elixir Bunn dominate specialty coffee; Elixir Bunn (by Azaz Architects, terrazzo + matte-black spiral staircase) was designed as 'a modern-day spiritual experience', and 78% of Saudi consumers 18-34 are drawn to minimalist-design cafes where 'every corner, cup, and caption is designed to evoke aesthetic pleasure' and a barista pour becomes a TikTok reel.",
+     "design_implication": "The e-menu itself must be content-worthy: design each item card like an Elixir Bunn interior — generous whitespace, one gorgeous photo, terrazzo/stone texture accents — so a screenshot of the menu looks like a cafe-aesthetic TikTok post. The bar is 'would a Riyadh Gen-Z post this to their story', not 'is it legible'.",
+     "colors": [
+      "terrazzo off-white #F2EEE8",
+      "matte black #1A1A1A"
+     ],
+     "source": "https://houseofsaud.com/travel/riyadh-cafe-guide/, https://www.esquireme.com/culture/the-saudi-cafe-moment-how-coffee-fuelled-saudis-introspective-revolution"
+    },
+    {
+     "finding": "Saudi Arabic is not one dialect: localization datasets (SauDial) distinguish Najdi, Hijazi, Janoubi and Eastern dialects, and Jahez's success is repeatedly credited to its deeply localized, customer-centric Saudi voice rather than generic MSA Arabic.",
+     "design_implication": "Write the menu's Arabic in warm Saudi colloquial (Najdi-leaning neutral), not stiff Modern Standard Arabic — 'وش تشرب اليوم؟' beats 'قائمة المشروبات'. Optionally let owners pick a dialect flavor for microcopy; this is a differentiator competitors translating from English cannot fake.",
+     "colors": [],
+     "source": "https://www.sciencedirect.com/science/article/pii/S2352340925006304, https://enatega.com/food-delivery-apps-in-saudi-arabia/"
+    }
+   ]
+  }
+ ],
+ "directions": [
+  {
+   "art_washes_strategy": "Each menu category is assigned one Sadu \"thread hue\" and every item card sits on an ambient radial wash of that hue dyed into the wool-cream ground — rendered as two stacked radial-gradients (12-16% saturation, 96-99% lightness, e.g. desserts: madder-rose wash #FBEFEA→transparent; espresso: clay-amber #F9EFE0; Saudi gahwa: saffron #FBF2DF; matcha/teas: pistachio #F1F4E6; cold brew: smoked-sand #F4F0E8) positioned behind and slightly above the food photo so the plate stays on near-white for maximum appetite pop, per Spence's optimal-background-per-food finding. Hue logic is strictly warm-side for anything edible: the crimson→saffron→pistachio band only; the indigo-teal secondary thread (#23545B) is BANNED within 24px of any food photograph and lives only in chrome (dividers, nav underlines, SFDA info chips). Washes shift on category change via a single GPU filter:hue-rotate on the wash layer (never repainting gradients), moving max 30° so the ground always reads as sun-warmed wool, never neon. In night (\"Layali\") mode the same washes drop to 8% saturation glows on the indigo-wool ground so category identity survives inversion.",
+   "base_mode": "dual",
+   "concept": "The menu is a length of undyed morning wool stretched on a loom, and every ounce of color is a dyed Sadu thread shot through it with Swiss precision: madder crimson for appetite and action, saffron for highlights, one disciplined indigo-teal thread reserved for chrome, all on a sunlit cream ground (#FAF6EE) that photographs food the way Riyadh's bright cafes photograph themselves. Sadu and Al-Qatt geometry never decorates — it STRUCTURES: hairline woven bands are the section dividers, a stepped-triangle motif is the price chip, and the weave literally assembles itself as you scroll, so heritage reads as living craft (JAX-district, museum-shop) rather than souvenir border art. Arabic Kufi display type is the hero graphic at poster scale — قهوة، حلا، بارد set huge and confident — with Latin as the quiet under-thread. Default mode is bright daylight wool; a \"Layali\" night mode inverts to deep indigo-black wool (#141216 ground, #F3ECDD ink, threads glowing at full chroma) for the 8PM–1AM ordering peak — night as Bedouin sky, never hotel leather. It is the anti-template: no white card grid, no gold, no arabesque — one calm ground, four proud threads, and a loom that moves.",
+   "name": "Khuyūt — خيوط (Sadu Threads on Morning Wool)",
+   "palette": {
+    "bg": "#FAF6EE",
+    "bg2": "#F3ECDD",
+    "card": "#FFFDF6",
+    "card2": "#F5EDDD",
+    "ink": "#201B16",
+    "ink2": "#4A4238",
+    "muted": "#665C4E",
+    "accent": "#A61C2B",
+    "accent2": "#C95A1E",
+    "secondary": "#23545B",
+    "hair": "rgba(32,27,22,0.14)",
+    "hair2": "rgba(166,28,43,0.22)",
+    "success": "#2F6B44"
+   },
+   "typography_notes": "Keep Noto Kufi Arabic as display and IBM Plex Sans Arabic as body, but violently rescale the hierarchy: category headers in Noto Kufi Arabic at clamp(44px, 14vw, 96px), weight animating 400→800 via variable wght (or two-weight crossfade fallback) as the header crosses viewport center — kinetic Kufi as the menu's wayfinding. Dish names: Noto Kufi Arabic 600 at 22-24px, ink #201B16; Latin/English names: IBM Plex Sans Arabic 400 at 13px, letter-spaced +0.06em, muted #665C4E, always the quiet second line under the Arabic. Prices set in IBM Plex Sans Arabic 600 tabular figures inside the stepped-triangle crimson chip (#A61C2B, white text, 7.5:1). Body/descriptions: IBM Plex Sans Arabic 400, 15px/1.7, ink2 #4A4238. Microcopy in warm Najdi-leaning Saudi dialect (\"وش تشرب اليوم؟\", \"سمّ\" on the CTA, \"تكرم عينك\" on confirm). Never letter-space Arabic; drama comes from size and weight, not tracking.",
+   "signature_moments": [
+    "THE LOOM WEAVES ITSELF: every section divider is an inline SVG Sadu band (stepped triangles + diamond 'uyun' eyes as strokes) whose stroke-dashoffset and stepped scaleX animate to completion via pure CSS scroll-driven animation-timeline: view() — the pattern threads itself left-to-right (RTL: right-to-left) as the user scrolls into each category; compositor-only, IntersectionObserver fallback, prefers-reduced-motion shows it pre-woven.",
+    "STITCHED ADD-TO-ORDER: tapping 'سمّ' draws a dashed crimson thread (#A61C2B) around the item card perimeter via SVG stroke-dashoffset (350ms), the button does a 250ms overshoot squish (cubic-bezier(.34,1.56,.64,1)), navigator.vibrate(30) fires on Android, and a 12px triangle 'knot' flies along a CSS offset-path arc to the tray badge — the order is literally sewn into your tray.",
+    "SHUTTLE-PASS CATEGORY CHANGE: switching categories sends one 60%-width diagonal light band (a blurred linear-gradient pseudo-element, transform: translateX only) sweeping across the viewport like a weaver's shuttle while the ambient wash hue-rotates ≤30° to the new category thread — one glowing element per viewport, Noor-Riyadh calm, never blinking.",
+    "LAYALI TOGGLE FROM THE THUMB: the day-wool/night-wool switch uses document.startViewTransition() with a clip-path: circle() expanding from the toggle's tap coordinates — the cream weave floods to indigo-black (#141216) and the crimson/saffron threads ignite to full chroma; ~20 lines of vanilla JS, silent no-op fallback."
+   ],
+   "why_saudis_love_it": "It is theirs and it is new: Sadu is UNESCO-listed grandmother-craft that every Saudi recognizes in a heartbeat, but here it behaves like Riyadh 2026 — JAX-district curation, Diriyah-mudbrick warmth, huge confident Kufi — not like a hotel-lobby souvenir. The bright wool ground matches the ALF/%Arabica light-aesthetic canon Gen-Z actually photographs, the crimson CTA hits the same learned tap-reflex as Jahez/Talabat warm buttons without looking like a delivery app, and a screenshot of any card (one wash, one photo, one woven band, dialect microcopy) reads as a story-ready post. Owners see a menu that flatters food in sunlight, honors the flag-green-free/gold-free premium codes of Camel Step and Elixir Bunn, and carries a national craft no imported template can fake.",
+   "risks": "The kill-radius risk is kitsch drift: one extra motif per viewport and Khuyūt collapses into airport-gift-shop — enforce the rule of max ONE woven band and ONE crimson element per screen, and never use the Sadu pattern as a repeating background fill. Crimson #A61C2B must stay CTA/price-only; spread it into headers and the menu reads Jahez-red commodity. The indigo-teal secondary is appetite-hostile if it leaks near photography — the 24px exclusion rule needs to be a code-level constant, not a guideline. Variable-weight Noto Kufi animation should be tested on mid Android (fall back to a 500/700 crossfade if wght interpolation janks), and the Layali inversion needs its own contrast pass (#F3ECDD ink on #141216 is ~13:1, fine, but muted tokens must be re-derived, not alpha-faded). Finally, founder taste: this direction is confident and colored — if the founder secretly wants greige minimalism, the crimson thread will feel loud; show the day mode first."
+  },
+  {
+   "name": "SAHRA — سهرة (Boulevard After Dark)",
+   "concept": "The menu as a night out at Boulevard City: a near-black ink-navy sky (never brown, never gray) where 60%+ of every viewport is pure night negative space, and exactly one thing glows at a time — Noor Riyadh curation, not funfair. The disciplined electric set is Boulevard violet for atmosphere, one hero magenta-pink for everything money (prices, CTAs, the Season Signature drop badge) — a deliberate neon evolution of the Half Million pink phenomenon that also reads 'sweet' in gastrophysics terms — and a whisper of cyan reserved for informational chrome only, never near food. Food photography is the counter-move: every dish shot is warm-lit (amber rim light, golden crema, no cool cast), floating on the dark ground inside a thin neon keyline so a screenshot of any card looks like an Instagram story asset shot at the Boulevard. Categories are zones, Boulevard-style: entering قهوة، ماتشا، حلا cross-fades the ambient wash to that zone's hue under one master system, so a long menu feels like walking between themed districts instead of scrolling a list. Arabic Kufi display type is the hero light installation — huge, luminous, RTL-first — with Latin as quiet subtitles.",
+   "base_mode": "dark",
+   "palette": {
+    "bg": "#0A0A14",
+    "bg2": "#11101F",
+    "card": "#161528",
+    "card2": "#1D1B33",
+    "ink": "#F5F2FF",
+    "ink2": "#C9C4E4",
+    "muted": "#8E88B0",
+    "accent": "#FF3D8F",
+    "accent2": "#22E0FF",
+    "secondary": "#8B5CF6",
+    "hair": "rgba(139, 92, 246, 0.24)",
+    "hair2": "rgba(245, 242, 255, 0.08)",
+    "success": "#34E5A4"
+   },
+   "art_washes_strategy": "Boulevard zoning as ambient light: each category owns ONE low-saturation radial-gradient wash pinned behind the scroll (position: fixed, ~600px radius blob at 10–16% alpha over #0A0A14, blurred 80px+), cross-faded on category change via opacity only. Hue logic is appetite-led, not decorative — hot coffee/espresso zone = amber #FFB300 wash (warm light on crema); Saudi coffee/gahwa zone = saffron-gold #F4C430; matcha/teas = mint #34E5A4 shifted toward green, never blue; desserts/sweet drinks = rose-magenta #FF3D8F (red/pink = sweet, per Spence); cold brew/signature night drinks = violet #8B5CF6 as the only cool wash, kept behind chrome not behind photos. Global rule: washes never exceed 16% alpha, never sit directly under a food photo (photos keep a solid #161528 card plate), and only one wash hue exists per viewport. A slow filter: hue-rotate(±8deg) drift at 30s duration gives the Noor-Riyadh 'light in motion' feel at zero repaint cost since hue-rotate composites on the GPU.",
+   "typography_notes": "Keep Noto Kufi Arabic (display) + IBM Plex Sans Arabic (text), but rescale radically. Noto Kufi Arabic becomes the light installation: category headers at clamp(2.75rem, 9vw, 4.5rem), weight 700, color #F5F2FF with a single text-shadow glow in the zone hue (0 0 24px at 35% alpha — one glowing element per viewport rule; when a header glows, nothing else does). Dish names in Noto Kufi 600 at 1.25–1.5rem, pure #F5F2FF, NO glow. IBM Plex Sans Arabic 400/#C9C4E4 for descriptions at 0.9375rem with 1.7 line-height; prices in Plex Sans 600 tabular figures, #FF3D8F. Latin (transliterations, EN toggle) drops one visual level everywhere: Plex Sans, #8E88B0, 0.8125rem, letter-spaced caps for labels. Since Noto Kufi Arabic ships as a variable font (wght axis), category titles animate wght 400→700 as they cross viewport center via pure CSS animation-timeline: view() — kinetic type with zero JS.",
+   "signature_moments": [
+    "ZONE SWEEP on category change: a 1.5-viewport-wide linear-gradient light bar (transparent → zone hue at 20% → transparent, skewed -12deg) translates across the screen in 600ms (transform-only, cubic-bezier(0.16,1,0.3,1)) while the old ambient wash opacity-fades out and the new one fades in — the Boulevard 'entering a new district' moment, all compositor-thread.",
+    "NEON TUBE KUFIC: section wordmarks (قهوة، حلا، بارد) as prepped SVG paths that write themselves on scroll-into-view via stroke-dashoffset → 0 over 1.2s, stroked in #22E0FF or zone hue with an SVG feGaussianBlur duplicate underneath for the tube glow; triggered by animation-timeline: view() with a 5-line IntersectionObserver fallback, prefers-reduced-motion shows them pre-drawn.",
+    "SEASON SIGNATURE DROP CARD (توقيع الموسم): one limited-time hero card per menu with an animated magenta keyline — SVG rect stroke-dashoffset loop drawing the border continuously plus a 3s breathing glow (opacity keyframe on a blur(12px) duplicate rect) and a small countdown chip in #FF3D8F; the only permanently-glowing element in the entire menu, honoring the drop-culture mechanic Riyadh Season trained users on.",
+    "DRONE-SHOW ORDER CONFIRMATION: on confirm, a canvas spawns ~40 particles (magenta/gold 2px dots) that drift upward with sine wobble then lerp into a precomputed hexagon dot-grid (the Islamic-geometry Riyadh Season motif) holding for 1s before alpha-fading — rAF only, all allocation outside the loop, canvas paused when off-screen, paired with navigator.vibrate(30) on Android."
+   ],
+   "why_saudis_love_it": "This is the visual language of the biggest shared cultural experience in the Kingdom — 20M people walked through Boulevard City's neon last season, and Saudi social life is genuinely nocturnal (menus get browsed 8PM–1AM on phones outdoors, where a dark ground is comfortable, not gloomy). It reads as 'night out', not 'hotel lobby': the exact distinction the founder wanted. The magenta hero taps the proven Half Million pink phenomenon (a single audacious ownable color that sold out in 20 minutes), the drop-card mechanic mirrors Pepsi's Riyadh Season Night Edition collectible urgency, and giant luminous Kufi type is the festival's own 'Eastern typography as centerpiece' move — culturally owned, never oriental clip-art. Every dish card is engineered as a shareable frame: warm-lit food inside a neon keyline on black is precisely the screenshot aesthetic Riyadh Gen-Z already posts from Boulevard's Shibuya crossing.",
+   "risks": "Sunlight readability is the structural weakness — dark screens mirror outdoors at noon, so this direction must be positioned as the evening-native identity with a required 'day' companion theme (the View Transitions circular day/night toggle turns the weakness into a feature). Second risk: cool hues suppress appetite — mitigated by hard rules (cyan/violet only on chrome and type, never washing food photos; all photography warm-lit on solid card plates), but a careless photo treatment breaks the whole system. Third: neon-on-black is one restraint failure away from both the rejected 'dark template' cliché and bazaar kitsch — the one-glow-per-viewport and 60% night-negative-space rules are load-bearing, not suggestions. Finally, glow effects tempt developers toward box-shadow animation (repaint-heavy); every glow here must be a pre-blurred duplicate layer animated via opacity/transform only to hold 60fps on mid-range Android."
+  },
+  {
+   "name": "PISTACHIO HALA — يا هلا (Sunlit Pistachio & Sour Cherry)",
+   "concept": "A sun-flooded ivory canvas with a pistachio-milk undertone — warm white like steamed oat milk hit by morning light through a cafe window, never beige, never terracotta. The identity color is edible pistachio/matcha green (the drink Saudi Gen-Z is actually ordering and photographing right now — So Matcha, Ashjar, the global pistachio-latte wave), used as deep matcha ink for hero Kufi typography and as pale pistachio washes behind cards, while food photos always sit on pure warm white so they photograph like a %Arabica counter. The single juicy accent is sour-cherry red — the proven appetite trigger and one leg of the 2026 'pistachio + butter + cherry' delicious-pastel trio — reserved exclusively for prices, add-to-order CTAs and the limited 'توقيع الموسم' badge, so it pops like a cherry on a cake instead of reading Jahez-red. Butter yellow appears only as micro-highlights (new-item chips, star ratings). The whole thing reads as a screenshot-ready Instagram story frame: radical whitespace, one oversized modern-Kufi Arabic word per screen (قهوة، ماتشا، حلا), hairline green keylines, and sunlit pastel gradients that feel like golden hour on a Riyadh cafe terrace.",
+   "base_mode": "light",
+   "palette": {
+    "bg": "#FAF7F0",
+    "bg2": "#F1F3E4",
+    "card": "#FFFFFF",
+    "card2": "#F5F7EA",
+    "ink": "#1F241B",
+    "ink2": "#3C4433",
+    "muted": "#59614F",
+    "accent": "#C93A2C",
+    "accent2": "#F0C64F",
+    "secondary": "#3F5D3A",
+    "hair": "rgba(46,58,38,0.12)",
+    "hair2": "rgba(46,58,38,0.22)",
+    "success": "#2E7D4F"
+   },
+   "art_washes_strategy": "Every item card gets a soft radial 'ceramic plate' wash behind its photo, derived from the item's flavor family, at pastel saturation (12-22% — sunlit ceramic, never poster color), rendered as a radial-gradient anchored top-center that fades to card white by 65% radius so the food itself always reads against near-white. Hue logic follows gastrophysics + ingredient truth: matcha/pistachio drinks → pistachio #E7EFD6; espresso/gahwa → warm oat #F6EDDD; sweet desserts → blush rose #F9E6E2 (red/pink = sweet crossmodal mapping); citrus/iced sour drinks → butter-lime #F5F0D2; saffron/date items → pale saffron #F8ECD3. Category zone backgrounds (bg2) inherit a 6% tint of the same family hue, so scrolling between categories subtly shifts the ambient temperature of the page — one light system, many flavor moods. Cherry accent never appears in washes; it stays reserved for interactive chrome.",
+   "typography_notes": "Keep Noto Kufi Arabic + IBM Plex Sans Arabic, but flip the scale contrast to editorial extremes. Category headers: Noto Kufi Arabic 800 at 64-88px mobile (one word fills the viewport width, RTL, set in deep matcha #3F5D3A on the ivory ground — treated like gallery signage, tracking slightly tight). Item names: Noto Kufi Arabic 600 at 22-24px in ink #1F241B. Body/descriptions: IBM Plex Sans Arabic 400 at 15px, muted #59614F, max 2 lines. Prices: IBM Plex Sans Arabic 600 tabular-nums in sour-cherry #C93A2C, with 'ر.س' at 70% size. Latin secondary text: IBM Plex Sans 400 at 11-12px uppercase, letter-spaced +0.08em, muted — always visually subordinate to Arabic. SFDA calorie labels: Plex 500 at 11px inside a hairline pill, muted ink — designed-in, never bolted on.",
+   "signature_moments": [
+    "Golden-hour aurora hero: three layered radial-gradients (pistachio #DDE8C4, butter #F6E3A8, warm ivory) plus a blurred conic-gradient layer, drifting via transform translate + a slow 30s hue-rotate(±10deg) filter on the composited layer, with a 3% SVG-noise grain overlay — the menu opens like sunlight moving across a plaster wall; pure CSS, GPU-only properties.",
+    "Scroll-into-zone flavor tint: category sections use CSS scroll-driven animations (animation-timeline: view(); IntersectionObserver fallback) to crossfade the ambient bg2 tint and thicken the giant Kufi header from wght-equivalent light to full 800 (two stacked layers cross-fading opacity since Noto Kufi ships static weights) as each zone enters center view — entering 'ماتشا' literally makes the page breathe green.",
+    "Cherry-pop add-to-order: CTA does a 250ms cubic-bezier(0.34,1.56,0.64,1) squish, fires navigator.vibrate(30) on Android, and a 48px dish-thumbnail arcs along a quadratic bezier (JS rAF, transform-only) into the cart chip which ripples butter-yellow for 300ms — the only place cherry red ever moves.",
+    "Story-frame screenshot cards: featured items render as 4:5 portrait cards (Instagram-story ratio) with the dish photo full-bleed on its pastel plate wash, a 1px pistachio keyline inset 8px, the Arabic name in Kufi overlaid bottom-right, and a pointermove 3D tilt (max 6deg rotateX/Y, preserve-3d, radial-gradient glare child) capped to one active card — screenshotting one produces a ready-made story asset with the cafe's name in the corner."
+   ],
+   "why_saudis_love_it": "It is the aesthetic they already queue for and post — ALF/O'PO bright-minimal interiors, So Matcha's green-and-cream world, the matcha/pistachio-latte drink culture that is the actual engine of Saudi cafe TikTok — rendered as a menu instead of a room. Green is the safest, warmest color in the Kingdom (flag, faith, Barn's precedent) so it flatters owners' sense of identity without a single camel or lantern; the ivory base is sunlight-readable on a terrace at 2pm and WCAG-comfortable at night; and the sour-cherry CTA taps the exact learned muscle memory of a warm saturated 'order' button from HungerStation/Talabat while the rest stays premium-quiet. Every screen passes the real bar: 'would a Riyadh 22-year-old put this on their story' — yes, because each card is literally framed as one.",
+   "risks": "Pistachio-forward identity could read 'matcha specialty bar' if the cafe is espresso-first — mitigated because green lives only in type, keylines and washes, never on coffee photography (espresso items sit on oat/ivory washes). Cherry red must stay under ~5% of any viewport or it collapses into delivery-app territory; enforce it as interactive-only. Green near food is appetite-risky in theory — solved by the wash strategy keeping all food on near-white centers. Light-first means the evening/Boulevard crowd gets no night mood unless a warm dark toggle ships later (acceptable: the founder rejected dark, and light is the correct default per sunlight/WCAG evidence). Finally, pastel gradients + grain must stay subtle on cheap OLED panels — test the aurora at 80% brightness on a mid-range Samsung to confirm banding doesn't appear."
+  },
+  {
+   "art_washes_strategy": "Every category is a different minute of the same sunrise. All washes share one fixed formula — a radial-gradient 'horizon glow' anchored at the top-right corner (RTL reading start) at 12-18% saturation and 90%+ lightness, dissolving into the sandstone bg, with a faint counter-glow of the sky token (#3E6B70 at ~6% alpha) on the opposite lower edge to simulate atmospheric horizon light — plus a 2.5% opacity SVG turbulence grain overlay so gradients read as film, not plastic. Only the hue rotates per category, always derived from the ingredient: Saudi coffee/espresso = date-amber into rose (hue 20-35deg), matcha/teas = pistachio into pale sky (hue 90-160deg), desserts = rose-pink (sweetness = red/pink per Spence crossmodal research, hue 350-10deg), cold drinks = pale apricot into dawn-sky (hue 25 to 190deg). Implementation: one CSS custom property --zone-h per category section; the wash is background: radial-gradient(120% 80% at 85% -10%, hsl(var(--zone-h) 55% 92%), transparent 60%) layered over var(--bg); scrolling between categories transitions --zone-h via a scroll-driven animation-timeline so the whole page's light literally changes as you move through the menu — the Boulevard 'zoning' trick executed as times of dawn instead of neon worlds. Food photos always sit on the neutral card (#FFFDF9), never on the tinted wash, so the gradient behaves as ambient room light around the plate, not a filter on the food.",
+   "base_mode": "light",
+   "concept": "SHUROUQ is the menu as the first ten minutes of sunrise over AlUla: a pale sandstone canvas that holds a single cinematic rose-gold horizon gradient, the same 'new-Saudi-luxury' light language the giga-projects coined with Diriyah Tan and dawn photography of Hegra. The identity is light and airy — Cloud-Dancer-warm sandstone, near-black canyon ink, radical whitespace — but never cold, because every surface carries the warm cast of low sun: plaster-tinted cards, terracotta CTAs, a whisper of dawn-sky teal at the edges of gradients only, never near food. Arabic Kufi display type is the monument in the landscape: enormous, confident, treated like Royal Commission wayfinding signage, with Latin as a quiet caption beneath. The drama budget is spent on exactly one thing — light in motion: a slow, grainy, hue-drifting dawn gradient that subtly shifts per category, so browsing the menu feels like the sun climbing over a canyon rather than scrolling a list. It is the precise inverse of the rejected espresso-gold hotel look: same premium restraint, but dawn instead of night, mineral instead of metallic, place-branding instead of lobby.",
+   "name": "SHUROUQ — Sandstone Dawn (شروق)",
+   "palette": {
+    "bg": "#FAF4EC",
+    "bg2": "#F3E7D8",
+    "card": "#FFFDF9",
+    "card2": "#F8EEE1",
+    "ink": "#2B211A",
+    "ink2": "#52443A",
+    "muted": "#79685A",
+    "accent": "#B0512F",
+    "accent2": "#EDA189",
+    "secondary": "#3E6B70",
+    "hair": "rgba(90, 62, 40, 0.14)",
+    "hair2": "rgba(90, 62, 40, 0.26)",
+    "success": "#3F6B4A"
+   },
+   "risks": "Light-and-airy can collapse into the ubiquitous Riyadh greige-minimal cliche if the dawn gradient is timid — the wash opacity and per-category hue shift must be clearly perceptible or the whole direction reads as 'another beige cafe menu'. The sky teal (#3E6B70) is appetite-hostile territory: it must stay strictly in chrome, gradient edges, and utility text, never within a card that contains food photography, or desserts will look cold. Grain overlays and large blurred gradients can jank on mid Android if implemented as animated box-shadows or repainting gradients — hue drift must ride hue-rotate/opacity/transform on pre-rasterized layers only, and the SVG grain must be a static tiled data-URI, not per-frame canvas noise. Finally, accent #B0512F sits at ~4.5:1 on bg — safe, but designers must not 'brighten it up' during build or price text falls out of WCAG compliance; provide #9A4527 as the darkened hover/pressed state instead of a lighter one.",
+   "signature_moments": [
+    "The Rising Sun hero: a layered CSS gradient horizon (2 radial layers + 1 blurred conic 'sun disc' pseudo-element over #FAF4EC, static SVG grain tile at 2.5% opacity) where the rose-gold sun disc rises and the sky warms as the user scrolls the hero away — pure CSS scroll-driven animation (animation-timeline: scroll()) moving only transform: translateY and filter: hue-rotate on the composited gradient layer, IntersectionObserver fallback; zero JS on the happy path, 60fps guaranteed off-main-thread.",
+    "Dawn-sweep category transitions: tapping a category in the sticky Kufi tab bar triggers document.startViewTransition() with a soft diagonal clip-path wipe (polygon animating corner-to-corner, ~450ms, ease-out) while --zone-h crossfades — the whole page's ambient light changes like the sun moving, echoing Boulevard's one-brand-many-zones logic; graceful no-op where View Transitions is unsupported (~20 lines vanilla JS).",
+    "Self-writing Kufi headers: each section title (قهوة سعودية، إسبريسو، ماتشا، حلا) is a prepared SVG whose stroke-mask animates via stroke-dashoffset on scroll-into-view, as if drawn in wet plaster; one-time SVG prep per word, single CSS keyframe per reveal, trivially 60fps, prefers-reduced-motion swaps it for a simple fade.",
+    "Featured-item 'first light' card: the daily signature dish gets a 3D tilt card (~15 lines vanilla JS: pointermove → rotateX/rotateY within ±6deg, photo/title/price chip at three translateZ depths) with a rose-gold radial-gradient glare (#EDA189 at 25% alpha) sweeping across the photo as it tilts — sunrise catching a canyon wall; will-change: transform, gyroscope via deviceorientation on Android, capped to the single featured card so mid-range devices never composite more than one."
+   ],
+   "typography_notes": "Keep the pairing but invert the power balance: Noto Kufi Arabic becomes monumental signage — category headers at clamp(3rem, 14vw, 6.5rem), weight 700-800, tight tracking, ink #2B211A, set flush-right as full-bleed RTL 'wayfinding' with the Latin equivalent in IBM Plex Sans Arabic at 0.75rem/500, letter-spaced 0.14em uppercase, in muted #79685A directly beneath like a museum caption. Dish names in Noto Kufi Arabic 600 at 1.35rem; descriptions and all UI chrome in IBM Plex Sans Arabic 400/1rem at 1.6 line-height (ink2 #52443A); prices in IBM Plex Sans Arabic 700 tabular figures in accent #B0512F with the SAR symbol at 60% size. Never set Noto Kufi below 1.1rem — it is display-only in this system. Scroll-linked weight animation (400→800 as a header crosses viewport center) only if a variable build of Noto Kufi Arabic is served; otherwise a single opacity/translate reveal — no faux-bolding.",
+   "why_saudis_love_it": "This is the exact aesthetic the Kingdom has taught its people to read as 'ours and premium': Diriyah Tan is literally a state-commissioned Pantone made from Najdi mudbrick, and AlUla dawn photography is the Vision 2030 postcard — so a sandstone-and-rose-gold dawn menu borrows national pride, not hotel-lobby orientalism. It photographs the way Saudi Gen-Z already shoots: bright, warm, sunlit — matching the ALF/%Arabica light-cafe canon that dominates 'Riyadh cafe aesthetic' TikTok, so a screenshot of this menu looks like a story post, not a receipt. Monumental Kufi headers deliver the 'Arabic type as hero' move that wins Saudi branding awards (Ubayyah), warm colloquial microcopy fits, and the terracotta CTA sits in the exact warm register (appetite science + Talabat-trained muscle memory) that makes ordering feel instinctive. And for the owner, it is unmistakably differentiated: no QR-menu vendor in the Kingdom ships cinematic place-branding light — it makes their cafe look like it belongs next to Hegra, not next to a delivery app."
+  },
+  {
+   "name": "MALACHITE MAJLIS — Ivory by Day, Emerald by Night",
+   "concept": "Saudi green reclaimed as a jewel, not a ministry: the menu lives on warm ivory like a sunlit majlis, and deep banded malachite — the stone, with its striations and depth — is worn as the brand's jewelry: oversized Kufic headers, hairline frames, and a slow-drifting mineral-vein hero behind the wordmark. Food never touches green; every dish sits on a bright ivory card-plate with a faint warm wash (date-amber, pistachio, rose) so photos look sun-lit and appetizing, while emerald does what luxury materials do — it frames, it types, it borders. Prices and CTAs run in saffron-bronze (gahwa gold, not hotel gold-foil), the single warm appetite accent Saudi thumbs already trust from food apps. After dark, one thumb-tap wipes the whole menu into Malachite Night: near-black green ground, ivory type, gold glints — Boulevard-at-night energy for the 8PM–1AM crowd, as a mode, never the identity. It is instantly, proudly 'ours' — flag-adjacent without a single flat government-green fill, arabesque border, or dallah clip-art in sight.",
+   "base_mode": "dual",
+   "palette": {
+    "bg": "#F6F1E4",
+    "bg2": "#0B1F19",
+    "card": "#FDFBF3",
+    "card2": "#132E24",
+    "ink": "#10291F",
+    "ink2": "#F4EEDD",
+    "muted": "#5B6B5E",
+    "accent": "#8C5E10",
+    "accent2": "#E3B65B",
+    "secondary": "#0F5C43",
+    "hair": "rgba(16,41,31,0.14)",
+    "hair2": "rgba(244,238,221,0.12)",
+    "success": "#2E7D4F"
+   },
+   "art_washes_strategy": "Token mapping: unsuffixed tokens are Day (default); *2 tokens are the Malachite Night counterparts (bg2/card2/ink2/accent2/hair2); night muted = rgba(244,238,221,0.66). DAY WASHES: each item card gets a single radial-gradient wash bleeding from the photo corner over the ivory card, hue derived from the item's category but always pulled toward the warm side and capped at ~10-14% saturation, ~6-9% opacity: espresso/gahwa → date-amber (#C98A2A base), matcha/teas → pistachio (#9DB87A base, the ONE place green may approach food, kept pale and yellow-leaning), desserts → rose (#D98A7B base), cold drinks → apricot (#E0A05C base). Emerald #0F5C43 is banned as a backdrop behind any food photo — it appears only as the card's outer hairline frame and category header above. NIGHT WASHES: the wash inverts to a low-luminance jewel halo OUTSIDE the card edge (box-shadow-like radial glow in the same category hue at ~12% opacity on #0B1F19), while the card interior stays a warm-lit food photo on #132E24 — glow frames the dish like Noor Riyadh light art, never tints it. Implementation: one CSS custom property --wash-h per category; washes are static gradients (no animation) so they cost nothing.",
+   "typography_notes": "Keep Noto Kufi Arabic (display) + IBM Plex Sans Arabic (text). Noto Kufi Arabic is variable — exploit it: category headers (قهوة، حلا، بارد، شاي) set enormous, clamp(2.75rem, 10vw, 5rem), wght 750, color secondary #0F5C43 on day / accent2 #E3B65B on night, treated as gallery signage with a full viewport-width of negative space above. Scroll-driven wght animation 300→750 as a header crosses viewport center (pure CSS view() timeline). Dish names: Noto Kufi Arabic 600 at 1.25-1.4rem in ink. Body/descriptions: IBM Plex Sans Arabic 400 at 0.95rem in muted, line-height 1.7. Prices: IBM Plex Sans Arabic 600 tabular in accent #8C5E10 (day) / #E3B65B (night). Latin is the quiet secondary: IBM Plex Sans (Latin subset) 500, 0.72em of its Arabic sibling, letter-spacing 0.08em, uppercase, muted color — never competing with Arabic. No decorative or script faces anywhere; the luxury is scale + weight + emerald ink, not ornament.",
+   "signature_moments": [
+    "MALACHITE VEIN HERO: behind the cafe wordmark, 3 stacked layers of narrow elliptical radial-gradients in #0F5C43/#14664B/#0B3D2E clipped by an SVG wave mask to read as banded malachite striations, drifting via transform: translateX keyframes at 90s+ a 45s filter: hue-rotate(±8deg) breathe — all GPU-composited, zero JS, grain via a tiled 64px noise PNG at 4% opacity. Max one instance, hero only.",
+    "DAY/NIGHT CIRCULAR WIPE: the ivory-majlis ↔ malachite-night toggle uses document.startViewTransition() with a clip-path: circle() expanding from the toggle's clientX/clientY (~20 lines vanilla JS, no-op fallback). Labeled صباح الديوانية / ليل الملكيت — framed as two moods of the cafe, matching Saudi late-night culture.",
+    "SELF-WRITING KUFIC HEADERS: each category wordmark is a prepped SVG whose stroke-mask animates stroke-dashoffset→0 on first scroll-into-view (IntersectionObserver adds one class), writing قهوة in emerald over ~900ms, followed by a 2px saffron #8C5E10 hairline sweeping in beneath. One-time per section, killed under prefers-reduced-motion.",
+    "GOLD GLINT ON PRICES: a single scroll-driven light sweep (animation-timeline: view(); a 30deg linear-gradient highlight moving across the saffron price chip via background-position) so exactly one price glints as it passes viewport center — festival restraint rule: never more than one glowing element per viewport."
+   ],
+   "why_saudis_love_it": "Green is the one color every Saudi already carries in their chest — flag, faith, Vision 2030 — but they have only ever seen it done as government or as Starbucks-clone; seeing it done as malachite jewelry on sunlit ivory reads instantly as 'national pride, worn luxuriously' and photographs like an Elixir Bunn interior. The ivory-day default matches the bright cafe canon Gen-Z actually posts (ALF, %Arabica, Draft), the malachite-night mode matches how they actually live (Boulevard hours, 8PM menus), and the saffron-gold prices whisper gahwa ritual rather than shouting hotel lobby. A screenshot of this menu looks like a Saudi brand, not a QR-vendor template — which is precisely what design-led owners like Half Million and Camel Step believe they are.",
+   "risks": "1) Bureaucratic drift: if any implementer nudges secondary toward saturated #006C35 flat fills or pairs it with pure white, it collapses into ministry branding — enforce the ivory base, the banded/textured treatment, and the desaturated-deep hexes exactly. 2) Appetite hazard: green touching food backdrops suppresses appetite; the ban on emerald behind photos is load-bearing, and the pistachio wash must stay pale and yellow-leaning. 3) Night-mode gravity: the malachite night is seductive to build and could quietly become the default, reproducing the rejected dark-luxury identity — day must ship as default with night behind the toggle. 4) Gold creep: saffron-bronze is rationed to prices/CTAs/one glint per viewport; add borders or foil textures in it and the design regresses to the Pikbest template economy the founder already rejected."
+  }
+ ],
+ "judgments": [
+  {
+   "lens": "saudi-appeal",
+   "scores": [
+    {
+     "direction_name": "Khuyūt — خيوط (Sadu Threads on Morning Wool)",
+     "score": 9,
+     "note": "Sadu done like JAX streetwear, not souvenir — the 'سمّ' CTA and Najdi microcopy alone get screenshotted; proudly ours, bright enough for the ALF-canon feed, and the Layali night mode covers the 8PM reality."
+    },
+    {
+     "direction_name": "SAHRA — سهرة (Boulevard After Dark)",
+     "score": 6.5,
+     "note": "Boulevard neon is genuinely loved but this reads like Riyadh Season merch, not a cafe — it will feel dated the moment the season rebrands, and a black menu at a 1PM terrace is a real annoyance."
+    },
+    {
+     "direction_name": "PISTACHIO HALA — يا هلا (Sunlit Pistachio & Sour Cherry)",
+     "score": 8,
+     "note": "This is literally the matcha-tok aesthetic Saudi Gen-Z queues and posts right now — instant mass appeal, story-ready 4:5 cards — but it could be Seoul or LA; loved, not talked about, and it dates with the pistachio wave."
+    },
+    {
+     "direction_name": "SHUROUQ — Sandstone Dawn (شروق)",
+     "score": 6,
+     "note": "Elegant giga-project prestige, but Riyadh is drowning in greige-minimal cafes — mainstream eyes read 'another beige menu, Royal Commission energy'; admired, never screenshotted."
+    },
+    {
+     "direction_name": "MALACHITE MAJLIS — Ivory by Day, Emerald by Night",
+     "score": 5.5,
+     "note": "Green is a cultural tightrope: before anyone sees 'malachite jewelry' they see ministry letterhead or a Starbucks clone — the concept is clever but one hex-nudge from National Day campaign cringe."
+    }
+   ],
+   "top_pick": "Khuyūt — خيوط (Sadu Threads on Morning Wool)",
+   "rationale": "For the 18-40 Riyadh/Jeddah crowd, the winning formula is 'ours + new + bright + shareable', and Khuyūt is the only direction that hits all four. Sadu is having a genuine cultural moment (Founding Day fits, UNESCO listing, Boulevard merch, JAX exhibitions) and every Saudi reads it instantly as grandmother-heritage — but here it structures a modern Swiss layout instead of decorating a souvenir, which is exactly the code-switch this generation celebrates and reposts. The sunlit cream ground matches the light-cafe aesthetic people actually photograph (nobody posts a dark menu at ALF at 2PM), the huge Kufi headers flatter Arabic-first pride, and the dialect microcopy ('وش تشرب اليوم؟', 'سمّ', 'تكرم عينك') is the detail that gets screenshotted with a 'يجننن' caption — warmth no imported template can fake. Pistachio Hala scores nearly as high on pure mass appeal because it IS the current matcha/pistachio feed aesthetic, but that's precisely its weakness: it's everyone's aesthetic, globally generic, and tied to a drink trend with a shelf life. SAHRA borrows Boulevard's glow but feels like festival collateral rather than a cafe identity and fights the sun. SHUROUQ is tasteful wallpaper in a city saturated with beige minimalism. Malachite is the boldest idea but green's gravitational pull toward government/Starbucks readings makes it the riskiest bet for mainstream love. Khuyūt is the one people would tag the cafe over: 'شفتوا المنيو؟ سدو بس مودرن'.",
+   "grafts": [
+    "From PISTACHIO HALA: the 4:5 Instagram-story-ratio featured cards with the Arabic name overlaid — make Khuyūt's screenshot-readiness literal by framing signature items as ready-made story assets.",
+    "From SAHRA: the 'توقيع الموسم' limited-drop card with countdown chip — drop-culture urgency that Riyadh Season trained users on, executed in Khuyūt's crimson thread instead of neon magenta.",
+    "From PISTACHIO HALA: lean the pistachio wash harder for matcha/pistachio drinks specifically — ride the live drink trend inside Khuyūt's wash system without rebranding around it.",
+    "From SHUROUQ: the museum-caption Latin treatment (tiny letter-spaced uppercase directly beneath monumental Arabic) — sharpens Khuyūt's Arabic-first hierarchy into true wayfinding signage.",
+    "From MALACHITE MAJLIS: the scroll-driven single gold-glint on the price chip as it crosses viewport center — one-glint-per-viewport restraint, recolored to Khuyūt's saffron thread."
+   ]
+  },
+  {
+   "lens": "appetite-conversion",
+   "scores": [
+    {
+     "direction_name": "Khuyūt — خيوط (Sadu Threads on Morning Wool)",
+     "score": 9,
+     "note": "Best appetite engineering in the set: food always on near-white warm ground per Spence, cool hues code-banned within 24px of photos, and the crimson stepped-triangle price chip (white on #A61C2B, 7.5:1) is the most conversion-forward price treatment of all five — plus a dual mode that covers both the 2PM terrace and the 8PM–1AM ordering peak."
+    },
+    {
+     "direction_name": "SAHRA — سهرة (Boulevard After Dark)",
+     "score": 5.5,
+     "note": "Highest demo-theater ceiling but weakest appetite floor: dark grounds suppress appetite and mercilessly expose average food photography, magenta prices read 'nightlife' more than 'edible', and the whole system collapses at a sunlit noon table — an owner demo at 9PM wows, the same demo at lunch loses the sale."
+    },
+    {
+     "direction_name": "PISTACHIO HALA — يا هلا (Sunlit Pistachio & Sour Cherry)",
+     "score": 8.5,
+     "note": "The most immediately appetizing on a phone — food on pure warm white with edible pastel plate washes, sour-cherry prices/CTAs hitting the exact Talabat-trained tap reflex, and 4:5 story-frame cards that are free marketing; docked for a pistachio identity that skews 'matcha bar' and reads slightly less premium-unique for an espresso-first cafe charging SAR 26."
+    },
+    {
+     "direction_name": "SHUROUQ — Sandstone Dawn (شروق)",
+     "score": 7,
+     "note": "Warm, flattering light on food and genuine giga-project premium cues, but its price/CTA layer is the softest in the set (terracotta at ~4.5:1, no chip container) and the whole direction is one timid gradient away from the ubiquitous beige-minimal menu every Riyadh cafe already has — pretty, but least pushy about the money."
+    },
+    {
+     "direction_name": "MALACHITE MAJLIS — Ivory by Day, Emerald by Night",
+     "score": 7,
+     "note": "Smart discipline (green never touches food, warm item washes) and the national-pride-as-jewelry story lands hard with owners, but emerald as the dominant brand ink keeps a cool, appetite-neutral cast over every viewport, and saffron-bronze #8C5E10 prices are dimmer and less tappable than a true warm-red money color."
+    }
+   ],
+   "top_pick": "Khuyūt — خيوط (Sadu Threads on Morning Wool)",
+   "rationale": "Through a menu-engineering lens, Khuyūt is the only direction that maximizes all four criteria simultaneously. Appetite: it is the most rigorously Spence-compliant system — every plate sits on near-white sunlit cream, ambient washes are warm-side-only (madder/saffron/pistachio) at 12-16% saturation so they flatter crema and pastry rather than tint them, and the appetite-hostile indigo is banned near photos as a code-level constant, not a style note. Money prominence: the crimson stepped-triangle price chip is the strongest price treatment in the set (white-on-crimson at 7.5:1, culturally a heritage motif rather than a discount sticker), and the 'سمّ' CTA sits in the exact warm-red register Saudi thumbs are trained to tap by Jahez/HungerStation — while everything around it stays quiet enough that the red still means 'order here'. Premium justification: UNESCO-listed Sadu executed with Swiss restraint reads as unfakeable craft — a SAR 26 latte needs a story, and 'no imported QR template can have this' is precisely that story. Owner demo: the loom weaving itself on scroll, the stitched-thread add-to-order with the knot flying into the tray, and the Layali circular wipe are three distinct wow beats an owner will remember and retell — and the dual mode answers the objection SAHRA can't (noon terrace) and PISTACHIO can't (the 8PM–1AM peak when most orders actually happen). Pistachio Hala is the close second and arguably safer commercially, but it's an aesthetic the market already saturates; Khuyūt sells at the same appetite level while being ownable.",
+   "grafts": [
+    "From SAHRA: the 'توقيع الموسم' Season Signature drop card — one limited-time hero item with a countdown chip and the menu's single permanently-animated keyline (rendered in Khuyūt's crimson thread, not neon). Scarcity mechanics are the highest-ROI upsell device here and Khuyūt currently has no urgency layer.",
+    "From PISTACHIO HALA: 4:5 portrait story-frame featured cards (full-bleed photo, Kufi name overlaid, cafe name in the corner) so a screenshot is a ready-made Instagram story — free marketing the owner instantly understands in a demo.",
+    "From PISTACHIO HALA: item-level flavor-family plate washes (blush behind desserts, oat behind espresso) layered inside Khuyūt's category washes, tightening the gastrophysics sweetness/red mapping at the individual-card level.",
+    "From MALACHITE MAJLIS: the scroll-driven gold-glint light sweep on the price chip as exactly one price crosses viewport center — a compositor-cheap way to pull the eye to the money without breaking the one-crimson-element rule.",
+    "From SHUROUQ: the single featured-item 3D tilt card (±6deg pointermove, capped to one card) for the daily signature dish — a tactile hero moment for the demo — plus its discipline of shipping a pre-darkened pressed state so nobody 'brightens up' the accent out of WCAG compliance."
+   ]
+  },
+  {
+   "lens": "craft-timeless",
+   "scores": [
+    {
+     "direction_name": "Khuyūt — خيوط (Sadu Threads on Morning Wool)",
+     "score": 9,
+     "note": "Heritage-as-structure is the only direction where the concept, the grid, and the motion are one idea; Sadu is craft, not trend, so it compounds rather than dates — and every signature moment (dashoffset weave, stitched add, shuttle sweep) is compositor-cheap on the existing token system. Only real hazard is the kitsch cliff, and the direction already ships its own guardrails as code-level rules."
+    },
+    {
+     "direction_name": "SAHRA — سهرة (Boulevard After Dark)",
+     "score": 5.5,
+     "note": "Highest short-term wow, worst longevity: neon-on-black is timestamped to this Riyadh Season cycle, is the closest of the five to both the rejected dark template and the emerging QR-vendor 'neon menu' cliche, and the canvas particle confirmation is the priciest moment-per-risk in the whole set."
+    },
+    {
+     "direction_name": "PISTACHIO HALA — يا هلا (Sunlit Pistachio & Sour Cherry)",
+     "score": 6.5,
+     "note": "Easiest to execute flawlessly and very screenshot-literate, but it is built on the pistachio/matcha/'delicious pastels 2026' trend trio by its own admission — in 3 years it reads like a dated drink fad, and pastel-matcha-minimal is already the most crowded aesthetic in Gulf cafe branding."
+    },
+    {
+     "direction_name": "SHUROUQ — Sandstone Dawn (شروق)",
+     "score": 8,
+     "note": "The most elegant engineering of the five (one --zone-h formula drives every wash) and Diriyah-Tan place-branding ages well — but its stated failure mode is real: one timid opacity decision and it collapses into the Riyadh greige-minimal sameness it's trying to transcend, so differentiation rests entirely on execution nerve."
+    },
+    {
+     "direction_name": "MALACHITE MAJLIS — Ivory by Day, Emerald by Night",
+     "score": 7,
+     "note": "The malachite-vein hero is a genuinely ownable signature and green-as-jewel is a bold reclamation, but the safe corridor is the narrowest here — four distinct drift failure modes (ministry, Starbucks, gold foil, night-mode gravity) plus dual-mode QA make it the highest-supervision build for a solo operator."
+    }
+   ],
+   "top_pick": "Khuyūt — خيوط (Sadu Threads on Morning Wool)",
+   "rationale": "Through a craft-and-longevity lens, Khuyūt wins because it is the only direction whose visual language cannot expire or be templated. SAHRA and PISTACHIO are both explicitly pegged to current trend cycles (Boulevard neon, the pistachio wave) — they will look like 2026 in 2029. SHUROUQ ages well but its differentiation depends on gradients being brave enough to escape Riyadh's beige-minimal default, a knife-edge for any implementer. MALACHITE has a strong signature but the tightest execution corridor. Khuyūt's Sadu-as-structure idea is UNESCO-grade permanent, unfakeable by QR-vendor templates (a competitor can copy a gradient; they can't copy a system where the weave IS the divider, the price chip, and the add-to-order interaction), and its signature moments are the cheapest in the set — SVG stroke-dashoffset, scroll-driven timelines, one View Transition — all proven-safe patterns on the existing static, token-based architecture (the palette drops directly onto the current --bg/--card/--ink/--hair token names). Its day-wool default answers the sunlight problem, its Layali mode owns the 8PM–1AM peak, and its acknowledged kitsch risk is governed by enforceable code-level rules (one band per viewport, indigo exclusion radius) rather than taste memos. Highest craft ceiling, longest shelf life, hardest to imitate, lowest technical risk per moment.",
+   "grafts": [
+    "From SHUROUQ: the single --zone-h custom-property wash formula — implement Khuyūt's five category washes as ONE fixed radial-gradient formula with only the hue token rotating per section, instead of five bespoke gradient pairs; simpler tokens, guaranteed consistency, cheaper QA.",
+    "From SHUROUQ: the static tiled SVG turbulence grain at ~2.5% opacity over washes, so Khuyūt's 'wool' ground actually reads as fiber/film rather than plastic gradient — a data-URI tile, zero runtime cost.",
+    "From SAHRA: the 'توقيع الموسم' limited-drop card mechanic — port it as the ONE permanently-stitched card in Khuyūt (continuous crimson dashed-keyline via stroke-dashoffset loop + countdown chip), giving the menu a drop-culture urgency moment without breaking the one-crimson-element rule.",
+    "From SAHRA: the hard rule that food photos always sit on a solid card plate and washes never pass directly under the photograph — tighten Khuyūt's 'behind and slightly above' wording into a code-level constant like its indigo exclusion radius.",
+    "From PISTACHIO HALA: the 4:5 Instagram-story-ratio featured cards with the Arabic name and cafe mark composed into the frame corner — makes every Khuyūt screenshot a ready-made story asset, the strongest owner-demo close in the set.",
+    "From MALACHITE MAJLIS: the single scroll-driven light glint that fires on exactly one price chip as it crosses viewport center (background-position sweep) — a compositor-free 'festival restraint' sparkle that fits Khuyūt's one-glowing-element rule.",
+    "From MALACHITE MAJLIS: naming the two modes as hospitality moods in the toggle microcopy (day/night as صباح / ليالي framing) so the Layali switch reads as an invitation, not a settings control."
+   ]
+  }
+ ],
+ "final": {
+  "winner": "Khuyūt — خيوط (Sadu Threads on Morning Wool)",
+  "final_concept": "Khuyūt swept all three lenses (9/9/9) and ships as day-wool light mode: a sunlit cream ground (#FAF6EE) that photographs food the way ALF and %Arabica photograph themselves, with every ounce of color spent as dyed Sadu threads — one madder-crimson thread (#A61C2B) doing ALL money work (prices, badges, chip glider, add buttons, order CTA) with warm-white text on it, and a deep saffron thread (#8A5A18) as the quiet secondary for line icons, labels and micro-text. From SHUROUQ we graft the single-formula discipline: all 23 item washes keep the existing radial geometry and rotate only a warm ingredient hue (pistachio leaned harder for matcha per PISTACHIO HALA — riding the live drink trend inside the wash system, never as the brand). From SAHRA we graft drop-culture urgency: the existing 'محصول محدود' Limited Harvest reserve block becomes the menu's ONLY permanently-animated element, sealed by a running crimson stitch. From MALACHITE we graft festival restraint sparkle: exactly one price glints saffron as its card crosses viewport center. The loom itself weaves the section dividers on scroll — heritage as structure, not ornament: the woven band IS the divider, the crimson thread IS the price, the stitch IS the add. Indigo/teal is banned entirely, WhatsApp green stays untouched as the one green block users already trust, and the Layali night mode is deferred to a later pass so this one ships with a single, fully-QA'd contrast system.",
+  "css_tokens": {
+   "bg": "#FAF6EE",
+   "bg2": "#F3ECDD",
+   "card": "#FFFDF6",
+   "card2": "#F5EDDD",
+   "ink": "#201B16",
+   "ink2": "#4A4238",
+   "muted": "#665C4E",
+   "gold": "#A61C2B",
+   "gold2": "#BE3144",
+   "sand": "#8A5A18",
+   "hair": "rgba(32,27,22,.14)",
+   "hair2": "rgba(166,28,43,.28)",
+   "green": "#2F6B44"
+  },
+  "art_washes": [
+   {
+    "key": "saffron",
+    "css": "radial-gradient(130% 95% at 50% 0%,rgba(201,138,42,.24),transparent 62%)"
+   },
+   {
+    "key": "rose",
+    "css": "radial-gradient(130% 95% at 50% 0%,rgba(198,84,100,.20),transparent 62%)"
+   },
+   {
+    "key": "choc",
+    "css": "radial-gradient(130% 95% at 50% 0%,rgba(141,86,48,.22),transparent 62%)"
+   },
+   {
+    "key": "rain",
+    "css": "radial-gradient(130% 95% at 50% 0%,rgba(84,104,96,.16),transparent 62%)"
+   },
+   {
+    "key": "clay",
+    "css": "radial-gradient(130% 95% at 50% 0%,rgba(178,96,58,.22),transparent 62%)"
+   },
+   {
+    "key": "qahwa",
+    "css": "radial-gradient(130% 95% at 50% 0%,rgba(176,116,48,.24),transparent 62%)"
+   },
+   {
+    "key": "dates",
+    "css": "radial-gradient(130% 95% at 50% 0%,rgba(146,94,42,.24),transparent 62%)"
+   },
+   {
+    "key": "ethiopia",
+    "css": "radial-gradient(130% 95% at 50% 0%,rgba(150,148,64,.18),transparent 62%)"
+   },
+   {
+    "key": "colombia",
+    "css": "radial-gradient(130% 95% at 50% 0%,rgba(166,120,58,.22),transparent 62%)"
+   },
+   {
+    "key": "yemen",
+    "css": "radial-gradient(130% 95% at 50% 0%,rgba(150,74,56,.22),transparent 62%)"
+   },
+   {
+    "key": "matcha",
+    "css": "radial-gradient(130% 95% at 50% 0%,rgba(122,148,74,.22),transparent 62%)"
+   },
+   {
+    "key": "pom",
+    "css": "radial-gradient(130% 95% at 50% 0%,rgba(178,52,80,.20),transparent 62%)"
+   },
+   {
+    "key": "yuzu",
+    "css": "radial-gradient(130% 95% at 50% 0%,rgba(186,160,52,.20),transparent 62%)"
+   },
+   {
+    "key": "mint",
+    "css": "radial-gradient(130% 95% at 50% 0%,rgba(88,138,110,.18),transparent 62%)"
+   },
+   {
+    "key": "cake",
+    "css": "radial-gradient(130% 95% at 50% 0%,rgba(196,150,54,.22),transparent 62%)"
+   },
+   {
+    "key": "kunafa",
+    "css": "radial-gradient(130% 95% at 50% 0%,rgba(188,128,44,.24),transparent 62%)"
+   },
+   {
+    "key": "basque",
+    "css": "radial-gradient(130% 95% at 50% 0%,rgba(160,110,66,.20),transparent 62%)"
+   },
+   {
+    "key": "milkpud",
+    "css": "radial-gradient(130% 95% at 50% 0%,rgba(158,132,96,.16),transparent 62%)"
+   },
+   {
+    "key": "luqaimat",
+    "css": "radial-gradient(130% 95% at 50% 0%,rgba(192,124,36,.24),transparent 62%)"
+   },
+   {
+    "key": "shak",
+    "css": "radial-gradient(130% 95% at 50% 0%,rgba(186,84,48,.22),transparent 62%)"
+   },
+   {
+    "key": "crois",
+    "css": "radial-gradient(130% 95% at 50% 0%,rgba(184,140,60,.22),transparent 62%)"
+   },
+   {
+    "key": "toastw",
+    "css": "radial-gradient(130% 95% at 50% 0%,rgba(164,116,58,.20),transparent 62%)"
+   },
+   {
+    "key": "set",
+    "css": "radial-gradient(130% 95% at 50% 0%,rgba(160,128,84,.16),transparent 62%)"
+   }
+  ],
+  "signature_moments": [
+   {
+    "name": "The Loom Weaves Itself (self-weaving Sadu dividers)",
+    "spec": "Lives on the existing .divider SVG (the DIVIDER template string near line 883: one path with two long strands, a diamond 'ayn' and two short dashes, stroked in currentColor = --hair2 crimson thread). Implementation: no DOM change beyond the template. CSS, gated inside @media (prefers-reduced-motion:no-preference): .divider path{stroke-dasharray:260;stroke-dashoffset:260;transition:stroke-dashoffset .9s var(--ease) .1s} html[lang=\"ar\"] .divider path{stroke-dashoffset:-260} .divider.woven path{stroke-dashoffset:0}. (Use raw px dasharray 260 ≈ total path length, NOT pathLength=1 — subpath dash normalization is inconsistent across engines.) JS (~6 lines, alongside the existing RISE IntersectionObserver): new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('woven');io.unobserve(en.target)}}),{threshold:.5}) observing every .divider — each band threads itself once, in reading direction (LTR in EN, RTL in AR via the negative offset). Reduced-motion fallback: all rules live inside the no-preference block, so the divider renders pre-woven with zero animation. Cost: one-time stroke paint per section, compositor-cheap."
+   },
+   {
+    "name": "The Stitched Seal — توقيع الموسم on the Limited Harvest card",
+    "spec": "SAHRA's drop-culture graft, hosted by the EXISTING .reserve block ('محصول محدود / Only 6 cups daily', built near line 911) — it becomes the menu's ONLY permanently-animated element. DOM: when building the reserve HTML, append one overlay SVG as first child of .reserve (which gets position:relative): <svg class=\"stitch\" aria-hidden=\"true\" style=\"position:absolute;inset:0;width:100%;height:100%;pointer-events:none\"><rect x=\"1.5\" y=\"1.5\" rx=\"18\" fill=\"none\" stroke=\"var(--gold)\" stroke-width=\"1.5\" stroke-dasharray=\"7 6\" stroke-linecap=\"round\" style=\"width:calc(100% - 3px);height:calc(100% - 3px)\"/></svg>, and change .reserve's own border-color to transparent so the running stitch replaces the solid keyline. Animation, gated in @media (prefers-reduced-motion:no-preference): .stitch rect{animation:stitch 1.8s linear infinite} @keyframes stitch{to{stroke-dashoffset:-26}} (offset -26 = 2x the 13px dash period, seamless loop); html[lang=\"ar\"] .stitch rect{animation-direction:reverse}. Reduced-motion fallback: a static dashed crimson seal (animation never applies). Cost: one tiny stroke repaint region; no box-shadow, no filter. Rule: this is the single permanently-moving crimson element in the whole menu."
+   },
+   {
+    "name": "Saffron Glint on the Price",
+    "spec": "MALACHITE's graft: exactly one price glints as its card crosses viewport center. CSS, gated in @media (prefers-reduced-motion:no-preference): .price.glint{background:linear-gradient(100deg,var(--gold2) 40%,#E2A84B 50%,var(--gold2) 60%) 120% 0/250% 100% no-repeat;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:glint .9s var(--ease) both} @keyframes glint{to{background-position:-20% 0}} html[lang=\"ar\"] .price.glint{animation-name:glintR} @keyframes glintR{from{background-position:-20% 0}to{background-position:120% 0}} plus .price.glint s{background:none;-webkit-text-fill-color:var(--muted)} so the struck-through old price stays muted. JS (~12 lines): if(matchMedia('(prefers-reduced-motion: no-preference)').matches){var gio=new IntersectionObserver(es=>es.forEach(en=>{if(!en.isIntersecting)return;var p=en.target.querySelector('.price');if(p&&!p.dataset.glinted){document.querySelectorAll('.price.glint').forEach(x=>x.classList.remove('glint'));p.dataset.glinted=1;p.classList.add('glint');p.addEventListener('animationend',()=>p.classList.remove('glint'),{once:true})}}),{rootMargin:'-42% 0px -42% 0px'});document.querySelectorAll('.card').forEach(c=>gio.observe(c));} — single active glint enforced, once per card per page load. Reduced-motion fallback: no glint, prices render in flat var(--gold2). Background-position tween on one small text node — negligible repaint."
+   }
+  ],
+  "implementation_steps": [
+   "STEP 1 — Swap the 13 schema tokens in :root (line 36-44) to the css_tokens values exactly. The comment 'Majlis at night' becomes 'Khuyūt — Sadu threads on morning wool'.",
+   "STEP 2 — ON-ACCENT (non-negotiable, accent is dark): --on-accent changes from #1D1712 to #FFF6EC (warm wool-white, 6.96:1 on #A61C2B). This carries the text of every .badge, .chip.on (glider chips), .addb, .ob-count, .ob-cta, .opt.on and .sheet-add. Shipping the old #1D1712 on crimson would be near-invisible — this is the first thing to verify in the browser.",
+   "STEP 3 — Light-mode chrome tokens (all currently dark-glass, all must flip): --glass: rgba(250,246,238,.78) (frosted header + chips bar); --glass2: rgba(255,253,246,.84) (order bar); --glass3: rgba(255,253,246,.93) (toast — ink text on it passes at 15:1); --scrimc: rgba(38,28,18,.45) (sheet scrim, still darkens); --watermark: rgba(166,28,43,.05) (kufic watermark becomes a faint crimson thread-ghost on cream — at 44vh size .05 is the ceiling, do not raise); --tint: rgba(201,138,42,.10) and --tint2: rgba(201,138,42,.07) (reserve + credit backgrounds go saffron, NOT crimson — crimson fields read Jahez); --glow: rgba(201,138,42,.32) and --glow2: rgba(166,28,43,.50) (intro drop-shadow / fly-dot); --shadow: 0 18px 44px rgba(63,46,24,.16).",
+   "STEP 4 — Hardcoded colors outside tokens: body radial (line 54) #221A11 → #F6EBD3 (saffron dawn glow on wool); .heritage radial (line 227) rgba(107,74,36,.35) → rgba(201,138,42,.16); .sheet-cta-row box-shadow rgba(10,8,6,.55) → rgba(63,46,24,.14); .addb box-shadow rgba(0,0,0,.4) → rgba(63,46,24,.22); <meta name=\"theme-color\"> #171310 → #FAF6EE; manifest.webmanifest background_color/theme_color #171310 → #FAF6EE and the icon SVG rect fill %23171310 → %23FAF6EE with text fill %23C9A25C → %23A61C2B.",
+   "STEP 5 — ICON STROKES: change svg.item-ic{color:var(--gold)} (line 157) to color:var(--sand) and .heritage svg from var(--gold) to var(--sand) — all line icons render in deep saffron #8A5A18 (5.5:1 on bg, 4.55:1 on the strongest wash), NEVER crimson (icons everywhere would shatter the one-crimson-element rule). Leave .steam at var(--gold2): crimson mist at .55 opacity reads as Taif-rose steam — it IS the first-rain story. Leave :focus-visible, .flight-steps .rn, .story-line and .reserve borders on var(--gold): those are intentional crimson thread accents.",
+   "STEP 6 — Replace the 23 ART values (line 565-587) with the art_washes CSS exactly. Geometry is unchanged (130% 95% at 50% 0%, transparent 62%) — SHUROUQ's single-formula graft: only the rgba rotates, always warm-side ingredient hues over card2 #F5EDDD; matcha deliberately leans pistachio (PISTACHIO graft); rain is a desaturated petrichor sage, the coolest hue allowed, and no teal/indigo exists anywhere in the build.",
+   "STEP 7 — WHATSAPP COEXISTENCE: .wa-btn stays hardcoded #22A55A with white text — do not touch it; it is brand-recognition, not palette. --green:#2F6B44 (deeper, same family) covers step-done states so the saturated WhatsApp block remains the only vivid green on screen. In the cart sheet the crimson .sheet-add / totals sit above the green wa-btn — that crimson-above-green pairing is the trained Jahez/WhatsApp pattern; never swap them or recolor wa-btn crimson.",
+   "STEP 8 — Wire the three signature moments per their specs: (a) divider weave CSS + 6-line IntersectionObserver, (b) stitch SVG injected into the reserve HTML string at build (line ~911) + keyframes, (c) glint CSS + 12-line observer. All animation rules live inside @media (prefers-reduced-motion:no-preference); all use stroke-dashoffset / background-position / class toggles only — no box-shadow or filter animation anywhere.",
+   "STEP 9 — Intro sequence needs NO code change: it reads --gold/--gold2 from computed style at runtime, so the wasm wordmark now stitches itself in crimson particles on cream (the 'wasm' IS a brand-mark — the story writes itself). Verify the drop + particles are visible on #FAF6EE and that o.fillStyle=\"#000\" (line 1370) stays black — it is the offscreen alpha-sampling mask, not a visible color.",
+   "STEP 10 — Pressed/hover states: darken, never lighten — crimson pressed state is #8E1624 (e.g. via filter:brightness(.85) on :active for .ob-cta/.sheet-add/.addb if desired). #A61C2B sits at 6.9:1 on bg and 7:1 under white text; any 'brightened' crimson falls out of compliance.",
+   "STEP 11 — QA pass (headless Chromium AR+EN like the earlier run): verified ratios — ink/bg 15.8:1, ink2/bg 9.2:1, muted/bg 6.1:1, muted/bg2 (sheets) 5.6:1, price #BE3144/card 5.6:1, accent/bg 6.9:1, on-accent/accent 7.0:1, sand/bg 5.5:1, green/bg2 5.4:1. Manually check: .badge.soft (UNESCO) over the qahwa/yemen washes — if it dips below 4.5:1 in the screenshot, add color:var(--gold) to .badge.soft; glider chip text in both languages; toast over hero; scrim + sheet stack; watermark subtlety at 80% brightness on OLED (banding check on the washes)."
+  ],
+  "do_not": [
+   "Do NOT let crimson exceed one element per viewport: it is money/action only (prices, badges, glider, add buttons, order CTA, the reserve stitch). Never crimson headers, body text, backgrounds or icon strokes — one leak and the menu reads Jahez-red commodity.",
+   "Do NOT introduce indigo/teal anywhere, and never any cool hue within 24px of an item art area — the coolest permitted hue in the build is the desaturated rain/mint sage already specified.",
+   "Do NOT use Sadu bands as repeating background fills, add a second woven divider per viewport, or add any pattern borders — one band, one crimson element, per screen. Kitsch is the kill-radius.",
+   "Do NOT brighten #A61C2B 'for pop' or lighten pressed states — contrast fails; pressed state darkens to #8E1624.",
+   "Do NOT keep --on-accent #1D1712 — dark-on-crimson is illegible; it must ship as #FFF6EC.",
+   "Do NOT recolor the WhatsApp button (#22A55A stays) and do not use --green for anything except progress/success states.",
+   "Do NOT ship the Layali night mode in this pass — day-wool is the identity; night is a future toggle with its own re-derived contrast pass, not an alpha-fade of these tokens.",
+   "Do NOT animate box-shadows, filters or gradients by repaint — motion is restricted to stroke-dashoffset, background-position, transform, opacity, and class toggles, all gated behind prefers-reduced-motion:no-preference.",
+   "Do NOT letter-space Arabic or change the type system — the fonts, sizes and layout are fixed; drama comes from the thread colors and the three moments only.",
+   "Do NOT raise the kufic watermark above rgba(166,28,43,.05) or the washes above the specified alphas — the ground must always read as sun-warmed wool, never poster color."
+  ]
+ }
+}
