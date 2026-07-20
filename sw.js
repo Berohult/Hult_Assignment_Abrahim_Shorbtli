@@ -1,8 +1,9 @@
 // WASM Café — offline shell (the "works without internet" party trick)
-const CACHE = "wasm-v1";
+const CACHE = "wasm-v2";
 const SHELL = [
   "./",
   "./index.html",
+  "./demo.html",
   "./owner.html",
   "./assets/fonts/noto-kufi-arabic-arabic-500-normal.woff2",
   "./assets/fonts/noto-kufi-arabic-arabic-700-normal.woff2",
@@ -40,7 +41,7 @@ self.addEventListener("fetch", (e) => {
           return res;
         })
         .catch(() =>
-          caches.match(e.request).then((hit) => hit || caches.match("./index.html"))
+          caches.match(e.request).then((hit) => hit || caches.match("./demo.html"))
         )
     );
     return;

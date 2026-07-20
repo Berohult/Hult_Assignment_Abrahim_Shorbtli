@@ -1,7 +1,7 @@
 {
   "name": "مقهى وَسْم — WASM Café",
   "short_name": "وَسْم",
-  "start_url": "./",
+  "start_url": "./demo.html",
   "display": "standalone",
   "background_color": "#171310",
   "theme_color": "#171310",
