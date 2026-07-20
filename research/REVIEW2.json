@@ -1,0 +1,159 @@
+{
+ "confirmed_findings": [
+  {
+   "lens": "js-logic",
+   "severity": "medium",
+   "file": "demo.html",
+   "title": "Right after 'Swap it' merges the V60 + cake into the Afternoon Set, the cart re-suggests adding the saffron cake it just removed",
+   "fix_applied": true
+  },
+  {
+   "lens": "js-logic",
+   "severity": "medium",
+   "file": "demo.html",
+   "title": "Placing an order never clears the cart, so the new 'welcome back — your usual?' strip can never appear for a real returning customer and stale carts resurface",
+   "fix_applied": true
+  },
+  {
+   "lens": "js-logic",
+   "severity": "medium",
+   "file": "demo.html",
+   "title": "smartSuggestHtml dereferences flagship item ids without guards (byId[\"colombia\"].price, byId[\"dateplate\"].price) and hardcodes the cake price as 24 — kit-personalized client demos crash renderCart, making 'View order' dead",
+   "fix_applied": true
+  },
+  {
+   "lens": "js-logic",
+   "severity": "low",
+   "file": "demo.html",
+   "title": "Turning Ramadan mode off doesn't survive a reload when the URL carries ?ramadan=1 — the stored '0' is ignored",
+   "fix_applied": true
+  },
+  {
+   "lens": "js-logic",
+   "severity": "low",
+   "file": "demo.html",
+   "title": "Owner Mode 'Scans by hour' axis is hardcoded English ('6am/12pm/6pm/12am') and mislabels the 24-cell heat row",
+   "fix_applied": true
+  },
+  {
+   "lens": "js-logic",
+   "severity": "low",
+   "file": "demo.html",
+   "title": "'wasm-last-order' is loaded without the shape validation applied to the cart — a corrupt value makes renderUsual throw inside applyLang and aborts the whole boot under the intro overlay",
+   "fix_applied": true
+  },
+  {
+   "lens": "rtl-i18n",
+   "severity": "high",
+   "file": "demo.html",
+   "title": "Cart is never cleared after ordering — 'your usual' strip is unreachable organically, stale cart on return, and the rescue toast nags right after every order",
+   "fix_applied": true
+  },
+  {
+   "lens": "rtl-i18n",
+   "severity": "medium",
+   "file": "demo.html",
+   "title": "Owner Mode heat-chart axis labels are hardcoded English ('6am/12pm/6pm/12am') — violates the bilingual t() hard rule",
+   "fix_applied": true
+  },
+  {
+   "lens": "rtl-i18n",
+   "severity": "low",
+   "file": "demo.html",
+   "title": "Inconsistent numeral systems for money and counts in the same view (locNum vs bare Western numerals)",
+   "fix_applied": true
+  },
+  {
+   "lens": "rtl-i18n",
+   "severity": "low",
+   "file": "demo.html",
+   "title": "Owner Mode 'scans by hour' has 24 hourly buckets under an 18-hour (6am–12am) axis — the histogram misplaces traffic and contradicts the demo's own story",
+   "fix_applied": true
+  },
+  {
+   "lens": "rtl-i18n",
+   "severity": "low",
+   "file": "demo.html",
+   "title": "Owner Mode bar-fill growth animation ignores prefers-reduced-motion (hard rule for new animations)",
+   "fix_applied": true
+  },
+  {
+   "lens": "rtl-i18n",
+   "severity": "low",
+   "file": "demo.html",
+   "title": "om-dot glow hardcodes the flagship gold rgba, escaping the palette-token pipeline kit/new-client.mjs depends on",
+   "fix_applied": true
+  },
+  {
+   "lens": "rtl-i18n",
+   "severity": "low",
+   "file": "demo.html",
+   "title": "New rmBtn aria-label 'Ramadan mode' is hardcoded English and never localized",
+   "fix_applied": true
+  },
+  {
+   "lens": "landing",
+   "severity": "medium",
+   "file": "index.html",
+   "title": "Demo iframe is off-center in the 'good' phone frame — 46px dead strip on the inline-start side",
+   "fix_applied": true
+  },
+  {
+   "lens": "landing",
+   "severity": "medium",
+   "file": "index.html",
+   "title": "Green 'Menu Sadah' phone label overlays and blocks the live demo's header controls inside the interactive frame",
+   "fix_applied": true
+  },
+  {
+   "lens": "landing",
+   "severity": "low",
+   "file": "index.html",
+   "title": "QR promises 'scan to see a live menu' but encodes the marketing site root, not the demo menu",
+   "fix_applied": true
+  },
+  {
+   "lens": "landing",
+   "severity": "low",
+   "file": "index.html",
+   "title": "anaTry hint says triple-tap 'the وَسْم wordmark' but only the small header wordmark is wired — the big hero وَسْم does nothing",
+   "fix_applied": true
+  },
+  {
+   "lens": "perf-a11y",
+   "severity": "high",
+   "file": "demo.html",
+   "title": "Owner Mode dialog (aria-modal) never receives, traps, or restores focus — and stays keyboard-reachable after closing",
+   "fix_applied": true
+  },
+  {
+   "lens": "perf-a11y",
+   "severity": "medium",
+   "file": "demo.html",
+   "title": "Owner Mode bar-growth animation ignores prefers-reduced-motion (project hard rule)",
+   "fix_applied": true
+  },
+  {
+   "lens": "perf-a11y",
+   "severity": "medium",
+   "file": "demo.html",
+   "title": "Ramadan toggle: hardcoded English-only aria-label never localized, and no aria-pressed state",
+   "fix_applied": true
+  },
+  {
+   "lens": "perf-a11y",
+   "severity": "low",
+   "file": "demo.html",
+   "title": "Owner Mode hour-axis labels are hardcoded English-only strings (hard-rule violation)",
+   "fix_applied": true
+  },
+  {
+   "lens": "perf-a11y",
+   "severity": "low",
+   "file": "sw.js",
+   "title": "Offline navigate fallback serves the flagship WASM demo for any uncached page, including kit-generated client demos",
+   "fix_applied": true
+  }
+ ],
+ "note": "22 confirmed (several duplicates across lenses -> 14 unique fixes), 0 rejected; all fixed and re-verified 2026-07-20"
+}

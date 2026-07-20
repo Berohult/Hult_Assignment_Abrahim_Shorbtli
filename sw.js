@@ -1,5 +1,5 @@
 // WASM Café — offline shell (the "works without internet" party trick)
-const CACHE = "wasm-v2";
+const CACHE = "wasm-v3";
 const SHELL = [
   "./",
   "./index.html",
@@ -41,7 +41,15 @@ self.addEventListener("fetch", (e) => {
           return res;
         })
         .catch(() =>
-          caches.match(e.request).then((hit) => hit || caches.match("./demo.html"))
+          caches.match(e.request).then((hit) => {
+            if (hit) return hit;
+            // Only the core pages fall back to the flagship demo shell —
+            // kit-generated client demos must never silently become WASM.
+            const path = new URL(e.request.url).pathname;
+            return /\/(index\.html|demo\.html)?$/.test(path)
+              ? caches.match("./demo.html")
+              : Response.error();
+          })
         )
     );
     return;

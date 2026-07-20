@@ -97,10 +97,9 @@ html[dir="ltr"] .phone .ph-label{transform:translateX(-50%)}
 .pdf-sheet td{border-bottom:1px dotted #999;padding:1px 4px;white-space:nowrap}
 .pdf-hint{position:absolute;bottom:12px;inset-inline:12px;text-align:center;font-size:10.5px;
   color:#E8A28F;background:rgba(14,11,8,.8);border-radius:10px;padding:5px 8px}
-.frame-holder{height:480px;position:relative}
-.frame-holder iframe{width:390px;height:844px;border:0;transform:scale(.568);transform-origin:top left;
-  position:absolute;top:0;left:0;background:#171310}
-html[dir="rtl"] .frame-holder iframe{left:auto;right:0;transform-origin:top right}
+.frame-holder{height:514px;padding-top:34px;position:relative;overflow:hidden}
+.frame-holder iframe{display:block;width:390px;height:844px;border:0;transform:scale(.568);
+  transform-origin:top center;margin:0 calc((100% - 390px)/2);background:#171310}
 .try-row{display:flex;gap:12px;justify-content:center;align-items:center;margin-top:22px;flex-wrap:wrap}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:700;
   border-radius:16px;padding:13px 22px;font-size:14.5px;transition:transform .18s var(--ease)}
@@ -283,7 +282,7 @@ var S = {
   newWay:{ar:"منيو سادة",en:"Menu Sadah"},
   pdfHint:{ar:"تكبير… تصغير… وين الأسعار؟ 🔍",en:"Zoom in… zoom out… where are the prices? 🔍"},
   tryFull:{ar:"افتح المنيو التجريبي كامل الشاشة",en:"Open the demo full screen"},
-  qrCap:{ar:"أو امسح الرمز وشاهد منيو حيًّا على جوالك",en:"Or scan to see a live menu on your phone"},
+  qrCap:{ar:"هكذا يبدو رمزك على الطاولة — يفتح منيو ضيفك في أقل من ثانية",en:"This is your table code — it opens your guest's menu in under a second"},
   statsEyebrow:{ar:"أرقام من السوق، ليست وعودًا",en:"Market numbers, not promises"},
   statsH:{ar:"المنيو الرقمي الصحيح يبيع عنك",en:"The right digital menu sells for you"},
   stats:[

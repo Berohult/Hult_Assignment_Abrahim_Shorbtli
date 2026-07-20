@@ -440,6 +440,7 @@ footer .f-block{margin-bottom:18px;line-height:2}
   .wordmark .mask{animation:none}
   .parade-track{animation:none}
   .parade{overflow-x:auto}
+  .om-bar .fill{transition:none}
   html{scroll-behavior:auto}
 }
 @media (min-width:700px){
@@ -489,8 +490,9 @@ footer .f-block{margin-bottom:18px;line-height:2}
 /* ===== Owner Mode ===== */
 #ownerView{position:fixed;inset:0;z-index:96;overflow-y:auto;overscroll-behavior:contain;
   background:radial-gradient(90% 30% at 50% 0%,#221A11 0%,transparent 70%),var(--bg);
-  transform:translateY(103%);transition:transform .5s var(--ease)}
-#ownerView.show{transform:none}
+  transform:translateY(103%);visibility:hidden;
+  transition:transform .5s var(--ease),visibility 0s linear .5s}
+#ownerView.show{transform:none;visibility:visible;transition:transform .5s var(--ease)}
 .om-in{max-width:var(--maxw);margin:0 auto;padding:18px 18px 60px}
 .om-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
 .om-title{font-family:var(--f-d);font-weight:700;font-size:20px;color:var(--gold2)}
@@ -516,7 +518,7 @@ html[dir="rtl"] .om-bar .fill{transform-origin:right}
   background:linear-gradient(var(--hair) 1px,transparent 1px) center/100% 50% no-repeat,
              linear-gradient(90deg,var(--hair) 1px,transparent 1px) center/50% 100% no-repeat}
 .om-dot{position:absolute;width:12px;height:12px;border-radius:99px;background:var(--gold);
-  transform:translate(-50%,50%);box-shadow:0 0 8px rgba(226,194,131,.4);border:0;padding:0}
+  transform:translate(-50%,50%);box-shadow:0 0 8px var(--glow);border:0;padding:0}
 .om-quad{position:absolute;font-size:9.5px;color:var(--muted)}
 .om-heat{display:flex;gap:3px;margin-top:6px;direction:ltr}
 .om-heat span{flex:1;height:26px;border-radius:4px;background:var(--gold)}
@@ -727,6 +729,9 @@ var T = {
   omIn2:{ar:"«{x}» يُشاهد كثيرًا ويُطلب قليلًا — جرّب صورة أو وصفًا جديدًا",en:"'{x}' gets views but few orders — try a new photo or description"},
   omIn3:{ar:"«العصرونية» ترفع متوسط الفاتورة — ثبّتها أول فصل الأطقم",en:"The Afternoon Set lifts the average ticket — keep it first in Sets"},
   omDemoTag:{ar:"أرقام توضيحية + نقراتك الحية في هذه الجلسة. مع منيو سادة يصلك التقرير الحقيقي كل اثنين واتساب.",en:"Illustrative numbers + your live taps this session. With Menu Sadah, the real report arrives every Monday on WhatsApp."},
+  omAx0:{ar:"٦ص",en:"6am"},omAx1:{ar:"١٢ظ",en:"12pm"},omAx2:{ar:"٦م",en:"6pm"},omAx3:{ar:"١٢ل",en:"12am"},
+  ramadanMode:{ar:"وضع رمضان",en:"Ramadan mode"},
+  fsLabel:{ar:"حجم الخط",en:"Text size"},
   closeSheet:{ar:"إغلاق",en:"Close"}
 };
 
@@ -1174,7 +1179,10 @@ function renderHero(){
   document.getElementById("greet").textContent=RAMADAN?t(T.greetRamadan):((h>=5&&h<12)?t(T.greetMorning):t(T.greetEvening));
   var hm=RAMADAN?[T.ramadanChip].concat(T.metaChips):T.metaChips;
   document.getElementById("heroMeta").innerHTML=hm.map(function(c){return '<span class="hmchip">'+t(c)+'</span>';}).join("");
-  document.getElementById("rmBtn").classList.toggle("on",RAMADAN);
+  var rb=document.getElementById("rmBtn");
+  rb.classList.toggle("on",RAMADAN);
+  rb.setAttribute("aria-label",t(T.ramadanMode));
+  rb.setAttribute("aria-pressed",RAMADAN?"true":"false");
   document.getElementById("langBtn").textContent=t(T.langBtn);
   document.getElementById("obLabel").textContent=t(T.sar)+" · "+t(T.vatShort);
   document.getElementById("obView").textContent=t(T.viewOrder);
@@ -1246,6 +1254,7 @@ document.getElementById("filters").addEventListener("click",function(e){
 document.getElementById("rmBtn").addEventListener("click",function(){
   RAMADAN=!RAMADAN;
   localStorage.setItem("wasm-ramadan",RAMADAN?"1":"0");
+  try{ if(location.search) history.replaceState(null,"",location.pathname+location.hash); }catch(e){}
   applyLang();
   toast(t(RAMADAN?T.ramadanOn:T.ramadanOff));
   if(RAMADAN){
@@ -1335,6 +1344,7 @@ function checkBreakfast(){
 }
 
 /* ================ Cart ================ */
+var orderPlaced=false;
 var cart=[];
 try{ cart=JSON.parse(localStorage.getItem("wasm-cart")||"[]"); }catch(e){ cart=[]; }
 cart=Array.isArray(cart)?cart.filter(function(l){
@@ -1421,6 +1431,11 @@ function hideSheets(){
   openSheet=null;
   if(lastFocus&&document.contains(lastFocus)&&lastFocus.focus){lastFocus.focus();}
   lastFocus=null;
+  if(orderPlaced){
+    orderPlaced=false;
+    cart=[];saveCart();updateOrderBar(true);
+    renderUsual();
+  }
 }
 document.getElementById("scrim").addEventListener("click",hideSheets);
 document.querySelectorAll(".sheet-x").forEach(function(b){ b.addEventListener("click",hideSheets); });
@@ -1532,10 +1547,13 @@ document.getElementById("itemSheetBody").addEventListener("click",function(e){
 });
 
 /* smart suggest — the thinking-cashier line: one rule, one line, real math */
+var SET_HAS={afternoon:{drinks:1,desserts:1},flight:{drinks:3},"majlis-set":{drinks:1,food:1,desserts:1},"iftar-set":{drinks:1,food:1,desserts:1}};
 function cartStats(){
   var st={drinks:0,food:0,desserts:0,ids:{},v60:null,cake:null};
   cart.forEach(function(l){
     var m=byId[l.id]; st.ids[l.id]=true;
+    var sc=SET_HAS[l.id];
+    if(sc){ st.drinks+=(sc.drinks||0)*l.qty; st.food+=(sc.food||0)*l.qty; st.desserts+=(sc.desserts||0)*l.qty; return; }
     if(m.ch==="sets") return;
     if(m.ch==="sweet") st.desserts+=l.qty;
     else if(m.caf!=null||m.ch==="pour") st.drinks+=l.qty;
@@ -1547,16 +1565,16 @@ function cartStats(){
 }
 function smartSuggestHtml(){
   var st=cartStats();
-  if(st.v60&&st.cake&&!st.ids["afternoon"]){
+  if(st.v60&&st.cake&&byId["afternoon"]&&!st.ids["afternoon"]){
     var save=st.v60.unit+st.cake.unit-byId["afternoon"].price;
-    if(save>0) return '<div class="suggest"><span class="s-t">'+t(T.sgSwapT).replace("{n}",locNum(save))+'</span><button data-swap="1">'+t(T.sgSwapBtn)+'</button></div>';
+    if(save>0) return '<div class="suggest"><span class="s-t">'+t(T.sgSwapT).replace("{n}",num(save))+'</span><button data-swap="1">'+t(T.sgSwapBtn)+'</button></div>';
   }
-  if(st.desserts>=2&&st.drinks===0&&!st.ids["colombia"])
+  if(st.desserts>=2&&st.drinks===0&&byId["colombia"]&&!st.ids["colombia"])
     return '<div class="suggest"><span class="s-t">'+t(T.sgNoCoffee)+'</span><button data-sug="colombia">'+t(T.addIt)+' · '+num(byId["colombia"].price)+'</button></div>';
-  if(st.drinks>=3&&st.food===0&&st.desserts===0&&!st.ids["dateplate"])
+  if(st.drinks>=3&&st.food===0&&st.desserts===0&&byId["dateplate"]&&!st.ids["dateplate"])
     return '<div class="suggest"><span class="s-t">'+t(T.sgNoFood)+'</span><button data-sug="dateplate">'+t(T.addIt)+' · '+num(byId["dateplate"].price)+'</button></div>';
-  if(st.desserts===0)
-    return '<div class="suggest"><span class="s-t">'+t(T.suggest)+'</span><button data-sug="saffron-cake">'+t(T.addIt)+' · '+num(24)+'</button></div>';
+  if(st.desserts===0&&byId["saffron-cake"])
+    return '<div class="suggest"><span class="s-t">'+t(T.suggest)+'</span><button data-sug="saffron-cake">'+t(T.addIt)+' · '+num(byId["saffron-cake"].price)+'</button></div>';
   return "";
 }
 
@@ -1638,7 +1656,7 @@ document.getElementById("cartSheetBody").addEventListener("click",function(e){
       if(stx.cake.qty>1) stx.cake.qty--; else cart.splice(cart.indexOf(stx.cake),1);
       addToCart("afternoon",[],1,sw);
       renderCart();
-      toast(t(T.sgSwapDone).replace("{n}",locNum(save)));
+      toast(t(T.sgSwapDone).replace("{n}",save));
     }
     return;
   }
@@ -1665,6 +1683,7 @@ document.getElementById("cartSheetBody").addEventListener("click",function(e){
   if(e.target.closest("#waOrder")){
     logEv("order");
     saveLastOrder();
+    orderPlaced=true;
     var st=document.getElementById("orderStatus");
     st.classList.add("show");
     setTimeout(function(){document.getElementById("st1").classList.add("done");},400);
@@ -1676,6 +1695,15 @@ document.getElementById("cartSheetBody").addEventListener("click",function(e){
 /* ================ Memory: your usual + rescue ================ */
 var LASTO=null;
 try{ LASTO=JSON.parse(localStorage.getItem("wasm-last-order")||"null"); }catch(e){ LASTO=null; }
+if(!(LASTO&&Array.isArray(LASTO.lines)&&typeof LASTO.total==="number"&&typeof LASTO.ts==="number"
+  &&LASTO.lines.every(function(l){return l&&typeof l.id==="string"&&typeof l.sig==="string"
+    &&typeof l.qty==="number"&&l.qty>0&&typeof l.unit==="number"&&Array.isArray(l.mods||[]);}))) LASTO=null;
+/* if this cart is exactly the order that was already sent (tab died mid-WhatsApp), clear it */
+if(LASTO&&cart.length){
+  var _sn=cart.map(function(l){return l.sig+"x"+l.qty;}).sort().join("|");
+  var _sl=LASTO.lines.map(function(l){return l.sig+"x"+l.qty;}).sort().join("|");
+  if(_sn===_sl){ cart=[]; saveCart(); }
+}
 function saveLastOrder(){
   if(!cart.length) return;
   LASTO={lines:cart.map(function(l){return {sig:l.sig,id:l.id,qty:l.qty,unit:l.unit,mods:l.mods};}),
@@ -1742,7 +1770,7 @@ function renderOwner(){
     var y=10+80*Math.sqrt((r.m.price-pmin)/Math.max(1,pmax-pmin));
     return '<button class="om-dot" style="left:'+x.toFixed(1)+'%;bottom:'+y.toFixed(1)+'%" data-nm="'+esc(t(r.m.nm))+'" aria-label="'+esc(t(r.m.nm))+'"></button>';
   }).join("");
-  var heat=HEAT.map(function(x){ return '<span style="opacity:'+(0.06+0.94*x/100).toFixed(2)+'"></span>'; }).join("");
+  var heat=HEAT.slice(6).map(function(x){ return '<span style="opacity:'+(0.06+0.94*x/100).toFixed(2)+'"></span>'; }).join("");
   var star=rows[0], puzzle=null, worst=0;
   rows.slice(0,14).forEach(function(r){
     var ratio=r.v/Math.max(1,r.o);
@@ -1760,7 +1788,7 @@ function renderOwner(){
     +'<span class="om-quad" style="bottom:6px;left:8px">'+t(T.omQ3)+'</span>'
     +dots+'</div></div>'
     +'<div class="om-panel"><h3>'+t(T.omHeat)+'</h3><div class="om-heat">'+heat+'</div>'
-    +'<div class="om-heat-x"><span>6am</span><span>12pm</span><span>6pm</span><span>12am</span></div>'
+    +'<div class="om-heat-x"><span>'+t(T.omAx0)+'</span><span>'+t(T.omAx1)+'</span><span>'+t(T.omAx2)+'</span><span>'+t(T.omAx3)+'</span></div>'
     +'<div class="om-note">'+t(T.omHeatNote)+'</div></div>'
     +'<div class="om-panel"><h3>'+t(T.omInsights)+'</h3>'
     +'<div class="om-card">'+t(T.omIn1).replace("{x}",t(star.m.nm))+'</div>'
@@ -1772,14 +1800,20 @@ function renderOwner(){
     el.querySelectorAll(".om-bar .fill").forEach(function(f){ f.style.setProperty("--w",f.dataset.w); });
   },60);
 }
+var omLastFocus=null;
 function openOwner(){
   renderOwner();
-  document.getElementById("ownerView").classList.add("show");
+  omLastFocus=document.activeElement;
+  var el=document.getElementById("ownerView");
+  el.classList.add("show");
   document.body.classList.add("sheet-open");
+  el.focus();
 }
 function closeOwner(){
   document.getElementById("ownerView").classList.remove("show");
   if(!openSheet) document.body.classList.remove("sheet-open");
+  if(omLastFocus&&document.contains(omLastFocus)&&omLastFocus.focus){ omLastFocus.focus(); }
+  omLastFocus=null;
 }
 document.getElementById("ownerView").addEventListener("click",function(e){
   if(e.target.closest("#omClose")){ closeOwner(); return; }
@@ -1787,12 +1821,14 @@ document.getElementById("ownerView").addEventListener("click",function(e){
   if(d) toast(d.dataset.nm);
 });
 var wmTaps=0,wmTimer;
-document.querySelector(".wordmark-sm").addEventListener("click",function(){
+function wmTap(){
   wmTaps++;
   clearTimeout(wmTimer);
   wmTimer=setTimeout(function(){ wmTaps=0; },900);
   if(wmTaps>=3){ wmTaps=0; openOwner(); }
-});
+}
+document.querySelector("header .wordmark-sm").addEventListener("click",wmTap);
+document.querySelector(".hero .wordmark").addEventListener("click",wmTap);
 
 /* ================ Global card clicks ================ */
 document.addEventListener("click",function(e){
